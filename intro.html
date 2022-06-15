@@ -3,8 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Intro</title>
+    <link rel="stylesheet" href="dist/css/root.min.css">
+    <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.min.css">
+    <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/roboto/fonts.css">
+    <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/roboto-condensed/fonts.css">
+    <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.min.css">
+    <script src="dist/js/root.min.js"></script>
 </head>
 <body>
-
+<div class="intro-header">
+    <div class="intro-header__top">
+        <div class="container-large">
+            <div class="intro-header__top__wrapper">
+                <div class="intro-header__top-logo">
+                    <a href="javascript:void 0">
+                        <img src="" alt="" width="255" height="110">
+                    </a>
+                </div>
+                <div class="intro-header__top-rest">
+                    <button class="button-signin">Хуульч нэвтрэх</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-header__bot">
+        <div class="container-large">
+            <div class="intro-header__bot-wrapper">
+                <div class="social-icons">
+                    <a href="javascript:void 0">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="javascript:void 0">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="javascript:void 0">
+                        <i class="fas fa-phone fa-flip-horizontal"></i>
+                    </a>
+                    <a href="javascript:void 0">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void 0">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </div>
+                <div class="menus">
+                    <a href="javascript:void 0">Холбооны тухай</a>
+                    <a href="javascript:void 0">Үйлчилгээ</a>
+                    <a href="javascript:void 0">Хамтын ажиллагаа</a>
+                    <a href="javascript:void 0">Хуулчийн тухай</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="intro-body__wrapper">
+    <div class="sector-logo">
+        <img src="" alt="">
+    </div>
+    <div class="container-large">
+        <div class="grid-20" style="overflow: hidden">
+            <div>
+                <div class="unit-count">
+                    <span>512</span>
+                    Шүүгч
+                </div>
+                <div class="unit-count">
+                    <span>670</span>
+                    Прокурор
+                </div>
+                <div class="unit-count">
+                    <span>2270</span>
+                    Өмгөөлөгч
+                </div>
+                <div class="unit-count">
+                    <span>375</span>
+                    Нотариатч
+                </div>
+                <div class="unit-count">
+                    <span>1276</span>
+                    Хуульч
+                </div>
+                <div>Холбоо барих хаяг</div>
+                <div>Утас - И-Мэйл</div>
+                <div>(976) 70116065</div>
+                <div>УБ хот, Хууль зүйн үндэсний хүрээлэн, 403 тоот.</div>
+            </div>
+            <div>
+                <div>info@mglbar.mn</div>
+                <div>Монголын хуульчдын холбоо</div>
+                <div>Монголын хуульчдын холбооны албан ёсны цахим хуудас...</div>
+                <button class="button">Зочлох</button>
+                <div>
+                    Хуульч би Монгол Улсын Үндсэн хуулийг даган мөрдөж, хуульчийн үүрэг, мэргэжлийн үйл ажиллагаанд баримтлах
+                    дүрмийг чанд сахиж,<br>
+                    шударга ёсыг хамгаалагчийн хувьд иргэний эрх, хууль ёсны ашиг сонирхлыг бүрэн, тууштай хамгаалахдаа батлан
+                    тангаргалая
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <img src="images/318-1920x860.jpg" alt="">-->
+</div>
+<script>
+    function applyLargestWidth() {
+        if (document.body.contains(document.querySelector('.unit-count span'))) {
+            const elems = document.querySelectorAll('.unit-count span')
+            let maxWidth=0;
+            elems.forEach(el=>{
+                if (el.offsetWidth > maxWidth) {
+                    maxWidth = el.offsetWidth
+                }
+            });
+            console.log(maxWidth);
+            elems.forEach(el=>{
+                el.style.minWidth = maxWidth + "px";
+            })
+        }
+    }
+    document.addEventListener('DOMContentLoaded', e => {
+        applyLargestWidth();
+    })
+</script>
 </body>
 </html>

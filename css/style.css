@@ -284,6 +284,30 @@ body {
 }
 
 
+.article-summary__list {
+    position: relative;
+    padding-right: 10px;
+    max-height: 500px;
+    overflow: auto;
+}
+.article-summary__list .article-list__item {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.article-list__item .name {
+    font-size: 14px;
+}
+.article-list__item .published {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+.article-list__item .published i {
+    margin-right: 5px;
+}
+
+
 .article-feature__sub {
     display: block;
 }

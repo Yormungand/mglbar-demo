@@ -25,6 +25,7 @@ function refresh() {
  * */
 function css() {
     return gulp.src([
+        '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
         '/home/turbold/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.css',
         'css/*.css',
     ])
@@ -48,6 +49,9 @@ function css() {
 function js() {
     return gulp.src([
         '/home/turbold/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.js',
+        '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.common.js',
+        '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
+        // '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js',
         'js/*.js',
     ])
         .pipe(uglify())

@@ -1,0 +1,12 @@
+.sidebar-header{display: flex; justify-content: space-between}
+.sidebar-header{margin-top: 50px; border-top: 2px solid #b7833e; margin-bottom: 10px;border-bottom: 1px solid #E8E8E8}
+.button{border: none}
+.all-icons a{font-size: 14px;color: #D2B48C}
+.sidebar-title{font-size: 18px; font-weight: 500; color: #b7833e; margin: 6px 0px}
+
+.all-icons{display: flex}
+.all-icons a {position: relative;display: block;padding: 9px 15px;}
+.all-icons a::before {content: "";position: absolute;bottom: 0;left: 0;width: 100%;
+    height: 2px;background-color: transparent;transition: background-color .5s ease;}
+.all-icons a:not(.active):hover::before {background-color: rgba(0,0,0,.3);}
+.all-icons a.active::before {background-color: #D2B48C;}

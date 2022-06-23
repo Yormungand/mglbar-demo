@@ -63,9 +63,7 @@
     object-fit: cover;
 }
 
-.sector-cards {
-
-}
+.sector-cards {margin-top: auto}
 .sector-card{display: flex; flex-direction: column; background-size: contain; background: rgba(0,0,0,.8); transition: background-color .5s}
 .sector-card__title{color: #cba242; font-weight: 700; transition: color .5s}
 .sector-card__text{margin-top: 10px; color: #cba242; font-weight: 400; transition: color .5s}
@@ -73,14 +71,16 @@
 .sector-card:hover .sector-card__text {color: whitesmoke}
 .sector-card:hover{background-color: rgba(0,0,0,.5);cursor: pointer;color: #ffffff;}
 @media (min-width: 1200px){
+    .sector-cards {padding-top: 40px}
     .sector-card {padding: 40px;}
     .sector-card__title {font-size: 26px;}
     .sector-card__text {font-size: 15px;}
 }
 @media (max-width: 1200px){
-    .sector-card {border-bottom: 1px solid rgba(200,200,200,.5); padding: 20px;}
-    .sector-card__title {font-size: 14px;}
-    .sector-card__text {font-size: 10px;}
+    .sector-cards {padding-top: 20px}
+    .sector-card {border-bottom:1px solid rgba(200,200,200,.5);padding:20px;}
+    .sector-card__title {font-size:14px;}
+    .sector-card__text {font-size:10px;}
 }
 
 

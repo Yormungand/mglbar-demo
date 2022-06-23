@@ -77,7 +77,7 @@
     .sector-card__text {font-size: 15px;}
 }
 @media (max-width: 1200px){
-    .sector-cards {padding-top: 20px}
+    .sector-cards {padding-top: 30px}
     .sector-card {border-bottom:1px solid rgba(200,200,200,.5);padding:20px;}
     .sector-card__title {font-size:14px;}
     .sector-card__text {font-size:10px;}

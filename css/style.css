@@ -262,15 +262,15 @@ body {
 
 .intro-title {font-size: 2.550vw;font-weight: 700;text-transform: uppercase;}
 .intro-subtitle {text-transform: uppercase;}
-.intro-button {display: block;border-style: none;box-sizing: border-box;border-radius: 10px;padding: 10px 30px;font-size: 16px;
-    background-color: #b29550;color: rgba(255,255,255,.7);transition: background-color .5s ease, color .5s ease, border .5s ease}
+.intro-button {display: block;border-style: none;box-sizing: border-box;border-radius: 10px;font-size: 16px;
+    background-color:#b29550;color:rgba(255,255,255,.7);transition:background-color .5s ease,color .5s ease,border .5s ease}
 .intro-button:not(:disabled) {cursor: pointer}
 @media (hover: hover) {
-    .intro-button:hover {border-color: rgb(53 51 52);color: rgb(53 51 52);background-color: rgb(238 202 126);}
+    .intro-button:hover {border-color:rgb(53 51 52);color:rgb(53 51 52);background-color:rgb(238 202 126);}
 }
-@media (hover: none) {
-    .intro-button:active {border-color: rgb(53 51 52);color: rgb(53 51 52);background-color: rgb(238 202 126);}
-}
+@media (hover: none) {  .intro-button:active {border-color:rgb(53 51 52);color:rgb(53 51 52);background-color:rgb(238 202 126);}}
+@media (min-width: 1200px){  .intro-button {margin: 40px 0;padding: 10px 30px;}}
+@media (max-width: 1200px){  .intro-button {margin: 15px 0; padding: 7px 15px;}}
 
 .intro-grid {
     display: flex;
@@ -325,7 +325,6 @@ body {
     .unit-count {font-size: 18px;}
     .unit-count span {font-size: 32px;}
     .intro-address {order: 2;font-size: 16px;}
-    .intro-button {margin: 40px 0;}
     .intro-subtitle {margin-top: 20px;font-size: 1.050vw;}
     .intro-body__wrapper {padding-top: 40px;}
 }
@@ -334,7 +333,6 @@ body {
     .unit-count {font-size:12px;}
     .unit-count span {font-size:22px;}
     .intro-address {order: 3; font-size:12px;}
-    .intro-button {margin:20px 0;}
     .intro-title {font-size: 20px;}
     .intro-subtitle {margin-top: 10px;font-size:14px;}
     .intro-body__wrapper {padding-top:20px;}

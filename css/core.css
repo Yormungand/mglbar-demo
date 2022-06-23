@@ -614,6 +614,7 @@
 
 
 
+.mt-auto {margin-top: auto;}
 .ml-auto {margin-left: auto;}
 .mr-auto {margin-right: auto;}
 .m-auto {margin: auto;}
@@ -665,6 +666,7 @@
 .mb-40 {margin-bottom: 40px}
 .mb-45 {margin-bottom: 45px}
 @media (min-width: 1600px) {
+    .mt-auto\@xl {margin-top: auto;}
     .ml-auto\@xl {margin-left: auto;}
     .mr-auto\@xl {margin-right: auto;}
     .m-auto\@xl {margin: auto;}
@@ -717,6 +719,7 @@
     .mb-45\@xl {margin-bottom: 45px}
 }
 @media (min-width: 1440px) {
+    .mt-auto\@n {margin-top: auto;}
     .ml-auto\@n {margin-left: auto;}
     .mr-auto\@n {margin-right: auto;}
     .m-auto\@n {margin: auto;}
@@ -769,6 +772,7 @@
     .mb-45\@n {margin-bottom: 45px}
 }
 @media (min-width: 1200px) {
+    .mt-auto\@l {margin-top: auto;}
     .ml-auto\@l {margin-left: auto;}
     .mr-auto\@l {margin-right: auto;}
     .m-auto\@l {margin: auto;}
@@ -821,6 +825,7 @@
     .mb-45\@l {margin-bottom: 45px}
 }
 @media (min-width: 960px) {
+    .mt-auto\@m {margin-top: auto;}
     .ml-auto\@m {margin-left: auto;}
     .mr-auto\@m {margin-right: auto;}
     .m-auto\@m {margin: auto;}
@@ -873,6 +878,7 @@
     .mb-45\@m {margin-bottom: 45px}
 }
 @media (min-width: 640px) {
+    .mt-auto\@s {margin-top: auto;}
     .ml-auto\@s {margin-left: auto;}
     .mr-auto\@s {margin-right: auto;}
     .m-auto\@s {margin: auto;}

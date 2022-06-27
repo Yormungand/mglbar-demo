@@ -270,6 +270,7 @@ body {
 .intro-title {font-size: 2.550vw;font-weight: 700;text-transform: uppercase;}
 .intro-subtitle {text-transform: uppercase;}
 .intro-button {display: block;border-style: none;box-sizing: border-box;border-radius: 10px;font-size: 16px;
+    width: max-content;
     background-color:#b29550;color:rgba(255,255,255,.7);transition:background-color .5s ease,color .5s ease,border .5s ease}
 .intro-button:not(:disabled) {cursor: pointer}
 @media (hover: hover) {

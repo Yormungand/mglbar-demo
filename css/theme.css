@@ -259,7 +259,7 @@ ol#video-player-list__lists a:hover {
 
 .video-player-list-view__video {
     position: relative;
-    padding-bottom: 30%;
+    padding-bottom: 25%;
     padding-top: 30px;
     height: 0;
     width: 40%;
@@ -338,9 +338,8 @@ ol#video-player-list__lists a:hover {
 }
 
  .banner-image {
-     /*margin-top: 40px;*/
      overflow: hidden;
-     padding-bottom: 70%;
+     padding-bottom: 90.69%;
      position: relative;
      height: 0;
  }
@@ -355,8 +354,7 @@ ol#video-player-list__lists a:hover {
     object-fit: cover;
 }
 
-.sidebar-forum{margin-top: 40px}
-.sidebar-forum{margin-top: 40px}
+
  hr{border: none}
 hr.under-line{width: 40px;border-bottom: 3px solid #ddae3d; top: 0px; margin-bottom: 30px;}
 .sidebar-forum__title {text-align: center;}
@@ -430,6 +428,7 @@ hr.under-line{width: 40px;border-bottom: 3px solid #ddae3d; top: 0px; margin-bot
 .mgl-bar-footer__email span{color: #cba242;font-size: 12px; font-weight: 400}
 .mgl-bar-footer__location span{color: #cba242;font-size: 12px; font-weight: 400;}
 .mgl-bar-footer{background: #322d2d; padding-bottom: 20px; margin-top: 40px; padding-top: 20px}
+.mgl-bar-footer-3{background: #322d2d; padding-bottom: 20px;}
 .mgl-bar-footer-icon i{color: #b29550; font-size: 19px}
 
 .mgl-bar-footer-icon {
@@ -1572,4 +1571,31 @@ ol#podcast-video-list-view {
     display: block;
 }
 
+@media (max-width: 700px){
+    .video-player-list-video{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+    }
+    .video-player-list-view__video{
+        width: 100%;
+    }
+    .video-player-list-view__video {
+        position: relative;
+        padding-bottom: 30%;
+        padding-top: 104px;
+    }
+}
 
+@media (max-width: 1200px) {
+    .header-banner{
+        width: 100%;
+    }
+}
+
+.forumsNew{
+    max-height: 1400px;
+}
+.articleNew{
+    max-height: 350px;
+}

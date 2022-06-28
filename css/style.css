@@ -235,8 +235,27 @@ body {
 .post-item__mini .author__stars i {font-size: 10px;color: #f1c57c;width: max-content;line-height: 1;}
 
 
-.sub-heading {position: relative;display: block;font-size: 16px;text-transform: uppercase;font-weight: 700;color: #353334;margin-bottom: 40px;padding-bottom: 10px;}
-.sub-heading::before {content: "";position: absolute;bottom: 0;left: 0;width: 40px;height: 3px;background-color: #b29550;}
+.sub-heading {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #353334;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+.sub-heading::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #b29550;
+}
 
 .intro-header {
 

@@ -1005,8 +1005,9 @@ li{list-style: none}
     color: #353334
 }
 .page-icon-card{
-    text-align: center;
     display: flex;
+    text-align: center;
+    justify-content: center;
     flex-direction: column;
     text-decoration: none;
     cursor: pointer;

@@ -1,30 +1,18 @@
-import gulp from "gulp"
-import concat from "gulp-concat"
-import postcss from 'gulp-postcss'
-import autoprefixer from "gulp-autoprefixer"
-import cleancss from "gulp-clean-css"
-import browserSync from "browser-sync"
-import cssnext from "postcss-preset-env"
-import uglify from "gulp-uglify"
-import cssnano from "cssnano";
-import imagemin from 'gulp-imagemin';
-// let imagemin = require("gulp-imagemin")
-
-function imgmin () {
-    return gulp.src([
-        'images/*',
-    ])
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
-        .pipe(browserSync.stream());
-}
+let gulp = require('gulp');
+let concat = require('gulp-concat');
+let postcss = require('gulp-postcss');
+let autoprefixer = require('gulp-autoprefixer');
+let cleancss = require('gulp-clean-css');
+let browserSync = require('browser-sync').create();
+let cssnext = require("postcss-preset-env")
+let uglify = require("gulp-uglify")
+let cssnano = require("cssnano")
 
 function refresh() {
     return gulp.src(['css/*.css'])
         .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());
 }
-
 
 
 /**
@@ -86,5 +74,5 @@ function serve(){
 }
 
 gulp.task('default', gulp.series(serve, css, js));
-gulp.task('build', gulp.series(css, js, imgmin));
+gulp.task('build', gulp.series(css, js));
 gulp.task('css', gulp.series(css));

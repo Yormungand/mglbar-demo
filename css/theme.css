@@ -40,7 +40,7 @@
 .discussion-icon{text-align: center; padding: 10px}
 .discussion-icon img{width: 30px; height: 30px}
 .discussion{display: flex; border: 1px solid #ffffff; background-color: #ffffff; padding: 5px;box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px; }
-.discussion-wrapper{margin-top: 40px}
+.discussion-wrapper{}
 
 
 .site-news-name span{font-size: 16px; font-weight: 500; color: #9f9378}
@@ -1238,7 +1238,6 @@ li{list-style: none}
 }
 @media (min-width: 1600px) {
     .mglbar-border-grid {
-        padding-top: 50px;
         margin-top: -40px;
         margin-left: -40px;
     }
@@ -1350,7 +1349,7 @@ ol#podcast-video-list-view {
 .participant-percent__title span{color: #000000; font-size: 16px; font-weight: 500}
 .participant-percentage{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
 .participant-percentage__in{padding-bottom: 4%; width: 8%; background-color: #cba242}
-.participant-text{text-transform: uppercase; color: #000000; font-size: 18px; font-weight: 300; margin-top: 40px;line-height: 20px}
+.participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
 .sector-header__logo-text{font-size: 19px; color: #000000;font-weight: 600; margin-top: 42px;margin-left: 11px;}
 
@@ -1562,7 +1561,6 @@ ol#podcast-video-list-view {
 }
 .header-banner{
     display: block;
-    margin: 20px 0;
 }
 
 

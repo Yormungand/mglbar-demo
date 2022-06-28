@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "browserslist": [
     "> 1%",
     "ie >= 8",

@@ -137,7 +137,13 @@ body {
     color: #353334;
 }
 @media (min-width: 1200px){
-    .article-feature__sub .name {margin-top: 15px;font-size: .855vw;}
+    .article-feature__sub .name {margin-top: 5px;}
+}
+@media (min-width: 1440px){
+    .article-feature__sub .name {margin-top: 10px;-webkit-line-clamp: 2;font-size: .855vw;}
+}
+@media (min-width: 1600px){
+    .article-feature__sub .name {margin-top: 15px;-webkit-line-clamp: 2;font-size: 16px;}
 }
 @media (max-width: 1200px){
     .article-feature__sub .name {margin-top: 10px;font-size: 14px;}

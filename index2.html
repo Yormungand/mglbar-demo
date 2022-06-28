@@ -331,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="width-4-12@l">
+                    <div id="sidebar" class="width-4-12@l">
                         <div class="banner-image">
                             <img src="images/zu3.jpg">
                         </div>
@@ -351,7 +351,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sidebar-forum">
+                        <div class="sidebar-forum mt-40">
                             <div class="sidebar-forum__title">
                                 <span>E-forum</span>
                                 <hr class="under-line">
@@ -412,76 +412,87 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            const siteNew = document.getElementById("site-new");
-                            const eForum = document.getElementById("eforum");
-                            document.addEventListener("DOMContentLoaded", e=>{
-                                for(let i =0;i<20;i++){
-                                    siteNew.innerHTML+='' +
-                                        '<div class="article-list__item">\n' +
-                                        '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                                        '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
-                                        '</div>';
-                                    eForum.innerHTML+='' +
-                                        '<div class="sidebar-forum-item">\n' +
-                                        '   <div class="sidebar-forum-item__info">\n' +
-                                        '       <div class="sidebar-forum-img">\n' +
-                                        '           <div class="sidebar-forum-img-wrapper">\n' +
-                                        '               <img src="images/zu4.jpg">\n' +
-                                        '           </div>\n' +
-                                        '       </div>\n' +
-                                        '       <div class="sidebar-forum__name">\n' +
-                                        '           <span class="sidebar-forum__name-item">Ч.Лодойсамбуу</span>\n' +
-                                        '           <span class="sidebar-forum__name-time"><i class=\'far fa-clock\'\n' +
-                                        '           style="font-size: 13px; margin-right: 5px"></i>2 цагийн өмнө</span>\n' +
-                                        '       </div>\n' +
-                                        '   </div>\n' +
-                                        '   <div class="sidebar-forum__text">\n' +
-                                        '       <div class="name">orem Ipsum is simply dummy text of the printing and typesetting\n' +
-                                        '           industry.\n' +
-                                        '           Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-                                        '           when an unknown printer took a galley of type and scrambled it to make a type\n' +
-                                        '           specimen book.\n' +
-                                        '       </div>\n' +
-                                        '   </div>\n' +
-                                        '</div>';
-                                }
-                                for(let i = 0; i<11;i++){
-                                    document.getElementById('article-post').innerHTML+='' +
-                                        '<div class="post-item__mini">\n' +
-                                        '                                <div class="content">\n' +
-                                        '                                    <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>\n' +
-                                        '                                    <div class="text">\n' +
-                                        '                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis\n' +
-                                        '                                        odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus\n' +
-                                        '                                        praesentium similique voluptates!\n' +
-                                        '                                    </div>\n' +
-                                        '                                    <div class="author">\n' +
-                                        '                                        <div class="author__img">\n' +
-                                        '                                            <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>\n' +
-                                        '                                        </div>\n' +
-                                        '                                        <div class="author__intel">\n' +
-                                        '                                            <div class="author__address">Boldbaatar.E-lawyer.MN</div>\n' +
-                                        '                                            <div class="author__stars">\n' +
-                                        '                                                5.0\n' +
-                                        '                                                <i class="fa fa-star"></i>\n' +
-                                        '                                                <i class="fa fa-star"></i>\n' +
-                                        '                                                <i class="fa fa-star-half-alt"></i>\n' +
-                                        '                                                <i class="far fa-star"></i>\n' +
-                                        '                                                <i class="far fa-star"></i>\n' +
-                                        '                                            </div>\n' +
-                                        '                                        </div>\n' +
-                                        '                                    </div>\n' +
-                                        '                                </div>\n' +
-                                        '                            </div>'
-                                }
-                            })
-
-                        </script>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const sidebar = document.getElementById("sidebar");
+            const siteNew = document.getElementById("site-new");
+            const eForum = document.getElementById("eforum");
+
+            document.addEventListener("DOMContentLoaded", e=>{
+                for(let i =0;i<20;i++){
+                    siteNew.innerHTML+='' +
+                        '<div class="article-list__item">\n' +
+                        '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
+                        '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
+                        '</div>';
+                    eForum.innerHTML+='' +
+                        '<div class="sidebar-forum-item">\n' +
+                        '   <div class="sidebar-forum-item__info">\n' +
+                        '       <div class="sidebar-forum-img">\n' +
+                        '           <div class="sidebar-forum-img-wrapper">\n' +
+                        '               <img src="images/zu4.jpg">\n' +
+                        '           </div>\n' +
+                        '       </div>\n' +
+                        '       <div class="sidebar-forum__name">\n' +
+                        '           <span class="sidebar-forum__name-item">Ч.Лодойсамбуу</span>\n' +
+                        '           <span class="sidebar-forum__name-time"><i class=\'far fa-clock\'\n' +
+                        '           style="font-size: 13px; margin-right: 5px"></i>2 цагийн өмнө</span>\n' +
+                        '       </div>\n' +
+                        '   </div>\n' +
+                        '   <div class="sidebar-forum__text">\n' +
+                        '       <div class="name">orem Ipsum is simply dummy text of the printing and typesetting\n' +
+                        '           industry.\n' +
+                        '           Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
+                        '           when an unknown printer took a galley of type and scrambled it to make a type\n' +
+                        '           specimen book.\n' +
+                        '       </div>\n' +
+                        '   </div>\n' +
+                        '</div>';
+                }
+                for(let i = 0; i<11;i++){
+                    document.getElementById('article-post').innerHTML+='' +
+                        '<div class="post-item__mini">\n' +
+                        '                                <div class="content">\n' +
+                        '                                    <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>\n' +
+                        '                                    <div class="text">\n' +
+                        '                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis\n' +
+                        '                                        odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus\n' +
+                        '                                        praesentium similique voluptates!\n' +
+                        '                                    </div>\n' +
+                        '                                    <div class="author">\n' +
+                        '                                        <div class="author__img">\n' +
+                        '                                            <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>\n' +
+                        '                                        </div>\n' +
+                        '                                        <div class="author__intel">\n' +
+                        '                                            <div class="author__address">Boldbaatar.E-lawyer.MN</div>\n' +
+                        '                                            <div class="author__stars">\n' +
+                        '                                                5.0\n' +
+                        '                                                <i class="fa fa-star"></i>\n' +
+                        '                                                <i class="fa fa-star"></i>\n' +
+                        '                                                <i class="fa fa-star-half-alt"></i>\n' +
+                        '                                                <i class="far fa-star"></i>\n' +
+                        '                                                <i class="far fa-star"></i>\n' +
+                        '                                            </div>\n' +
+                        '                                        </div>\n' +
+                        '                                    </div>\n' +
+                        '                                </div>\n' +
+                        '                            </div>'
+                };
+
+                siteNew.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 80 + 'px';
+                eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 80 + 'px';
+
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+                } else {
+                    new PerfectScrollbar(eForum);
+                    new PerfectScrollbar(siteNew);
+                }
+            })
+        </script>
     </body>
     <footer>
         <div class="mgl-bar-footer">

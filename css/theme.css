@@ -158,8 +158,17 @@
 
 .book-item-main-text-desc {
     flex: 1;
-    font-size: 13px;
-    color: #000000
+    font-size: 14px;
+    color: #131313;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.home-page__block-par{
+    font-size: 14px;
+    color: #131313;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .book-item-main-text__title {
@@ -1417,6 +1426,9 @@ ol#podcast-video-list-view {
 .podcast{max-width: 350px; margin-top: 40px}
 
 
+.book-wrapper{
+    margin-bottom: 20px;
+}
 
  .book-item-main-bottom-text{
      position: relative;

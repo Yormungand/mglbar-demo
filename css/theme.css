@@ -1183,6 +1183,7 @@ li{list-style: none}
 
 
 .mglbar-border-grid {
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1481,7 +1482,7 @@ ol#podcast-video-list-view {
 }
 
 .book-item-main-bottom-text__body > div {
-    font-size: 16px;
+    font-size: 14px;
     color: #212125;
 }
 .book-item-main__sub-title{

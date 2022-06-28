@@ -808,8 +808,9 @@ table thead tbody {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    min-width: 45px;
-    min-height: 45px;
+    max-width: 55px;
+    min-width: 35px;
+    min-height: 35px;
     margin: 0 auto;
     transition: border .5s ease;
 }
@@ -860,7 +861,7 @@ table thead tbody {
 }
 .web-header__signin-title{
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 .web-header__signin-title span{
     width: 100%;

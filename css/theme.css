@@ -166,9 +166,12 @@
 
 .home-page__block-par{
     font-size: 14px;
-    color: #131313;
-    text-align: justify;
+    color: #555;
+    text-align: center;
     line-height: 1.5;
+    width: calc(100% - 10%);
+    margin: 30px auto 0;
+    font-weight: 400;
 }
 
 .book-item-main-text__title {
@@ -356,7 +359,9 @@ ol#video-player-list__lists a:hover {
 
 
  hr{border: none}
-hr.under-line{width: 40px;border-bottom: 3px solid #ddae3d; top: 0px; margin-bottom: 30px;}
+hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-bottom: 30px;}
+
+.sidebar-forum {height: 100%}
 .sidebar-forum__title {text-align: center;}
 .sidebar-forum__title span{font-size: 24px; font-weight: 600; color: #000000; text-transform: uppercase}
 .sidebar-forum-item{border-bottom: 1px solid #e5e5e5; margin-bottom: 20px; padding-bottom: 20px}
@@ -394,6 +399,11 @@ hr.under-line{width: 40px;border-bottom: 3px solid #ddae3d; top: 0px; margin-bot
 }
 
 .sidebar-forum__text{margin-top: 20px}
+.forum-lists {}
+@media(max-width: 1200px) {
+    .forum-lists {max-height: 400px}
+}
+
 
  .body-banner{margin-top: 40px}
 .body-banner__img{
@@ -1343,7 +1353,6 @@ ol#podcast-video-list-view {
 .participant {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
 }
 .participant > * {
     width: 100%;
@@ -1357,7 +1366,7 @@ ol#podcast-video-list-view {
 .participant-percent__title span{color: #000000; font-size: 16px; font-weight: 500}
 .participant-percentage{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
 .participant-percentage__in{padding-bottom: 4%; width: 8%; background-color: #cba242}
-.participant-text{flex: 1; text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
+.participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
 .sector-header__logo-text{font-size: 19px; color: #000000;font-weight: 600; margin-top: 42px;margin-left: 11px;}
 
@@ -1599,3 +1608,5 @@ ol#podcast-video-list-view {
 .articleNew{
     max-height: 350px;
 }
+
+

@@ -209,6 +209,10 @@
     border-bottom: 1px solid #2b2b33
 }
 
+.vid-desc > div *{
+    padding-left: 10px;
+}
+
 .vid-desc {
     display: flex;
     padding: 25px
@@ -1538,3 +1542,5 @@ ol#podcast-video-list-view {
     display: block;
     margin: 20px 0;
 }
+
+

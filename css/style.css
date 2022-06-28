@@ -320,7 +320,7 @@ body {
     flex-flow: column;
     position: relative;flex: 1;box-sizing: border-box;color: #fcfcfc;
     background-color: #361c0d;
-    background-image: url("../../images/jlady.jpeg");
+    background-image: url("../images/jlady.jpeg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

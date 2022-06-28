@@ -53,12 +53,12 @@
 
 
 .sector-cards {margin-top: auto}
-.sector-card{display: flex; flex-direction: column; background-size: contain; background: rgba(0,0,0,.8); transition: background-color .5s}
+.sector-card{display: flex; flex-direction: column; background-size: contain; background: rgba(0,0,0,.5); transition: background-color .5s}
 .sector-card__title{color: #cba242; font-weight: 700; transition: color .5s}
 .sector-card__text{margin-top: 10px; color: #cba242; font-weight: 400; transition: color .5s}
 .sector-card:hover .sector-card__title {color: whitesmoke}
 .sector-card:hover .sector-card__text {color: whitesmoke}
-.sector-card:hover{background-color: rgba(0,0,0,.5);cursor: pointer;color: #ffffff;}
+.sector-card:hover{background-color: rgba(0,0,0,.2);cursor: pointer;color: #ffffff;}
 
 @media (min-width: 1200px){
     .sector-cards {padding-top: 40px}

@@ -1340,6 +1340,15 @@ ol#podcast-video-list-view {
     height: 100%;
     object-fit: cover;
 }
+
+.participant {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.participant > * {
+    width: 100%;
+}
 .participant-percentage-bottom__two{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
 .participant-percentage__in-two{padding-bottom: 4%; width: 30%; background-color: #cba242}
 .participant-percentage-bottom__one{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
@@ -1349,7 +1358,7 @@ ol#podcast-video-list-view {
 .participant-percent__title span{color: #000000; font-size: 16px; font-weight: 500}
 .participant-percentage{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
 .participant-percentage__in{padding-bottom: 4%; width: 8%; background-color: #cba242}
-.participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
+.participant-text{flex: 1; text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
 .sector-header__logo-text{font-size: 19px; color: #000000;font-weight: 600; margin-top: 42px;margin-left: 11px;}
 

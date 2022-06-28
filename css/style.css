@@ -318,7 +318,7 @@ body {
 .unit-count span::before {content: "";position: absolute;top: 0;right: 0;height: 2px;background-color: #b29550}
 .unit-count:not(:last-child) {margin-bottom: 10px;}
 
-.intro-logo__box {margin-bottom: 20px;width: 100%;}
+.intro-logo__box {margin-bottom: 20px;width: 100%;user-select: none; pointer-events: none}
 .intro-logo {}
 .intro-logo > *{border-radius: 50%; position: relative;overflow: hidden;box-sizing: border-box;padding-bottom: 100%;height: 0;}
 .intro-logo img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;height: 100%;object-fit: cover;}
@@ -346,7 +346,7 @@ body {
     flex-flow: column;
     position: relative;flex: 1;box-sizing: border-box;color: #fcfcfc;
     background-color: #361c0d;
-    background-image: url("../../images/jlady.jpeg");
+    background-image: url("../../images/1.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -438,6 +438,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 .mgl-bar-footer__email span{color: #cba242;font-size: 12px; font-weight: 400}
 .mgl-bar-footer__location span{color: #cba242;font-size: 12px; font-weight: 400;}
 .mgl-bar-footer{background: #322d2d; padding-bottom: 20px; margin-top: 40px; padding-top: 20px}
+.mgl-bar-footer-main{background: #322d2d; padding-bottom: 20px;padding-top: 20px}
 .mgl-bar-footer-3{background: #322d2d; padding-bottom: 20px;}
 .mgl-bar-footer-icon i{color: #b29550; font-size: 19px}
 
@@ -1381,6 +1382,11 @@ ol#podcast-video-list-view {
     margin-top: 40px;
 }
 
+.home-page__over-text {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
 
 .typo-steps {
     position: absolute;
@@ -1389,12 +1395,13 @@ ol#podcast-video-list-view {
     box-sizing: border-box;
     margin-top: -50px;
     margin-left: -50px;
-    padding: 80px;
-    width: 100%;
-    height: 75%;
+    padding: 2% 10% 30px 30px;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+
 .typo-steps > * {
     padding-top: 50px;
     padding-left: 50px;
@@ -1409,11 +1416,6 @@ ol#podcast-video-list-view {
     align-self: flex-start;
 }
 
-.home-page__over-text {
-    position: relative;
-    box-sizing: border-box;
-    padding-right: 10px;
-}
 .home-page__over-text::before,
 .home-page__over-text::after {
     position: absolute;
@@ -1610,4 +1612,8 @@ ol#podcast-video-list-view {
     max-height: 350px;
 }
 
-
+.muted-box{
+    background-color: #e5e4e4;
+    margin-top: 50px;
+    overflow: hidden;
+}

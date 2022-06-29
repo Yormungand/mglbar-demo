@@ -279,37 +279,57 @@
                         </div>
                     </div>
                     <div class="width-6-12@l width-6-12@m">
-                        <div class="sub-heading">Оролцогч (1970)</div>
+                        <div class="sub-heading">Оролцогч (1160)</div>
                         <div class="participant">
                             <div class="participant-text">
                                 үндсэн хуульд дахин нэмэлт өөрчлөлт үндсэн хуульд дахин нэмэлт өөрчлөлт оруулахыг дэмжих үү?
                             </div>
                             <div class="participant-percent">
-                                <div class="participant-percent__title">
-                                    <span>Эхлэх <span class="participant-percent__date">2022-06-06</span></span>
-                                    <div class="participant-percentage">
-                                        <div class="participant-percentage__in"></div>
+                                <div class="poll-answer" data-count="510">
+                                    <span>Мэдэхгүй</span>
+                                    <div class="poll-answer__pct-wrap">
+                                        <div class="poll-answer__pct-result"></div>
+                                        <div class="poll-answer__pct-number">0%</div>
                                     </div>
                                 </div>
-                                <div class="participant-percent__title">
-                                    <span>Дуусах <span class="participant-percent__date">2022-06-06</span></span>
-                                    <div class="participant-percentage">
-                                        <div class="participant-percentage__in"></div>
+                                <div class="poll-answer" data-count="230">
+                                    <span>Дундыг баримтлах</span>
+                                    <div class="poll-answer__pct-wrap">
+                                        <div class="poll-answer__pct-result"></div>
+                                        <div class="poll-answer__pct-number">0%</div>
                                     </div>
                                 </div>
-                                <div class="participant-percent__title">
+                                <div class="poll-answer" data-count="320">
                                     <span>Дэмжсэн</span>
-                                    <div class="participant-percentage-bottom__one">
-                                        <div class="participant-percentage__in-one"></div>
+                                    <div class="poll-answer__pct-wrap">
+                                        <div class="poll-answer__pct-result"></div>
+                                        <div class="poll-answer__pct-number">0%</div>
                                     </div>
                                 </div>
-                                <div class="participant-percent__title">
+                                <div class="poll-answer" data-count="100">
                                     <span>Дэмжээгүй</span>
-                                    <div class="participant-percentage-bottom__two">
-                                        <div class="participant-percentage__in-two"></div>
+                                    <div class="poll-answer__pct-wrap">
+                                        <div class="poll-answer__pct-result"></div>
+                                        <div class="poll-answer__pct-number">0%</div>
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                                document.addEventListener("DOMContentLoaded", e=> {
+                                    answerCount__percentage(1160);
+                                });
+                                function answerCount__percentage (totalCount){
+                                    document.querySelectorAll(".poll-answer").forEach(el=>{
+                                        let numberElement = el.querySelectorAll(".poll-answer__pct-number")[0];
+                                        let answerCount = el.getAttribute("data-count")
+                                        let absResult = answerCount / totalCount * 100
+                                        numberElement.innerText = absResult.toFixed(0) + "%";
+                                        let width_of_numberElement = el.querySelectorAll(".poll-answer__pct-number")[0].offsetWidth;
+                                        numberElement.style.left = "calc("+absResult.toFixed(0) + "% - "+width_of_numberElement+"px )";
+                                        el.querySelectorAll(".poll-answer__pct-result")[0].style.width = absResult.toFixed(0) + "%";
+                                    })
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>

@@ -1452,15 +1452,56 @@ ol#podcast-video-list-view {
 .participant > * {
     width: 100%;
 }
-.participant-percentage-bottom__two{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
-.participant-percentage__in-two{padding-bottom: 4%; width: 30%; background-color: #cba242}
-.participant-percentage-bottom__one{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
-.participant-percentage__in-one{padding-bottom: 4%; width: 62%; background-color: #cba242}
+
+.poll-answer {margin-top: 15px}
+.poll-answer span{color: #353334; font-size: 16px; font-weight: 500}
+
+.poll-date {
+    margin-top: 20px;
+}
+.poll-date span {
+    color: #353334;
+    font-size: 16px;
+    font-weight: 500;
+}
+.poll-date .range-wrap {
+    display: block;
+    margin-top: 10px;
+}
+.poll-date input[type="range"] {
+
+}
+.poll-date input[type="range"]::-webkit-slider-thumb,
+.poll-date input[type="range"]::-moz-range-thumb,
+.poll-date input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+}
+.poll-date input[type="range"]::-webkit-slider-runnable-track{
+    background-color: #fff;
+}
+
+.poll-answer__pct-wrap{position: relative; width: 100%; background-color: #F8F8F8; margin: 10px 0 10px 0}
+.poll-answer__pct-result{padding-bottom: 15px; width: 0; background-color: #cba242}
+
+.poll-answer__pct-number {
+    position: absolute;
+    border-top-left-radius: 5px;
+    top: calc(-100% - 15px);
+    left: 0;
+    background-color: #353334;
+    width: max-content;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+}
+
 .participant-percent__date{font-size: 18px!important; font-weight: 300!important;margin-right: 6px}
-.participant-percent__title{margin-top: 15px}
-.participant-percent__title span{color: #000000; font-size: 16px; font-weight: 500}
-.participant-percentage{width: 100%; background-color: #F8F8F8; margin: 10px 0px 10px 0px}
-.participant-percentage__in{padding-bottom: 4%; width: 8%; background-color: #cba242}
 .participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
 .sector-header__logo-text{font-size: 19px; color: #000000;font-weight: 600; margin-top: 42px;margin-left: 11px;}

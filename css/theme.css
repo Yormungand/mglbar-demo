@@ -822,6 +822,7 @@ table thead tbody {
     flex: 1;
 }
 
+
 .web-header__social-icons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -840,21 +841,20 @@ table thead tbody {
 .web-header__social-icons a{
     display: block;
     border-radius: 50%;
-    color: #000000;
-    padding: 10px;
+    color: #353334;
+    padding: 5px 7px;
     margin-right: 10px;
     -webkit-transition: box-shadow .8s;
-    transition: box-shadow .8s;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0);
+    transition: box-shadow .8s, color .5s;
 }
-.header-social__icons-item i{
-    font-size: 25px;
-    color: #000000;
+.web-header__social-icons a:hover {
+    color: #b29550;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.header-social__icons-item i{font-size: 25px;color: #353334;}
+.web-header__social-icons{display: flex;align-items: center;}
 
-}
-.web-header__social-icons{
-    display: flex;
-    align-items: center;
-}
 
 
 .web-header__signin{
@@ -1610,5 +1610,6 @@ ol#podcast-video-list-view {
 .muted-box{
     background-color: #e5e4e4;
     margin-top: 50px;
+    padding-bottom: 30px;
     overflow: hidden;
 }

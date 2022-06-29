@@ -659,6 +659,19 @@
     })
 
 </script>
+<script>
+    function activateList(el){
+        const allIcons = document.querySelectorAll(".all-icons")[0];
+        if (el.classList.contains("active")) {
+            return false;
+        } else {
+            allIcons.querySelectorAll("a").forEach(a=>{
+                a.classList.remove("active");
+            });
+            el.classList.add("active");
+        }
+    }
+</script>
 <script src="dist/js/root.min.js"></script>
 </body>
 </html>

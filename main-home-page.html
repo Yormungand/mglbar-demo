@@ -54,7 +54,7 @@
                         <div class="article-feature__grid">
                             <div class="width-8-12@l">
                                 <div>
-                                    <a href="javascript:void 0;" class="article-feature">
+                                    <a href="article-view.html" class="article-feature">
                                         <div class="image">
                                             <div>
                                                 <img src="images/zu5.jpg" alt="">
@@ -189,9 +189,9 @@
                 <div class="sidebar-header">
                     <span class="sidebar-title">Шинэ</span>
                     <div class="all-icons">
-                        <a href="javascript:void(0)" class="active"><i class="fa fa-clock"></i></a>
-                        <a href="javascript:void(0)"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                        <a href="javascript:void(0)"><i class="fa fa-comment-dots"></i></a>
+                        <a href="javascript:void 0;" onclick="activateList(this);" id="overview-btn" class="mobile__CTA--btn active"><i class="fa fa-clock"></i></a>
+                        <a href="javascript:void 0;" onclick="activateList(this);" id="structure-btn" class="mobile__CTA--btn"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        <a href="javascript:void 0;" onclick="activateList(this);" id="surface-btn" class="mobile__CTA--btn"><i class="fa fa-comment-dots"></i></a>
                     </div>
                 </div>
                 <div id="site-new" class="article-summary__list articleNew">
@@ -404,7 +404,7 @@
 </div>
 <div class="container">
     <div class="sub-heading">E-adocate.mn</div>
-    <div class="mglbar-border-grid">
+    <div class="mglbar-border-grid__small">
         <div class="width-8-12@l">
             <div class="width-1-1@l">
                 <div class="grid-30">
@@ -751,6 +751,19 @@
         </div>
     </div>
 </footer>
+    <script>
+    function activateList(el){
+        const allIcons = document.querySelectorAll(".all-icons")[0];
+        if (el.classList.contains("active")) {
+            return false;
+        } else {
+            allIcons.querySelectorAll("a").forEach(a=>{
+                a.classList.remove("active");
+            });
+            el.classList.add("active");
+        }
+    }
+</script>
     <script>
         const siteNew = document.getElementById("site-new");
         const eForum = document.getElementById("eforum");

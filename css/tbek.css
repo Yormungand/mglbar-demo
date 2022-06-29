@@ -1,6 +1,10 @@
 *, *::before, *::after {padding: 0;margin: 0;box-sizing: border-box;list-style: none;list-style-type: none;text-decoration: none;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-rendering: optimizeLegibility;}
 a, button {cursor: pointer;border: none;outline: none;background: none;text-transform: unset;text-decoration: none;}
 
+.position-relative{position: relative}
+.justify-content-start{justify-content: flex-start}
+.justify-align-center{align-items: center}
+.justify-content-end{justify-content: flex-end}
 /*mobile for*/
 .header {position: fixed;left: 0;top: 0;width: 100%;height: auto;z-index: 10;margin: 0 auto;background-color: hsl(0, 0%, 100%);box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);}
 .headerIntro {position: relative;left: 0;top: 0;width: 100%;height: auto;z-index: 10;margin: 0 auto;background-color: hsl(0, 0%, 100%);box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);}
@@ -76,7 +80,6 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 .firmDesc p {position: relative;padding-left: 50px;margin-bottom: 15px;font-style: normal;font-weight: 400;font-size: 14px;line-height: 150%;display: flex;align-items: center;color: #fff;}
 .firmDesc p:before {position: absolute;top: 0;left: 15px;content: "\f00c";color: #b7833e;font-size: 25px;font-weight: 600;font-family: 'Font Awesome 5 Free';}
 
-.position-relative{position: relative}
 .overflowContent {content: '';background: rgba(0, 0, 0, 0.6);left: 0;right: 0;bottom: 0;top: 0;}
 .firmCard{display: flex;align-items: center;padding: 30px;width: 500px}
 .firmCard h2{font-size: 30px;line-height: 40px;font-weight: bold;color: #b7833e;text-transform: uppercase}
@@ -120,3 +123,29 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
         display: none!important;
     }
 }
+
+.categoryHead h2{margin-bottom: 20px;font-size: 20px;line-height: 30px;font-weight: bold;color: #fff}
+.star i{margin-right:5px;color: #cba242;font-size: 14px;line-height: 20px;}
+.categoryName span{font-size: 14px;line-height: 30px;font-weight: 600;color: #fff;}
+.category__pct-wrap{position: relative; width: 100%;margin: 0}
+.category__pct-result{padding-bottom: 3px; width: 0; background-color: #cba242}
+
+.onlinePage {height: 20px;position: relative;background: #b29550;margin-bottom: 30px;}
+.onlinePage:after {content: "";position: absolute;right: 0;bottom: 0;width: 0;height: 0;border-right: 20px solid rgb(54 48 35);border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
+.onlinePage:before {content: "";position: absolute;left: -20px;bottom: 0;width: 0;height: 0;border-right: 20px solid #b29550;border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
+
+.thank-you{margin-bottom: 10px;text-align: right;font-size: 14px;line-height: 20px;font-weight: bold;color: #b29550}
+.description{text-align: right;font-size: 14px;line-height: 20px;font-style: italic;font-weight: 400;color: #b29550}
+.review{margin-right: 10px;font-size: 12px;line-height: 20px;font-weight: 400;color: #b29550;}
+.siteFeature{margin-left: 5px;font-size: 14px;line-height: 20px;font-weight: 400;color: #fff;}
+.onlinePage a{display: flex;justify-content: center;align-items: center;font-size:14px;line-height:20px;font-weight:400;color: #ffffff85}
+.link span{font-size: 12px;line-height: 20px;color: #fff;}
+.link i{margin: 0 20px;font-size: 12px;line-height: 20px;color: #fff;}
+
+.search-advoice {display: flex;flex-direction: row-reverse;}
+.search-advoice {border: 1px solid #565151;display: flex;align-items: center;border-radius: 20px;transition: background-color .5s, border .5s, max-width .5s;background-color: #b29550;}
+.search-advoice input {background: transparent;flex: 1;border: 0;outline:none;font-size: 18px;font-weight: 300;color: #000000;padding: 10px;}
+.search-advoice input::placeholder {font-size: 18px;font-weight: 300;color: #555;}
+.search-advoice-icon{position: relative;display: flex;justify-content: center;text-align: center;left: 3px;bottom: 1px;padding: 10px;}
+.categoryFilter a{font-size:18px;line-height:20px;font-weight: 400;color: #fff;}
+.categoryFilter a.active{border-bottom: 2px solid #fff;font-size: 20px;font-weight: bold}

@@ -836,12 +836,12 @@
             window.addEventListener("resize", e=>{
                 if (window.innerWidth > 1200)
                     document.getElementById('eforum').style.maxHeight = forumHeight - forumTitle_height + 'px';
-            })
-        })
+            });
+        });
 
 
         /** @code Sidebar text */
-        fetch('/include/web-header.html').then(data=>{return data.text()}).then(data=>{document.querySelector("header").innerHTML = data})
+        fetch('include/web-header.html').then(data=>{return data.text()}).then(data=>{document.querySelector("header").innerHTML = data})
     </script>
     <script src="dist/js/root.min.js"></script>
 </body>

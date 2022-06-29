@@ -1149,12 +1149,20 @@ li{list-style: none}
      box-sizing: border-box;
      padding-bottom: 100%;
      height: 0;
-     background-color: #9e9e9e;
+ }
+ .sector-header__logos img{
+     position: absolute;
+     top: 50%;
+     right: 50%;
+     transform: translate(50%, -50%);
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
  }
 .sector-header__logos-wrapper{
-    margin-bottom: 40px;
-    margin-top: 40px;
-    width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 .fa-plus{
     font-size: 14px;

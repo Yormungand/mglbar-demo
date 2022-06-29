@@ -900,7 +900,7 @@ table thead tbody {
 
  .web-header-image__title{display: flex; justify-content: center; align-items: center; margin-left: 10px; font-weight: 500; font-size: 16px; text-align: center; color: #000000; text-transform: uppercase;}
 .web-header-title-color{color: #cba242!important;display: flex}
-.web-haeder__fix{display: flex}
+.web-header__fix{display: flex}
 .sector-header__mid-title-color{color: #cba242!important;}
 .sector-header__mid-title{display: flex; flex-direction: column; width: 40px;margin-top: 28px; margin-left: 10px}
 .sector-header__mid-title span{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 500}

@@ -507,7 +507,6 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 20px}
 .sidebar-text__text span{font-size: 14px; font-weight: 400; line-height: 24px}
 
 .header-section{background-image: url("../images/gray.jpg");}
-.header-section__body{background: #0d0d0eab;padding: 40px 0px}
 .header-section__img{width: 100px}
 .space{width: 100%}
 .board-text{
@@ -525,10 +524,10 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 20px}
      border: 2px solid #ffffff;
      box-sizing: border-box;
      border-radius: 50%;
-     width: 100px;
-     height: 100px;
-     min-width: 100px;
-     min-height: 100px;
+     width: 120px;
+     height: 120px;
+     min-width: 120px;
+     min-height: 120px;
      margin: 0 auto;
      transition: border .5s ease;
  }
@@ -800,7 +799,7 @@ table thead tbody {
     font-size: 18px;
     display: block;
     border-radius: 50%;
-    color: #666666;
+    color: #1f1e1e;
     padding: 10px;
     margin-right: 10px;
     -webkit-transition: box-shadow .8s;
@@ -1117,9 +1116,11 @@ li{list-style: none}
 @media (min-width: 1200px){
     .menus a{font-size: 12px;}
 }
+.sector-header__logos-wrapper{
+    display: block;
+}
 
-
- .sector-header__logos{
+.sector-header__logos{
      border-radius: 50%;
      position: relative;
      overflow: hidden;
@@ -1127,7 +1128,7 @@ li{list-style: none}
      padding-bottom: 100%;
      height: 0;
  }
- .sector-header__logos img{
+.sector-header__logos img{
      position: absolute;
      top: 50%;
      right: 50%;
@@ -1136,14 +1137,6 @@ li{list-style: none}
      height: 100%;
      object-fit: cover;
  }
-.sector-header__logos-wrap{
-    position: absolute;
-}
-.sector-header__logos-wrapper{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
 
 .fa-plus{
     font-size: 14px;
@@ -2119,4 +2112,16 @@ blockquote{
 }
 .form .register-form {
     display: none;
+}
+
+.header-section{
+    width: 20%;
+}
+.header-section-item{
+    display: flex;
+}
+.header-section__button-wrapper{position: relative; display: block}
+.header-section__button-wrapper a{color: #FFFFFF; font-size: 14px; font-weight: 400}
+@media (min-width: 1200px){
+    .header-section__button{position: absolute; top: 95px; left: 0px}
 }

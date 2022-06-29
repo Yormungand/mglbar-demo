@@ -343,7 +343,7 @@ body {
 .intro-address__heading {font-size: 14px;font-weight: 700;color: #b29550;font-family: "Roboto Condensed";text-transform: uppercase;}
 @media (min-width: 1200px){
     .unit-count {font-size: 18px;}
-    .unit-count span {font-size: 32px;}
+    .unit-count span {font-size: 32px; font-weight: 700}
 }
 @media (min-width: 1600px){
     .unit-count {font-size: 18px;}

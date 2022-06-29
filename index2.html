@@ -339,9 +339,9 @@
                             <div class="sidebar-header">
                                 <span class="sidebar-title">Шинэ</span>
                                 <div class="all-icons">
-                                    <a href="javascript:void(0)" class="active"><i class="fa fa-clock"></i></a>
-                                    <a href="javascript:void(0)"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    <a href="javascript:void(0)"><i class="fa fa-comment-dots"></i></a>
+                                    <a href="javascript:void 0;" onclick="activateList(this);" id="overview-btn" class="mobile__CTA--btn active"><i class="fa fa-clock"></i></a>
+                                    <a href="javascript:void 0;" onclick="activateList(this);" id="structure-btn" class="mobile__CTA--btn"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    <a href="javascript:void 0;" onclick="activateList(this);" id="surface-btn" class="mobile__CTA--btn"><i class="fa fa-comment-dots"></i></a>
                                 </div>
                             </div>
                             <div id="site-new" class="article-summary__list">
@@ -492,6 +492,19 @@
                     new PerfectScrollbar(siteNew);
                 }
             })
+        </script>
+        <script>
+            function activateList(el){
+                const allIcons = document.querySelectorAll(".all-icons")[0];
+                if (el.classList.contains("active")) {
+                    return false;
+                } else {
+                    allIcons.querySelectorAll("a").forEach(a=>{
+                        a.classList.remove("active");
+                    });
+                    el.classList.add("active");
+                }
+            }
         </script>
     </body>
     <footer>

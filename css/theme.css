@@ -1134,11 +1134,15 @@ li{list-style: none}
      height: 100%;
      object-fit: cover;
  }
-.sector-header__logos-wrapper{
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+.sector-header__logos-wrap{
+    position: absolute;
 }
+.sector-header__logos-wrapper{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
 .fa-plus{
     font-size: 14px;
 }

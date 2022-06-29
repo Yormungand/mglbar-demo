@@ -1430,26 +1430,19 @@ ol#podcast-video-list-view {
     top: 0;
     right: 0;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
 }
 .home-page__over-text::after {
     content: "";
     top: 0;
-    right: 4.5px;
+    right: 5px;
     width: 1px;
     height: 100%;
 }
 
-.home-page__over-text__title{font-size: 32px; color: #ffffff;font-weight: 700;}
-.home-page__over-text__all{color: #ffffff; font-size: 14px; font-weight: 300}
-.home-page__over-text::before{
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
+.home-page__over-text__title{font-size: 32px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
+.home-page__over-text__all{color: #ffffff; font-size: 14px; font-weight: 300; text-align: right; padding-right: 5px}
 .home-page__over-text{
     /*width: 200px;*/
 }

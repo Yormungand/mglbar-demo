@@ -366,7 +366,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 .sidebar-forum__title span{font-size: 24px; font-weight: 600; color: #000000; text-transform: uppercase}
 .sidebar-forum-item{border-bottom: 1px solid #e5e5e5; margin-bottom: 20px; padding-bottom: 20px}
 .sidebar-forum-lists{position: relative; padding-right: 10px; max-height: 500px}
-.sidebar-forum__text .name{font-size: 16px; font-weight: 400; gap: 14px; line-height: 24px; flex: 1;text-align: justify;}
+.sidebar-forum__text .name{font-size: 14px; flex: 1; font-weight: 400; gap: 14px; line-height: 1.5; text-align: justify;}
 .sidebar-forum__name-time{font-size: 12px; color: #2b2b33}
 .sidebar-forum__name-item{font-size: 17px; font-weight: 500}
 .sidebar-forum__name{display: flex; flex-direction: column; margin-left: 14px; line-height: 20px}
@@ -898,7 +898,7 @@ table thead tbody {
 
 /* Дуусгаагүй зүйл маш их үлдсэн css*/
 
- .web-header-image__title{display: flex; justify-content: center; align-items: center; margin-left: 10px; font-weight: 500; font-size: 16px; color: #000000; text-transform: uppercase;}
+ .web-header-image__title{display: flex; justify-content: center; align-items: center; margin-left: 10px; font-weight: 500; font-size: 16px; text-align: center; color: #000000; text-transform: uppercase;}
 .web-header-title-color{color: #cba242!important;display: flex}
 .web-haeder__fix{display: flex}
 .sector-header__mid-title-color{color: #cba242!important;}
@@ -995,7 +995,7 @@ table thead tbody {
 .sector-header__text-lists-title{margin-bottom: 40px}
 .sector-header__text-lists-title span{font-size: 30px; color: #b29550; font-weight: 600}
 li{list-style: none}
-.Page-icon-card__title{display: flex; margin: 10px 0px}
+.Page-icon-card__title{display: flex; margin-top: 15px;}
 
 .Page-icon-card__title span {
     font-size: 14px;

@@ -47,12 +47,57 @@
 .site-news:hover .site-news__title{
     color: #cba242;
 }
-.site-news-name span{font-size: 16px; font-weight: 500; color: #9f9378}
-.site-news-name{position: absolute;top: 75%;left: 35%;text-align: center;z-index: 999;width: 70%;transform: translate(-50%, -50%);background: #0d0d0eab;height: 30px;line-height: 28px;}
-.site-news__title{margin-top: 10px}
-.site-news__title span{font-size: 16px; text-transform: uppercase; color: #000000; font-weight: 400;}
-.site-news__img{overflow: hidden;padding-bottom: 75%;position: relative;height: 0;}
-.site-news__img img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;height: 100%;object-fit: cover;}
+.site-news-name:hover{
+    background: rgba(42, 42, 45, 0.67);
+}
+
+.site-news-name span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.site-news-name {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    z-index: 999;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    /*background: rgba(42, 42, 45, 0.67);*/
+    height: 30px;
+    line-height: 28px;
+}
+
+.site-news__title {
+    margin-top: 10px
+}
+
+.site-news__title span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #444141;
+    font-weight: 400;
+}
+
+.site-news__img {
+    overflow: hidden;
+    padding-bottom: 75%;
+    position: relative;
+    height: 0;
+}
+
+.site-news__img img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -1465,7 +1510,8 @@ ol#podcast-video-list-view {
 }
 
 .poll-answer__pct-wrap{position: relative; width: 100%; background-color: #F8F8F8; margin: 10px 0 10px 0}
-.poll-answer__pct-result{padding-bottom: 15px; width: 0; background-color: #cba242}
+.poll-answer__pct-result{padding-bottom: 15px; width: 10%; background-color: #cba242}
+
 
 .poll-answer__pct-number {
     position: absolute;
@@ -1480,7 +1526,7 @@ ol#podcast-video-list-view {
 }
 
 .participant-percent__date{font-size: 18px!important; font-weight: 300!important;margin-right: 6px}
-.participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
+.participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px;}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
 
 .sector-header__logo-text {
@@ -2137,4 +2183,8 @@ blockquote{
 .header-section__button-wrapper a{color: #FFFFFF; font-size: 14px; font-weight: 400}
 @media (min-width: 1200px){
     .header-section__button{position: absolute; top: 95px; left: 0px}
+}
+
+.top-space{
+    margin-top: 20px;
 }

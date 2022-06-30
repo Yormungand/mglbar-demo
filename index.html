@@ -246,6 +246,9 @@
     }
     document.addEventListener('DOMContentLoaded', e => {
         applyLargestWidth();
+        window.addEventListener("resize", e=>{
+            applyLargestWidth();
+        });
     })
 </script>
 </body>

@@ -80,6 +80,11 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 .firmDesc p {position: relative;padding-left: 50px;margin-bottom: 15px;font-style: normal;font-weight: 400;font-size: 14px;line-height: 150%;display: flex;align-items: center;color: #fff;}
 .firmDesc p:before {position: absolute;top: 0;left: 15px;content: "\f00c";color: #b7833e;font-size: 25px;font-weight: 600;font-family: 'Font Awesome 5 Free';}
 
+@media (max-width: 1200px){
+    .firmCard{width: 100%!important;padding: 40px 0!important;}
+    .firmCard h2{font-size: 20px!important;}
+}
+
 .overflowContent {content: '';background: rgba(0, 0, 0, 0.6);left: 0;right: 0;bottom: 0;top: 0;}
 .firmCard{display: flex;align-items: center;padding: 30px;width: 500px}
 .firmCard h2{font-size: 30px;line-height: 40px;font-weight: bold;color: #b7833e;text-transform: uppercase}
@@ -149,3 +154,29 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 .search-advoice-icon{position: relative;display: flex;justify-content: center;text-align: center;left: 3px;bottom: 1px;padding: 10px;}
 .categoryFilter a{font-size:18px;line-height:20px;font-weight: 400;color: #fff;}
 .categoryFilter a.active{border-bottom: 2px solid #fff;font-size: 20px;font-weight: bold}
+
+.accordion {display: grid;align-content: center;}
+.accordion__container {display: grid;row-gap: 10px;}
+.accordion__title {font-size: 16px;color: #363636;font-weight: 400;margin-top: 0;transition: .2s;}
+.accordion__header {display: flex;column-gap: .5rem;padding: 20px;cursor: pointer;}
+.accordion__description {padding: 0 20px 20px 20px;font-size: 16px;}
+.accordion__header i{display: inline-block;line-height: 25px;margin-right: 20px}
+.accordion__icon {font-size: 16px;height: max-content;color: #000;transition: .3s;}
+
+.accordion__item {position: relative;box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);background-color: #fff;border-radius: .25rem;transition: all .25s ease;}
+.accordion__content {overflow: hidden;height: 0;transition: all .25s ease;}
+.accordion-open .accordion__icon {transform: rotate(45deg);}
+.accordion-open .accordion__title {font-weight: 600;}
+
+@media screen and (min-width: 576px) {
+    .accordion__container {
+        justify-self: center;
+        border-radius: .75rem;
+    }
+    .accordion__header {
+        padding: 1.5rem;
+    }
+    .accordion__description {
+        padding: 0 40px 20px 60px;
+    }
+}

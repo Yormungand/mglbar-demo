@@ -66,148 +66,45 @@
     .flex-middle-self\@s {justify-self: center}
 }
 
-*[class^='grid'], *[class*=' grid-'] {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-.grid-collapse {
-
-}
-.grid-collapse > * {
-    box-sizing: border-box
-}
-.grid-5 {
-    margin-top: -5px;
-    margin-left: -5px
-}
-.grid-5 > * {
-    padding-top: 5px;
-    padding-left: 5px
-}
-.grid-5_10 {
-    margin-top: -5px;
-    margin-left: -10px
-}
-.grid-5_10 > * {
-    padding-top: 5px;
-    padding-left: 10px
-}
-.grid-10 {
-    margin-top: -10px;
-    margin-left: -10px
-}
-.grid-10 > * {
-    padding-top: 10px;
-    padding-left: 10px
-}
-.grid-15 {
-    margin-top: -15px;
-    margin-left: -15px
-}
-.grid-15 > * {
-    padding-top: 15px;
-    padding-left: 15px
-}
-.grid-10_20 {
-    margin-top: -10px;
-    margin-left: -20px
-}
-
-.grid-10_20 > * {
-    padding-top: 10px;
-    padding-left: 20px
-}
-.grid-20 {
-    margin-top: -20px;
-    margin-left: -20px
-}
-.grid-20 > * {
-    padding-top: 20px;
-    padding-left: 20px
-}
-.grid-20_10 {
-    margin-top: -20px;
-    margin-left: -10px
-}
-.grid-20_10 > * {
-    padding-top: 20px;
-    padding-left: 10px
-}
-.grid-30 {
-    margin-top: -30px;
-    margin-left: -30px
-}
-.grid-30 > * {
-    padding-top: 30px;
-    padding-left: 30px
-}
+*[class^='grid'], *[class*=' grid-'] {display: flex;flex-wrap: wrap;box-sizing: border-box;}
+.grid-collapse {}
+.grid-collapse > * {box-sizing: border-box}
+.grid-5 {margin-top: -5px;margin-left: -5px}
+.grid-5 > * {padding-top: 5px;padding-left: 5px}
+.grid-5_10 {margin-top: -5px;margin-left: -10px}
+.grid-5_10 > * {padding-top: 5px;padding-left: 10px}
+.grid-10 {margin-top: -10px;margin-left: -10px}
+.grid-10 > * {padding-top: 10px;padding-left: 10px}
+.grid-15 {margin-top: -15px;margin-left: -15px}
+.grid-15 > * {padding-top: 15px;padding-left: 15px}
+.grid-10_20 {margin-top: -10px;margin-left: -20px}
+.grid-10_20 > * {padding-top: 10px;padding-left: 20px}
+.grid-20 {margin-top: -20px;margin-left: -20px}
+.grid-20 > * {padding-top: 20px;padding-left: 20px}
+.grid-20_10 {margin-top: -20px;margin-left: -10px}
+.grid-20_10 > * {padding-top: 20px;padding-left: 10px}
+.grid-30 {margin-top: -30px;margin-left: -30px}
+.grid-30 > * {padding-top: 30px;padding-left: 30px}
+.grid-40 {margin-top: -40px;margin-left: -40px}
+.grid-40 > * {padding-top: 40px;padding-left: 40px}
 @media (min-width: 640px) {
-    .grid-5\@s {
-        margin-top: -5px;
-        margin-left: -5px;
-    }
-    .grid-5\@s > * {
-        padding-top: 5px;
-        padding-left: 5px
-    }
-    .grid-5_10\@s {
-        margin-top: -5px;
-        margin-left: -10px
-    }
-    .grid-5_10\@s > * {
-        padding-top: 5px;
-        padding-left: 10px
-    }
-    .grid-10\@s {
-        margin-top: -10px;
-        margin-left: -10px
-    }
-    .grid-10\@s > * {
-        padding-top: 10px;
-        padding-left: 10px
-    }
-    .grid-15\@s {
-        margin-top: -15px;
-        margin-left: -15px
-    }
-    .grid-15\@s > * {
-        padding-top: 15px;
-        padding-left: 15px
-    }
-    .grid-10_20\@s {
-        margin-top: -10px;
-        margin-left: -20px
-    }
-    .grid-10_20\@s > * {
-        padding-top: 10px;
-        padding-left: 20px
-    }
-    .grid-20\@s {
-        margin-top: -20px;
-        margin-left: -20px
-    }
-    .grid-20\@s > * {
-        padding-top: 20px;
-        padding-left: 20px
-    }
-    .grid-20_10\@s {
-        margin-top: -20px;
-        margin-left: -10px
-    }
-    .grid-20_10\@s > * {
-        padding-top: 20px;
-        padding-left: 10px
-    }
-    .grid-30\@s {
-        margin-top: -30px;
-        margin-left: -30px
-    }
-
-    .grid-30\@s > * {
-        padding-top: 30px;
-        padding-left: 30px
-    }
+    .grid-5\@s {margin-top: -5px;margin-left: -5px;}
+    .grid-5_10\@s {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@s > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@s {margin-top: -10px;margin-left: -10px}
+    .grid-10\@s > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@s {margin-top: -15px;margin-left: -15px}
+    .grid-15\@s > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@s {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@s > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@s {margin-top: -20px;margin-left: -20px}
+    .grid-20\@s > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@s {margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@s > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@s {margin-top: -30px;margin-left: -30px}
+    .grid-30\@s > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@s {margin-top: -40px;margin-left: -40px}
+    .grid-40\@s > * {padding-top: 40px;padding-left: 40px}
 }
 @media (min-width: 960px) {
     .grid-5\@m {margin-top: -5px;margin-left: -5px}
@@ -226,6 +123,8 @@
     .grid-20_10\@m > * {padding-top: 20px;padding-left: 10px}
     .grid-30\@m {margin-top: -30px;margin-left: -30px}
     .grid-30\@m > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@m {margin-top: -40px;margin-left: -40px}
+    .grid-40\@m > * {padding-top: 40px;padding-left: 40px}
 }
 @media (min-width: 1200px) {
     .grid-5\@l {margin-top: -5px;margin-left: -5px}
@@ -244,6 +143,8 @@
     .grid-20_10\@l > * {padding-top: 20px;padding-left: 10px}
     .grid-30\@l {margin-top: -30px;margin-left: -30px}
     .grid-30\@l > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@l {margin-top: -40px;margin-left: -40px}
+    .grid-40\@l > * {padding-top: 40px;padding-left: 40px}
 }
 @media (min-width: 1440px) {
     .grid-5\@n {margin-top: -5px;margin-left: -5px}
@@ -262,6 +163,8 @@
     .grid-20_10\@n > * {padding-top: 20px;padding-left: 10px}
     .grid-30\@n {margin-top: -30px;margin-left: -30px}
     .grid-30\@n > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@n {margin-top: -40px;margin-left: -40px}
+    .grid-40\@n > * {padding-top: 40px;padding-left: 40px}
 }
 @media (min-width: 1600px) {
     .grid-5\@xl {margin-top: -5px;margin-left: -5px}
@@ -280,6 +183,8 @@
     .grid-20_10\@xl > * {padding-top: 20px;padding-left: 10px}
     .grid-30\@xl {margin-top: -30px;margin-left: -30px}
     .grid-30\@xl > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@xl {margin-top: -40px;margin-left: -40px}
+    .grid-40\@xl > * {padding-top: 40px;padding-left: 40px}
 }
 
 
@@ -620,6 +525,11 @@
 .m-auto {margin: auto;}
 .mh-auto {margin: 0 auto;}
 .mv-auto {margin: auto 0;}
+.m-0{margin: 0 !important;}
+.mt-0{margin-top: 0 !important;}
+.mb-0{margin-bottom: 0 !important;}
+.mr-0{margin-right: 0 !important;}
+.ml-0{margin-left: 0 !important;}
 .m-5 {margin: 5px}
 .m-10 {margin: 10px}
 .m-15 {margin: 15px}

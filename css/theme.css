@@ -1048,7 +1048,7 @@ table thead tbody {
 .sector-header__text-lists-title{margin-bottom: 40px}
 .sector-header__text-lists-title span{font-size: 30px; color: #b29550; font-weight: 600}
 li{list-style: none}
-.Page-icon-card__title{display: flex; margin-top: 15px;}
+.Page-icon-card__title{display: flex; margin-top: 20px;}
 
 .Page-icon-card__title span {
     font-size: 14px;
@@ -2226,4 +2226,11 @@ blockquote{
     right: 0;
     bottom: 0;
     top: 0;
+}
+
+.text-wrapper{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

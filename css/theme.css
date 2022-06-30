@@ -43,6 +43,10 @@
 .discussion-wrapper{}
 
 
+.site-news:active,
+.site-news:hover .site-news__title{
+    color: #cba242;
+}
 .site-news-name span{font-size: 16px; font-weight: 500; color: #9f9378}
 .site-news-name{position: absolute;top: 75%;left: 35%;text-align: center;z-index: 999;width: 70%;transform: translate(-50%, -50%);background: #0d0d0eab;height: 30px;line-height: 28px;}
 .site-news__title{margin-top: 10px}
@@ -1478,7 +1482,16 @@ ol#podcast-video-list-view {
 .participant-percent__date{font-size: 18px!important; font-weight: 300!important;margin-right: 6px}
 .participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}
-.sector-header__logo-text{font-size: 19px; color: #000000;font-weight: 600; margin-top: 42px;margin-left: 11px;}
+
+.sector-header__logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 11px;
+}
 
 
 

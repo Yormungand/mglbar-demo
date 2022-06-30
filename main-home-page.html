@@ -23,8 +23,8 @@
 </div>
 <div class="container">
     <div class="menu-list mb-10">
-        <div>
-            <a class="active" href="javascript:void(0)">Пүрэв 2022-6-09</a>
+        <div class="menu-list-item active">
+            <a class="active" href="javascript:void 0">Пүрэв 2022-6-09</a>
         </div>
         <div>
             <a href="javascript:void(0)">Лхагва 2022-6-09</a>
@@ -771,6 +771,68 @@
     </div>
 </footer>
     <script>
+        $(document).ready(function () {
+            $('.subFeatures .item').css("height", $('.features .main').height() / 2)
+        })
+    </script>
+    <script>
+        Date.prototype.addDays = function(days) {
+            this.setDate(this.getDate() + parseInt(days));
+            return this;
+        };
+
+
+        function getDate(days) {
+            var date = new Date().addDays(days);
+            return date
+        }
+
+        var weekday = ["Ням","Даваа","Мягмар","Лхагва","Пүрэв","Баасан","Бямба"];
+
+        var today = getDate(0).toISOString().slice(0, 10);
+        var pastSixDays = getDate(-6).toISOString().slice(0, 10);
+        var pastFiveDays = getDate(-5).toISOString().slice(0, 10);
+        var pastFourDays = getDate(-4).toISOString().slice(0, 10);
+        var pastThreeDays = getDate(-3).toISOString().slice(0, 10);
+        var pastTwoDays = getDate(-2).toISOString().slice(0, 10);
+        var pastOneDays = getDate(-1).toISOString().slice(0, 10);
+        var nextSevenDays = getDate(7).toISOString().slice(0, 10);
+
+        var pastToday = getDate(0);
+        var pastSix= getDate(-6);
+        var pastFive = getDate(-5);
+        var pastFour = getDate(-4);
+        var pastThree = getDate(-3);
+        var pastTwo = getDate(-2);
+        var pastOne = getDate(-1);
+        var nextSeven = getDate(7);
+
+        console.log(weekday[pastToday.getDay()]);
+        console.log(weekday[pastOne.getDay()]);
+        console.log(weekday[pastTwo.getDay()]);
+        console.log(weekday[pastThree.getDay()]);
+        console.log(weekday[pastFour.getDay()]);
+        console.log(weekday[pastFive.getDay()]);
+        console.log(weekday[pastSix.getDay()]);
+
+        var dayOne = weekday[pastToday.getDay()];
+        var dayTwo = weekday[pastOne.getDay()];
+        var dayThree = weekday[pastThree.getDay()];
+        var dayFour = weekday[pastFour.getDay()];
+        var dayFive = weekday[pastFive.getDay()];
+        var daySix = weekday[pastSix.getDay()];
+        var daySeven = weekday[nextSeven.getDay()];
+
+        document.getElementById("inToday").innerHTML = dayOne + '&nbsp' + today;
+        document.getElementById("inYesterday").innerHTML = dayTwo + '&nbsp' + pastOneDays;
+        document.getElementById("inPastTwo").innerHTML = dayThree + '&nbsp' + pastTwoDays;
+        document.getElementById("inPastThree").innerHTML = dayFour + '&nbsp' + pastThreeDays;
+        document.getElementById("inPastFour").innerHTML = dayFive + '&nbsp' + pastFourDays;
+        document.getElementById("inPastFive").innerHTML = daySix + '&nbsp' + pastFiveDays;
+        document.getElementById("inPastSix").innerHTML = daySeven + '&nbsp' + pastSixDays;
+    </script>
+
+    <script>
     function activateList(el){
         const allIcons = document.querySelectorAll(".all-icons")[0];
         if (el.classList.contains("active")) {
@@ -842,3 +904,7 @@
     <script src="dist/js/root.min.js"></script>
 </body>
 </html>
+
+
+
+<!--id="inToday" onclick="location.href=this.href+'/a/?from='+today+'&to='+today"-->

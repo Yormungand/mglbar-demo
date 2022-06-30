@@ -1073,7 +1073,7 @@ li{list-style: none}
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #cba242;
+    border: 3px solid #cca13c;
     box-sizing: border-box;
     border-radius: 50%;
     width: 100px;
@@ -1085,10 +1085,10 @@ li{list-style: none}
 }
 @media (min-width: 1200px){
     .Page-icon-card {
-        width: 100px;
-        height: 100px;
-        min-width: 100px;
-        min-height: 100px;
+        width: 125px;
+        height: 125px;
+        min-width: 125px;
+        min-height: 125px;
     }
     .Page-icon-card__title span {
         font-size: 14px;

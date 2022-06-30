@@ -275,26 +275,26 @@
                                 үндсэн хуульд дахин нэмэлт өөрчлөлт үндсэн хуульд дахин нэмэлт өөрчлөлт оруулахыг дэмжих үү?
                             </div>
                             <div class="participant-percent">
-                                <div class="poll-answer-main" data-count="510">
+                                <div class="poll-answer-main">
                                     <span>Мэдэхгүй</span>
                                     <div class="poll-answer__pct-wrap">
                                         <div class="poll-answer__pct-result"></div>
                                     </div>
                                 </div>
-                                <div class="poll-answer-main" data-count="230">
+                                <div class="poll-answer-main">
                                     <span>Дундыг баримтлах</span>
                                     <div class="poll-answer__pct-wrap">
                                         <div class="poll-answer__pct-result"></div>
                                     </div>
                                 </div>
-                                <div class="poll-answer" data-count="320">
+                                <div class="poll-answer" data-count="830">
                                     <span>Дэмжсэн</span>
                                     <div class="poll-answer__pct-wrap">
                                         <div class="poll-answer__pct-result"></div>
                                         <div class="poll-answer__pct-number">0%</div>
                                     </div>
                                 </div>
-                                <div class="poll-answer" data-count="100">
+                                <div class="poll-answer" data-count="170">
                                     <span>Дэмжээгүй</span>
                                     <div class="poll-answer__pct-wrap">
                                         <div class="poll-answer__pct-result"></div>
@@ -304,17 +304,21 @@
                             </div>
                             <script>
                                 document.addEventListener("DOMContentLoaded", e=> {
-                                    answerCount__percentage(1160);
+                                    answerCount__percentage(1000);
                                 });
                                 function answerCount__percentage (totalCount){
                                     document.querySelectorAll(".poll-answer").forEach(el=>{
                                         let numberElement = el.querySelectorAll(".poll-answer__pct-number")[0];
-                                        let answerCount = el.getAttribute("data-count")
-                                        let absResult = answerCount / totalCount * 100
+                                        let answerCount = el.getAttribute("data-count");
+                                        let absResult = answerCount / totalCount * 100;
+                                        let pollSpan = el.querySelector("span");
+                                        let resultPct = el.querySelectorAll(".poll-answer__pct-result")[0];
                                         numberElement.innerText = absResult.toFixed(0) + "%";
                                         let width_of_numberElement = el.querySelectorAll(".poll-answer__pct-number")[0].offsetWidth;
                                         numberElement.style.left = "calc("+absResult.toFixed(0) + "% - "+width_of_numberElement+"px )";
-                                        el.querySelectorAll(".poll-answer__pct-result")[0].style.width = absResult.toFixed(0) + "%";
+                                        resultPct.style.width = absResult.toFixed(0) + "%";
+                                        if (resultPct.clientWidth < pollSpan.offsetWidth)
+                                            numberElement.style.left = pollSpan.offsetWidth +( width_of_numberElement - 20) + "px";
                                     })
                                 }
                             </script>
@@ -322,7 +326,7 @@
                     </div>
                 </div>
                 <div class="home-page__block-par">
-                    <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
                 </div>
             </div>
             <div class="width-4-12@l width-4-12@m">
@@ -754,12 +758,7 @@
         </div>
     </div>
 </footer>
-    <script>
-        $(document).ready(function () {
-            $('.subFeatures .item').css("height", $('.features .main').height() / 2)
-        })
-    </script>
-    <script>
+    <!--<script>
         Date.prototype.addDays = function(days) {
             this.setDate(this.getDate() + parseInt(days));
             return this;
@@ -814,7 +813,7 @@
         document.getElementById("inPastFour").innerHTML = dayFive + '&nbsp' + pastFourDays;
         document.getElementById("inPastFive").innerHTML = daySix + '&nbsp' + pastFiveDays;
         document.getElementById("inPastSix").innerHTML = daySeven + '&nbsp' + pastSixDays;
-    </script>
+    </script>-->
 
     <script>
     function activateList(el){

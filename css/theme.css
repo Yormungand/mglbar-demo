@@ -759,9 +759,9 @@ table thead tbody {
     margin-bottom: 25px;
 }
 .web-header-button__title span{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.3;
-    font-family: 'Mogul Propisi';
+    font-family: 'Mogul Adventure';
 
 }
 
@@ -773,10 +773,11 @@ table thead tbody {
     flex-flow: row;
     color: #131313;
     margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 .web-header-image__title span{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.3;
     font-family: 'Mogul Adventure';
  }

@@ -312,8 +312,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end}
-.more-button span{color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px}
+.more-button{display: flex; justify-content: end; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px}
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
 .board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}
 .board-text p{color: #353334; font-size: 14px; text-align: justify; line-height: 23px;}

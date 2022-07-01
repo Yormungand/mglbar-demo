@@ -338,7 +338,7 @@ body {
 .intro-header__top-rest {align-self: center;}
 .intro-header-flex{display: flex}
 @media (min-width: 1200px) {
-    .intro-header__top-logo {width: 60px;}
+    .intro-header__top-logo {width: 20%;}
     .intro-header-flex__img img{width: 100px}
 }
 @media (max-width: 1200px) {

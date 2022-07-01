@@ -320,7 +320,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
 .board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}
-.board-text p{color: #353334; font-size: 14px; text-align: justify; line-height: 23px;}
+.board-text p{color: #343032; font-size: 14px; text-align: justify; line-height: 23px;}
 .board-text {margin-top: 30px; margin-bottom: 30px}
 @media (min-width: 1200px){
     .more-button span{font-size: 16px;}
@@ -2183,7 +2183,7 @@ blockquote{
 }
 
  .image-gallery-wrapper {
-     width: min(90%, 960px);
+     width: min(100%, 960px);
      margin-inline: auto;
      margin-top: 3rem;
      display: grid;
@@ -2191,7 +2191,6 @@ blockquote{
  }
 
 details {
-    border-radius: 12px;
     overflow: hidden;
 }
 

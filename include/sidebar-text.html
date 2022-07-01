@@ -16,13 +16,12 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
     </div>
-    <div class="sidebar-text__text">
-                    <span>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </span>
-    </div>
-    <a class="more-button">
-        <span>Цааш нь...</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+    <a class="more-button" onclick="myFunction()" id="myBtn">
+
+        <span>
+            Цааш нь...
+        </span>
     </a>
     <hr>
 </div>
@@ -76,3 +75,9 @@
         <span>Цааш нь...</span>
     </a>
 </div>
+<style>
+    #more {display: none;}
+    .outer{height: 20px; overflow: hidden;}
+    .readmore{height: auto !important;}
+</style>
+

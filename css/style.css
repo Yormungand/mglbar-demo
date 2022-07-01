@@ -299,8 +299,9 @@ body {
     min-width: max-content;
     font-size: 20px;
     text-transform: uppercase;
+    align-items: center;
     font-weight: 700;
-    color: #a38b56;
+    color: #000;
     margin-bottom: 30px;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -313,7 +314,7 @@ body {
     left: 0;
     width: 40px;
     height: 3px;
-    background-color: #b9b9b9;
+    background-color: #a38b56;
     transition: width .5s, background-color .5s;
 }
 .sub-heading:hover i {
@@ -323,6 +324,56 @@ body {
 .sub-heading:hover::before {
     width: 100%;
     background-color: #a38b56;
+}
+
+
+.sidebar-heading>p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-width: max-content;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.sidebar-heading>div{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-heading>div>div {
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.sidebar-heading>div>div:last-child {
+    position: relative;
+    padding-right: 0;
+    margin-right: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.sidebar-heading>div>div:after {
+    content: ".";
+    position: absolute;
+    font-size: 24px;
+    bottom: 0;
+    left: 95%;
+    color: #cca13c;
+}
+
+.sidebar-heading>div>div:after:last-child {
+    content: "";
 }
 
 

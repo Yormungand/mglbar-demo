@@ -6,9 +6,24 @@
   ~ Vestibulum commodo. Ut rhoncus gravida arcu.
   -->
 
+<div class="sidebar-heading">
+    <p>
+        Монгол хуульчид
+    </p>
+    <div>
+        <div>
+            Өнгөрсөн
+        </div>
+        <div>
+            Одоо
+        </div>
+        <div>
+            Ирээдүй
+        </div>
+    </div>
+</div>
 
-<div class="sidebar-text">
-    <a href="javascript:void 0" class="sub-heading"><span>Монгол хуульчид</span><i class="fas fa-angle-right"></i></a>
+<div class="sidebar-text" id="sidebar-main">
     <div class="stars">
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
@@ -18,16 +33,21 @@
     </div>
     <div class="sidebar-text__text">
         <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.aaaaaaaaaaa<span id="dots">...</span><span id="more">Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.aaaaaaaaaaa Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
         </span>
     </div>
-    <p></p>
-    <a class="more-button" onclick="myFunction()" id="myBtn">
-        Цааш нь...
-    </a>
+    <button class="more-button" type="button" id="more-bttn" onclick="sidebar()"></button>
     <hr>
 </div>
+
+<script>
+    function sidebar(){
+        document.getElementById('more-bttn').addEventListener('click', function (){
+            alert('shadsa')
+        })
+    }
+</script>
+
 <div class="sidebar-text">
     <div class="stars">
         <i class="fa fa-star"></i>

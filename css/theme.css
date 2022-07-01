@@ -315,7 +315,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
 
 
-.sidebar-text p{display: -webkit-box; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 150px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
+.sidebar-text p{display: -webkit-box; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
 /*#sidebar-main.active p{display: block}*/
 
 .more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #b79850}

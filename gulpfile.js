@@ -57,8 +57,8 @@ function refresh() {
 
 function css() {
     return gulp.src([
-        '/home/batkhongor/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
-        '/home/batkhongor/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.css',
+        '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
+        '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.css',
         'css/*.css',
     ])
         .pipe(cleancss())
@@ -73,9 +73,9 @@ function css() {
 function js() {
     return gulp.src([
         'js/*.js',
-        '/home/batkhongor/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.js',
-        '/home/batkhongor/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.common.js',
-        '/home/batkhongor/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
+        '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/swiper/swiper-bundle.js',
+        // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.common.js',
+        // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
         // '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js',
 
     ])

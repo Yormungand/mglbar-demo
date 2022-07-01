@@ -653,6 +653,7 @@ table thead tbody {
     margin-right: 8px;
     -webkit-transition: box-shadow .8s;
     transition: box-shadow .8s;
+    margin-bottom: -3px;
 }
 
 .web-header__signin-img {

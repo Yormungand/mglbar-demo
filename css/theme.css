@@ -2208,3 +2208,7 @@ summary {
 }
 
 /*font-size: 18px;line-height:1.3;font-family:'Mogul Propisi';*/
+
+.sidebar-heading>div>div:last-child{
+    font-family: 'Mogul Adventure';
+}

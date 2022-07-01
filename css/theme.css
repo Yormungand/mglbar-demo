@@ -313,10 +313,15 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .more-button{display: flex; justify-content: end; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
-.more-button:before{content: "Цааш нь..."}
-.more-button .active ::before{content: "Буцах"}
+/*.more-button:before{content: "Цааш нь..."}*/
+/*.more-button .active ::before{content: "Буцах"}*/
 
+#more-bttn::before{content: 'neegd'; cursor: pointer; color: #b79850}
 
+#sidebar-main p{display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden}
+#sidebar-main p{display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden}
+#sidebar-main.active p{display: block}
+#sidebar-main.active #more-button::before{content: 'show less';}
 
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
 .board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}

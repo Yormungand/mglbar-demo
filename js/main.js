@@ -1,16 +1,16 @@
 /***todo */
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Цааш нь...";
-        moreText.style.display = "none";
+function main() {
+    var dots2 = document.getElementById("dots2");
+    var moreText2 = document.getElementById("more2");
+    var btnText2 = document.getElementById("myBtn2");
+
+    if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        moreText2.style.display = "none";
     } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Буцаах";
-        moreText.style.display = "inline";
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Буцаах";
+        moreText2.style.display = "inline";
     }
 }

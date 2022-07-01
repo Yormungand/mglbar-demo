@@ -172,7 +172,7 @@ ol#video-player-list__lists a:hover {background-color: #b29550}
 /*}*/
 
 .sidebar-text__title{text-align: center}
-.sidebar-text__text{text-align: justify;}
+.sidebar-text__text{text-align: justify;  overflow: hidden;}
 /*.sidebar-text__title{margin-bottom: 10px;font-size: 20px; font-weight: 500; color: #222222}*/
 
 .sidebar-text .stars {
@@ -312,7 +312,12 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px}
+.more-button{display: flex; justify-content: end; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
+.more-button:before{content: "Цааш нь..."}
+.more-button .active ::before{content: "Буцах"}
+
+
+
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
 .board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}
 .board-text p{color: #353334; font-size: 14px; text-align: justify; line-height: 23px;}
@@ -324,7 +329,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     .more-button span{font-size: 14px;}
 }
 
-.sidebar-text{margin-top: 40px}
+.sidebar-text{margin-top: 40px;}
 .home-page-image{
     margin-top: 20px;
     overflow: hidden;

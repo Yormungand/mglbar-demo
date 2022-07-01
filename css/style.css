@@ -351,7 +351,7 @@ body {
 .intro-header__bot {padding: 5px 0;background-color: #b29550;}
 .intro-header__bot-wrapper {display: flex;flex-wrap: wrap;}
 .intro-header__bot .social-icons {display: flex;/*flex-wrap: wrap;*/flex: 1;min-width: max-content}
-.intro-header__bot .social-icons a {display: block;border-radius: 50%;padding: 10px;color: #fff;transition: box-shadow .8s; font-size: 18px}
+.intro-header__bot .social-icons a {display: block;border-radius: 50%;padding: 10px;color: #fff;transition: box-shadow .8s;}
 .intro-header__bot .social-icons a:hover {box-shadow: inset 2px 2px 5px 5px rgba(0,0,0,.15);}
 
 
@@ -438,12 +438,19 @@ body {
     background-size: cover;
 }
 .intro-body__wrapper > * {position: relative;}
-.intro-body__wrapper::before {content: "";position: absolute;top: 0;right: 0;width: 100%;height: 100%;pointer-events: none;}
+.intro-body__wrapper::before {content: "";position: absolute;top: 0;right: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,.45);pointer-events: none;}
 
+@media (min-width: 1400px) {
+    .intro-body__container{width: 1600px!important;}
+    .intro-logo__box{width: 1600px!important;}
+}
 @media (min-width: 1200px){
+    .intro-body__container{width: 1100px}
+    .intro-logo__box{width: 1100px}
     .intro-address {flex-basis: 20%;}
     .intro-count {order: 1; flex-basis: 20%;}
     .intro-address {order: 2;font-size: 14px;}
+    .intro-title{font-size: 20px}
     .intro-subtitle {margin-top: 20px;font-size: 1.050vw;}
     .intro-body__wrapper {padding-top: 40px;}
 }

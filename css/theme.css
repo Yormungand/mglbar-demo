@@ -69,8 +69,9 @@
 }
 @media (min-width: 1200px){
     .sector-cards {padding-top: 40px}
-    .sector-card {padding: 40px;}
-    .sector-card__title {font-size: 26px;}
+    .sector-card {padding: 30px;}
+    .intro-logo__box{padding: 0 20px 0 30px}
+    .sector-card__title {font-size: 20px;}
     .sector-card__text {font-size: 15px;}
 }
 @media (max-width: 1200px){

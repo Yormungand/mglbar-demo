@@ -663,7 +663,7 @@ table thead tbody {
 .web-header__home-icon{
     display: flex;
     justify-content: flex-start;
-    flex: 1;
+    margin-left: 20px;
 }
 
 .web-header__social-icons {
@@ -1592,8 +1592,7 @@ ol#podcast-video-list-view {
 .forumsNew{
     max-height: 1400px;
 }
-.articleNew{
-    max-height: 350px;
+.articleNew{max-height: 801px;
 }
 
 .muted-box{

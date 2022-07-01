@@ -783,6 +783,7 @@
         </div>
     </div>
 </footer>
+<script src="dist/js/root.min.js"></script>
     <script>
     function activateList(el){
         const allIcons = document.querySelectorAll(".all-icons")[0];
@@ -863,8 +864,8 @@
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
             } else {
-                new PerfectScrollbar(eForum);
-                new PerfectScrollbar(siteNew);
+                // new PerfectScrollbar(eForum);
+                // new PerfectScrollbar(siteNew);
             }
 
             if (window.innerWidth > 1200)
@@ -879,7 +880,7 @@
         /** @code Sidebar text */
         fetch('include/web-header.html').then(data=>{return data.text()}).then(data=>{document.querySelector("header").innerHTML = data})
     </script>
-    <script src="dist/js/root.min.js"></script>
+
 </body>
 </html>
 

@@ -2,6 +2,7 @@
 a, button {cursor: pointer;border: none;outline: none;background: none;text-transform: unset;text-decoration: none;}
 
 .position-relative{position: relative}
+.justify-content-center{justify-content: center}
 .justify-content-start{justify-content: flex-start}
 .justify-align-center{align-items: center}
 .justify-content-end{justify-content: flex-end}

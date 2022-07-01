@@ -2145,3 +2145,30 @@ blockquote{
     width: 100%;
     background-color: #a38b56;
 }
+
+ .image-gallery-wrapper {
+     width: min(90%, 960px);
+     margin-inline: auto;
+     margin-top: 3rem;
+     display: grid;
+     gap: 1rem;
+ }
+
+details {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+summary {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    background: white;
+    padding: 10px 0px;
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    color: #af8f52;
+    font-size: 18px;
+}
+

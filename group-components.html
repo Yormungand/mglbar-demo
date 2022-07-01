@@ -1932,45 +1932,269 @@
     </div>
 </div>
 
-
-    <div class="body-banner">
-        <div class="body-banner__img">
-            <img src="https://via.placeholder.com/490x345/B5944F/000000/?text=MGLBAR%20banner">
+    <div class="wrapper">
+        <h1><strong>Components #3</strong> Accordion</h1>
+        <div class="accordion">
+            <div class="accordion__panel is-active">
+                <div class="accordion__heading"><button class="accordion__btn">Accordion 1</button></div>
+                <div class="accordion__content">
+                    <div class="accordion__inner">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt, laboriosam provident numquam assumenda fugit, ea quibusdam illo laudantium architecto incidunt! Quam corporis quas sunt ipsa nam, illo modi? Doloremque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__panel">
+                <div class="accordion__heading"><button class="accordion__btn">Accordion 2</button></div>
+                <div class="accordion__content">
+                    <div class="accordion__inner">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt, laboriosam provident numquam assumenda fugit, ea quibusdam illo laudantium architecto incidunt! Quam corporis quas sunt ipsa nam, illo modi? Doloremque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__panel">
+                <div class="accordion__heading"><button class="accordion__btn">Accordion 3</button></div>
+                <div class="accordion__content">
+                    <div class="accordion__inner">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt, laboriosam provident numquam assumenda fugit, ea quibusdam illo laudantium architecto incidunt! Quam corporis quas sunt ipsa nam, illo modi? Doloremque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__panel">
+                <div class="accordion__heading"><button class="accordion__btn">Accordion 4</button></div>
+                <div class="accordion__content">
+                    <div class="accordion__inner">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt, laboriosam provident numquam assumenda fugit, ea quibusdam illo laudantium architecto incidunt! Quam corporis quas sunt ipsa nam, illo modi? Doloremque.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-        <style type="text/css">
-            h2 {
-                text-align: center;
-                font-size: 30px;
-            }
-            img#getImage {
-                width: 300px;
-                height: auto;
-                border: 4px solid #a1a1a1;
-            }
-            div {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-    <div>
-        <h2>Change image onClick event here...</h2>
-        <img src="imageName1.jpg" id="getImage">
-
-    </div>
-    <div>
-        <input type="button" onclick="imagefun()" value="Change Image">
-    </div>
-    <script>
-        function imagefun() {
-            var Image_Id = document.getElementById('getImage');
-            if (Image_Id.src.match("imageName1.jpg")) {
-                Image_Id.src = "imageName2.jpg";
-            }
-            else {
-                Image_Id.src = "imageName1.jpg";
-            }
+    <style>
+        :root {
+            --font-base: "Poppins", sans-serif;
+            --color-accent: #6158de;
+            --color-accent-x-light: #f8f8ff;
+            --color-base: #222;
         }
+
+        body {
+            font-family: var(--font-base);
+            color: var(--color-base);
+            line-height: 1.5;
+        }
+
+        a {
+            color: var(--color-accent);
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: 700;
+            font-size: 3rem;
+            color: #000;
+            line-height: 1.2;
+        }
+        h1 strong {
+            display: block;
+            font-weight: 500;
+            color: #999;
+            font-size: 1rem;
+        }
+
+        button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            width: min(100% - 2rem, 90ch);
+            margin-inline: auto;
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .accordion {
+            width: 100%;
+        }
+        .accordion__panel {
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+        }
+        .accordion__panel:first-of-type {
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+        .accordion__panel:not(:first-of-type) {
+            border-top: 0;
+        }
+        .accordion__panel:last-of-type {
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        .is-active .accordion__heading {
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+        }
+        .accordion__btn {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            width: 100%;
+        }
+        .is-active .accordion__btn {
+            background-color: var(--color-accent-x-light);
+            color: var(--color-accent);
+        }
+        .accordion__btn::after {
+            content: "";
+            flex-shrink: 0;
+            width: 1.25rem;
+            aspect-ratio: 1;
+            margin-left: auto;
+            background-color: #000;
+            -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transition: transform 0.2s ease-in-out;
+        }
+        .is-active .accordion__btn::after {
+            background-color: var(--color-accent);
+            transform: rotate(180deg);
+        }
+        .accordion__content {
+            display: none;
+            margin-top: -1px;
+            transition: height 0.35s ease-in-out;
+            overflow: hidden;
+        }
+        .is-active .accordion__content {
+            display: block;
+        }
+        .accordion__inner {
+            padding: 1rem 1.25rem;
+        }
+
+        .src {
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+    </style>
+
+    <script>
+        const accordion = document.querySelector(".accordion");
+        const accordionPanels = document.querySelectorAll(".accordion__panel");
+        const accordionTriggers = document.querySelectorAll(".accordion__btn");
+        let speedAnimation = 300;
+
+        accordionTriggers.forEach((trigger) => {
+            trigger.addEventListener("click", (e) => {
+                let panel = trigger.parentNode.parentNode.querySelector(
+                    ".accordion__content"
+                );
+                if (e.target.parentNode.parentNode.classList.contains("is-active")) {
+                    slideUp(panel, speedAnimation);
+
+                    panel.addEventListener(
+                        "transitionrun",
+                        () => {
+                            trigger.parentNode.parentNode.classList.remove("is-active");
+                        },
+                        { once: true }
+                    );
+                } else {
+                    accordionPanels.forEach(function (item) {
+                        if (item.classList.contains("is-active")) {
+                            slideUp(item.querySelector(".accordion__content"), speedAnimation);
+
+                            item.querySelector(".accordion__content").addEventListener(
+                                "transitionrun",
+                                () => {
+                                    item.classList.remove("is-active");
+                                },
+                                { once: true }
+                            );
+                        }
+                    });
+                    trigger.parentNode.parentNode.classList.add("is-active");
+                    slideDown(panel, speedAnimation);
+                }
+            });
+        });
+
+        let slideUp = (target, duration = 500) => {
+            target.style.transitionProperty = "height, margin, padding";
+            target.style.transitionDuration = duration + "ms";
+            target.style.boxSizing = "border-box";
+            target.style.height = target.offsetHeight + "px";
+            target.offsetHeight;
+            target.style.overflow = "hidden";
+            target.style.height = 0;
+            target.style.paddingTop = 0;
+            target.style.paddingBottom = 0;
+            target.style.marginTop = 0;
+            target.style.marginBottom = 0;
+            window.setTimeout(() => {
+                target.style.display = "none";
+                target.style.removeProperty("height");
+                target.style.removeProperty("padding-top");
+                target.style.removeProperty("padding-bottom");
+                target.style.removeProperty("margin-top");
+                target.style.removeProperty("margin-bottom");
+                target.style.removeProperty("overflow");
+                target.style.removeProperty("transition-duration");
+                target.style.removeProperty("transition-property");
+                //alert("!");
+            }, duration);
+        };
+
+        let slideDown = (target, duration = 500) => {
+            target.style.removeProperty("display");
+            let display = window.getComputedStyle(target).display;
+
+            if (display === "none") display = "block";
+
+            target.style.display = display;
+            let height = target.offsetHeight;
+            target.style.overflow = "hidden";
+            target.style.height = 0;
+            target.style.paddingTop = 0;
+            target.style.paddingBottom = 0;
+            target.style.marginTop = 0;
+            target.style.marginBottom = 0;
+            target.offsetHeight;
+            target.style.boxSizing = "border-box";
+            target.style.transitionProperty = "height, margin, padding";
+            target.style.transitionDuration = duration + "ms";
+            target.style.height = height + "px";
+            target.style.removeProperty("padding-top");
+            target.style.removeProperty("padding-bottom");
+            target.style.removeProperty("margin-top");
+            target.style.removeProperty("margin-bottom");
+            window.setTimeout(() => {
+                target.style.removeProperty("height");
+                target.style.removeProperty("overflow");
+                target.style.removeProperty("transition-duration");
+                target.style.removeProperty("transition-property");
+            }, duration);
+        };
+
+        let slideToggle = (target, duration = 500) => {
+            if (window.getComputedStyle(target).display === "none") {
+                return slideDown(target, duration);
+            } else {
+                return slideUp(target, duration);
+            }
+        };
     </script>
+
+
+
+

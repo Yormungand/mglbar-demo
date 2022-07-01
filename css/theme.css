@@ -322,8 +322,10 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .more-button.active::before{content: 'Буцаах';}
 
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
-.board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}
-.board-text p{color: #343032; display: -webkit-box; max-height: 250px; -webkit-box-orient: vertical; overflow: hidden; -webkit-transition: max-height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 23px;}
+.board-title span{font-size: 16px; color: #000000;}
+.board-text p{color: #343032; display: -webkit-box; max-height: 250px; -webkit-box-orient: vertical; overflow: hidden;
+    -webkit-transition: max
+    -height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 23px;}
 .board-text {margin-top: 30px; margin-bottom: 30px}
 @media (min-width: 1200px){
     .more-button span{font-size: 16px;}
@@ -358,9 +360,6 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .header-section{background-image: url("../images/gray.jpg");}
 .header-section__img{width: 100px}
 .space{width: 100%}
-.board-text{
-    text-transform: uppercase;
-}
 
 
 

@@ -180,3 +180,7 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
         padding: 0 40px 20px 60px;
     }
 }
+
+.headerLawyer{background: #ddd}
+.social{display: flex;align-items: center}
+.social-icon{padding:10px;font-size: 14px;line-height: 30px;color: #fff}

@@ -312,20 +312,18 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
-/*.more-button:before{content: "Цааш нь..."}*/
-/*.more-button .active ::before{content: "Буцах"}*/
+.more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
 
-#more-bttn::before{content: 'neegd'; cursor: pointer; color: #b79850}
 
-#sidebar-main p{display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden}
-#sidebar-main p{display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden}
-#sidebar-main.active p{display: block}
-#sidebar-main.active #more-button::before{content: 'show less';}
+.sidebar-text p{display: -webkit-box; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 150px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
+/*#sidebar-main.active p{display: block}*/
+
+.more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #b79850}
+.more-button.active::before{content: 'Буцаах';}
 
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
 .board-title span{text-transform: uppercase; font-size: 24px; color: #000000;}
-.board-text p{color: #343032; font-size: 14px; text-align: justify; line-height: 23px;}
+.board-text p{color: #343032; display: -webkit-box; max-height: 250px; -webkit-box-orient: vertical; overflow: hidden; -webkit-transition: max-height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 23px;}
 .board-text {margin-top: 30px; margin-bottom: 30px}
 @media (min-width: 1200px){
     .more-button span{font-size: 16px;}
@@ -334,7 +332,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     .more-button span{font-size: 14px;}
 }
 
-.sidebar-text{margin-top: 40px;}
+.sidebar-text{margin-top: 40px; }
 .home-page-image{
     margin-top: 20px;
     overflow: hidden;

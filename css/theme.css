@@ -1398,8 +1398,8 @@ ol#podcast-video-list-view {
 .participant-percent{margin-top: 30px}
 
 .poll-answer-static{display: flex}
-.poll-answer-static{font-size: 15px; font-weight: 500;}
-.poll-answer-static>div{font-size: 15px; font-weight: 300; margin-left: 5px}
+.poll-answer-static{font-size: 16px; font-weight: 500;}
+.poll-answer-static>div{font-size: 16px; font-weight: 300; margin-left: 5px}
 
 .participant-percent__date{font-size: 18px!important; font-weight: 300!important;margin-right: 6px}
 .participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px;}
@@ -1643,6 +1643,8 @@ ol#podcast-video-list-view {
 }
 .header-banner{
     display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 700px){

@@ -374,8 +374,8 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
      border: 2px solid #ffffff;
      box-sizing: border-box;
      border-radius: 50%;
-     width: 160px;
-     height: 160px;
+     width: 140px;
+     height: 140px;
      min-width: 120px;
      min-height: 120px;
      margin: 0 auto;
@@ -391,11 +391,11 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     color: #ffffff;
 }
 .header-section__text{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .fa-angle-double-right{font-size: 12px; margin-left: 6px;align-items: center; margin-top: 2px; color: #ffffff}
 

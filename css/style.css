@@ -342,7 +342,8 @@ body {
     padding-bottom: 10px;
 }
 
-.sidebar-heading>div{
+.sidebar-heading > div {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -364,17 +365,13 @@ body {
     color: #666;
 }
 
-.sidebar-heading>div>div:after {
-    content: ".";
+.sidebar-heading>div>div:not(:last-child):after {
+    content: "•";
     position: absolute;
-    font-size: 24px;
+    font-size: 14px;
     bottom: 0;
     left: 95%;
     color: #cca13c;
-}
-
-.sidebar-heading>div>div:after:last-child {
-    content: "";
 }
 
 

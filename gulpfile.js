@@ -99,6 +99,6 @@ function serve(){
 }
 
 gulp.task('default', gulp.series(serve, css, js));
-gulp.task('build', gulp.series(css, js, imageminify));
+gulp.task('build', gulp.series(css, js));
 gulp.task('css', gulp.series(css));
 

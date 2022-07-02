@@ -157,6 +157,16 @@
         fetch('include/sidebar-text.html').then(data=>{return data.text()}).then(data=>{document.getElementById("sidebarText").innerHTML = data})
         /** @code Sidebar text */
         fetch('include/footer.html').then(data=>{return data.text()}).then(data=>{document.querySelector("footer").innerHTML = data})
+        function seeMore(el) {
+            let p = el.parentElement.querySelector("p")
+            if (el.classList.contains("active")){
+                el.classList.remove("active");
+                p.style.maxHeight = '260px';
+            } else {
+                el.classList.add("active")
+                p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
+            }
+        }
     </script>
 </body>
 </html>

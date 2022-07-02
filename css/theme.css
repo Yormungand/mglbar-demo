@@ -1269,8 +1269,6 @@ li{list-style: none}
     align-items: center;
     display: block;
     margin-left: 14px;
-    min-width: 40px;
-    max-width: 40px;
 }
 
 .mgl-bar-footer__logo-title span {
@@ -2083,6 +2081,11 @@ blockquote{
 }
 .form .register-form {
     display: none;
+}
+
+.header-section-wrapper{
+    display: flex;
+    gap: 1.42rem;
 }
 
 .header-section{

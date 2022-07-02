@@ -374,8 +374,8 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
      border: 2px solid #ffffff;
      box-sizing: border-box;
      border-radius: 50%;
-     width: 120px;
-     height: 120px;
+     width: 130px;
+     height: 130px;
      min-width: 120px;
      min-height: 120px;
      margin: 0 auto;
@@ -390,8 +390,9 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     color: #ffffff;
 }
 .header-section__text{
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 .fa-angle-double-right{font-size: 12px; margin-left: 6px;align-items: center; margin-top: 2px; color: #ffffff}
 

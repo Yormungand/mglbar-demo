@@ -1380,7 +1380,7 @@ ol#podcast-video-list-view {
 }
 
 .poll-answer__pct-wrap{position: relative; width: 100%; background-color: #F8F8F8; margin: 10px 0 10px 0}
-.poll-answer__pct-result{padding-bottom: 15px; width: 10%; background-color: #cba242}
+.poll-answer__pct-result{padding-bottom: 15px; width: 5%; background-color: #cba242}
 
 
 .poll-answer__pct-number {

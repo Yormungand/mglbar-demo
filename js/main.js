@@ -14,6 +14,27 @@ function main() {
         moreText2.style.display = "inline";
     }
 };
+function seeMore(el) {
+    let p = el.parentElement.querySelector("p")
+    if (el.classList.contains("active")){
+        el.classList.remove("active");
+        p.style.maxHeight = '260px';
+    } else {
+        el.classList.add("active")
+        p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
+    }
+}
+
+function seeMore1(el) {
+    let div = el.parentElement.querySelector("div")
+    if (el.classList.contains("active")){
+        el.classList.remove("active");
+        div.style.maxHeight = '350px';
+    } else {
+        el.classList.add("active")
+        div.style.maxHeight = el.parentElement.querySelector("div").scrollHeight+'px'
+    }
+}
 
 function seeMore(el) {
     let p = el.parentElement.querySelector("p")

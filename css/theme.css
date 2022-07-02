@@ -88,7 +88,7 @@
     flex-direction: column}
 .organisation-card__title span{font-size: 16px; font-weight: 400;color: #2b2b33}
 .organisation-card{border-style: solid; border-width: 1px; border-color: #E8E8E8}
-.organisation-card__img{overflow: hidden;padding-bottom: 56%;position: relative;height: 0;}
+.organisation-card__img{overflow: hidden;padding-bottom: 80%;position: relative;height: 0;}
 .organisation-card__img img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
     height: 100%;object-fit: cover;}
 
@@ -103,7 +103,7 @@
 .member-card-vertical__article {font-size: 16px;font-weight: 400;color: #2b2b33}
 .member-card-vertical__sub-title {font-size: 18px;font-weight: 400;color: #2b2b33}
 .member-card-vertical__name {font-size: 50px;font-weight: 600;color: #222222}
-.member-card-vertical__img{overflow: hidden;padding-bottom: 56%;position: relative;height: 0;}
+.member-card-vertical__img{overflow: hidden;padding-bottom: 65%;position: relative;height: 0;}
 .member-card-vertical__img img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
     height: 100%;object-fit: cover;}
 
@@ -312,7 +312,8 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
+.more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px;
+    font-weight: 400; margin-top: 50px; cursor: pointer}
 
 
 .sidebar-text p{display: -webkit-box; text-align: justify; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
@@ -325,7 +326,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .board-title span{font-size: 16px; color: #000000;}
 .board-text p{color: #343032; display: -webkit-box; max-height: 250px; -webkit-box-orient: vertical; overflow: hidden;
     -webkit-transition: max
-    -height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 23px;}
+    -height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 27px;}
 .board-text {margin-top: 30px; margin-bottom: 30px}
 .board-text span{text-transform: uppercase; font-weight: 500; font-size: 20px; color: #000}
 @media (min-width: 1200px){
@@ -1412,6 +1413,16 @@ ol#podcast-video-list-view {
 
 .member-card-vertical-wrapper{
     margin-top: 40px;
+}
+
+.organisation-card-title-buttom{
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+.organisation-card-title-buttom span{
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .organisation-card-title{

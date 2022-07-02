@@ -207,7 +207,7 @@ body {
 
 
 .advocate {position: relative;display: block;}
-.advocate .img-wrapper {position: relative;display: block;overflow: hidden;padding-bottom: 107.76%;height: 0;}
+.advocate .img-wrapper {position: relative;display: block;overflow: hidden;padding-bottom: 122.76%;height: 0;}
 .advocate .img-wrapper img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;height: 100%;object-fit: cover;}
 .advocate:hover .name{
     color: #FFFFFF;

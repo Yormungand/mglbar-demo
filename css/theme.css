@@ -2240,13 +2240,7 @@ summary {
     font-family: 'Mogul Adventure';
 }
 
-.temp1 {
-    position: relative;
-    background-image: url(../../images/2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-}
+
 .temp1::before {
     content: "";
     position: absolute;

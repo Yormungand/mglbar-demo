@@ -1571,6 +1571,13 @@ ol#podcast-video-list-view {
     min-width: 50px;
 }
 
+.article-sidebar-list{
+    max-height: 875px !important;
+}
+
+#sidebar{
+    overflow: hidden;
+}
 
 .article-feature__grid {
     display: flex;
@@ -1646,7 +1653,7 @@ ol#podcast-video-list-view {
 .header-banner{
     display: block;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 700px){

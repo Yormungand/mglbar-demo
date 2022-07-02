@@ -315,7 +315,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 .more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px; font-weight: 400; margin-top: 50px; cursor: pointer}
 
 
-.sidebar-text p{display: -webkit-box; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
+.sidebar-text p{display: -webkit-box; text-align: justify; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
 /*#sidebar-main.active p{display: block}*/
 
 .more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #b79850}
@@ -327,6 +327,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     -webkit-transition: max
     -height .5s; transition: max-height .5s; font-size: 14px; text-align: justify; line-height: 23px;}
 .board-text {margin-top: 30px; margin-bottom: 30px}
+.board-text span{text-transform: uppercase; font-weight: 500; font-size: 20px; color: #000}
 @media (min-width: 1200px){
     .more-button span{font-size: 16px;}
 }
@@ -336,7 +337,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 
 .sidebar-text{margin-top: 40px; }
 .home-page-image{
-    margin-top: 20px;
+    margin-top: 50px;
     overflow: hidden;
     padding-bottom: 35.23%;
     position: relative;

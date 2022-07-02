@@ -1573,6 +1573,10 @@ ol#podcast-video-list-view {
     max-height: 875px !important;
 }
 
+.purpose-title{
+    margin-top: 10px;
+}
+
 #sidebar{
     overflow: hidden;
 }

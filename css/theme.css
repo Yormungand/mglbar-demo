@@ -1395,6 +1395,12 @@ ol#podcast-video-list-view {
     font-size: 10px;
 }
 
+.participant-percent{margin-top: 30px}
+
+.poll-answer-static{display: flex}
+.poll-answer-static{font-size: 15px; font-weight: 500;}
+.poll-answer-static>div{font-size: 15px; font-weight: 300; margin-left: 5px}
+
 .participant-percent__date{font-size: 18px!important; font-weight: 300!important;margin-right: 6px}
 .participant-text{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 400; line-height: 20px;}
 .sector-header__logo-text-end{text-transform: uppercase!important;color: #b29550}

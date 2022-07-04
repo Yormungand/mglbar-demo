@@ -602,7 +602,7 @@ body {
 
 
 
-.bg-image__page {background-image: url('/images/2.jpg');background-size: cover;background-position: center left;}
+.bg-image__page {background-image: url('../../images/2.jpg');background-size: cover;background-position: center left;}
 .bg-image__overlay {display: flex; align-items: center; height: 250px;}
 @media (max-width: 1200px) {
     .bg-image__overlay {align-items: flex-end; padding-bottom: 20px}

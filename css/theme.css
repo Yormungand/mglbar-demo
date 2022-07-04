@@ -402,7 +402,49 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
         margin-top: 10px;
     }
 }
+
 @media (max-width: 1600px){
+    .header-section-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.2rem;
+    }
+    .header-section__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 125px;
+        height: 125px;
+        min-width: 125px;
+        min-height: 125px;
+        margin: 0 auto;
+        transition: border .5s ease;
+    }
+    .header-section__icon{
+        font-size: 18px;
+        color: #ffffff;
+    }
+    .header-section__number{
+        font-size: 40px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    .header-section__text{
+        font-size: 12px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px) {
     .header-section-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -417,10 +459,10 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
         border: 2px solid #ffffff;
         box-sizing: border-box;
         border-radius: 50%;
-        width: 90px;
-        height: 90px;
-        min-width: 90px;
-        min-height: 90px;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
         margin: 0 auto;
         transition: border .5s ease;
     }
@@ -429,7 +471,7 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
         color: #ffffff;
     }
     .header-section__number{
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 700;
         color: #ffffff;
     }
@@ -441,7 +483,6 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
         margin-top: 10px;
     }
 }
-
 
 
 .fa-angle-double-right{font-size: 12px; margin-left: 6px;align-items: center; margin-top: 2px; color: #ffffff}
@@ -2133,11 +2174,6 @@ blockquote{
     display: none;
 }
 
-
-
-.header-section{
-    width: 20%;
-}
 
 @media (min-width: 1600px) {
     .header-section-item{

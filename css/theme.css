@@ -784,6 +784,7 @@ table thead tbody {
     display: flex;
     align-items: center;
     flex-flow: row;
+    color: #131313;
     margin-left: 10px;
     color: #131313;
 }
@@ -793,8 +794,8 @@ table thead tbody {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.3;
-    text-align: center;
-}
+    font-family: 'Mogul Adventure';
+ }
 .web-header-title-color{color: #cba242!important;display: flex}
 .web-header__fix{display: flex}
 .sector-header__mid-title-color{color: #cba242!important;}
@@ -926,6 +927,25 @@ li{list-style: none}
     background: #FFFFFF;
     transition: border .5s ease;
 }
+
+.Page-icon-card {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 2%;
+    height: 0;
+}
+
+.Page-icon-card img{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 44px;
+    object-fit: cover;
+}
+
+
 @media (min-width: 1200px){
     .Page-icon-card {
         width: 125px;

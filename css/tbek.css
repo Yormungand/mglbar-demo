@@ -131,7 +131,7 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 }
 
 .categoryHead h2{margin-bottom: 20px;font-size: 20px;line-height: 30px;font-weight: bold;color: #fff}
-.star i{margin-right:5px;color: #cba242;font-size: 14px;line-height: 20px;}
+.star{margin-right:5px;color: #cba242;font-size: 14px;line-height: 20px;}
 .categoryName span{font-size: 14px;line-height: 30px;font-weight: 600;color: #fff;}
 .category__pct-wrap{position: relative; width: 100%;margin: 0}
 .category__pct-result{padding-bottom: 3px; width: 0; background-color: #cba242}

@@ -443,12 +443,11 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 
 @media (max-width: 920px) {
     .temp1{
-        margin-top: 64px;
+        margin-top: 70px;
     }
     .header-section-wrapper{
         display: flex;
-        flex-wrap: wrap;
-        gap: 1.4rem;
+        gap: 0.8rem;
     }
     .header-section__item{
         display: flex;

@@ -2534,3 +2534,32 @@ summary {
 }
 
 
+.static-title span{
+    color: #212125!important;
+}
+
+.static-title {
+    position: relative;
+    display: block;
+    width: max-content;
+    min-width: max-content;
+    font-size: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.static-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #a38b56;
+    transition: width .5s, background-color .5s;
+}

@@ -2589,72 +2589,72 @@ summary {
 @media (max-width: 960px){
 
     .mglbar-static-grid {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -40px;
     }
     .mglbar-static-grid > * {
-        padding-top: 40px;
+        padding-top: 20px;
         padding-left: 40px;
     }
     .mglbar-static-grid > *:nth-child(2)::before {
         left: 20px;
-        top: 40px;
+        top: 20px;
     }
 }
 @media (min-width: 960px){
     .mglbar-static-grid {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -40px;
     }
     .mglbar-static-grid > * {
-        padding-top: 40px;
+        padding-top: 20px;
         padding-left: 40px;
     }
     .mglbar-static-grid > *:nth-child(2)::before {
         left: 20px;
-        top: 40px;
+        top: 20px;
     }
 }
 @media (min-width: 1200px) {
     .mglbar-static-grid {
-        margin-top: -60px;
+        margin-top: -30px;
         margin-left: -60px;
     }
     .mglbar-static-grid > * {
-        padding-top: 60px;
+        padding-top: 30px;
         padding-left: 60px;
     }
     .mglbar-static-grid > *:nth-child(2)::before {
         left: 30px;
-        top: 40px;
+        top: 30px;
     }
 }
 @media (min-width: 1440px) {
     .mglbar-static-grid {
-        margin-top: -60px;
+        margin-top: -30px;
         margin-left: -60px;
     }
     .mglbar-static-grid > * {
-        padding-top: 60px;
+        padding-top: 30px;
         padding-left: 60px;
     }
     .mglbar-static-grid > *:nth-child(2)::before {
         left: 30px;
-        top: 40px;
+        top: 30px;
     }
 }
 
 @media (min-width: 1600px) {
     .mglbar-static-grid {
-        margin-top: -60px;
+        margin-top: -30px;
         margin-left: -60px;
     }
     .mglbar-static-grid > * {
-        padding-top: 60px;
+        padding-top: 30px;
         padding-left: 60px;
     }
     .mglbar-static-grid > *:nth-child(2)::before {
         left: 30px;
-        top: 40px;
+        top: 30px;
     }
 }

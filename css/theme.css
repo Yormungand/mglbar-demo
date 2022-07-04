@@ -83,7 +83,7 @@
 
 
 
-.organisation-card__link{margin-top: 10px}
+.organisation-card__link {margin-top: 10px;color: #00CED1}
 .organisation-card__title{border-top: 1px dashed #E8E8E8; margin: 20px; padding: 5px; display: flex;
     flex-direction: column}
 .organisation-card__title span{font-size: 16px; font-weight: 400;color: #2b2b33}

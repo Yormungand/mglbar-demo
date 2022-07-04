@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2022. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Black.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-BlackItalic.ttf);
+	font-weight: 900;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Bold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-BoldItalic.ttf);
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-MediumItalic.ttf);
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(Roboto-Thin.ttf);
+	font-weight: 100;
+}

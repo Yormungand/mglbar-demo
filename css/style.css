@@ -386,6 +386,20 @@ body {
 .intro-header-flex__img img{width: 100px}
 .intro-header__top-rest {align-self: center;}
 .intro-header-flex{display: flex}
+
+.intro-header-image__title{
+    display: flex;
+    align-items: end;
+    flex-flow: row;
+    color: #131313;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.intro-header-image__title span{
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: "Mogul Adventure";
+}
 @media (min-width: 1200px) {
     .intro-header__top-logo {width: 20%;}
     .intro-header-flex__img img{width: 100px}

@@ -94,7 +94,7 @@
     flex-direction: column}
 .organisation-card__title span{font-size: 16px; font-weight: 400;color: #2b2b33}
 .organisation-card{border-style: solid; border-width: 1px; border-color: #E8E8E8}
-.organisation-card__img{overflow: hidden;padding-bottom: 80%;position: relative;height: 0;}
+.organisation-card__img{overflow: hidden;padding-bottom: 65%;position: relative;height: 0;}
 .organisation-card__img img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
     height: 100%;object-fit: cover;}
 

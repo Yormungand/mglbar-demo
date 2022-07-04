@@ -65,21 +65,21 @@
 .site-news .author{position: absolute; bottom: 10px; left: 0; box-sizing: border-box; padding: 10px 20px; font-size: 14px; color: #e7c66e; background-color: rgba(0,0,0,.5)}
 .book-item-main__image .author{position: absolute; bottom: 10px; left: 0; box-sizing: border-box; padding: 10px 20px; font-size: 14px; color: #e7c66e; background-color: rgba(0,0,0,.5)}
 
-.sector-cards {padding-bottom: 10px}
-.sector-card{display: flex; flex-direction: column; background-size: contain; background: rgba(0,0,0,.5);
-    transition: background-color .5s}
+.sector-cards {padding-bottom: 10px;background: rgba(0,0,0,.5);background-clip: content-box}
+.sector-cards__wrapper {display: block;margin:0 auto;max-width: 1390px;box-sizing: border-box;padding: 0}
+.sector-card{display: flex; flex-direction: column; background-size: contain;transition: background-color .5s}
 .sector-card__title{color: #cba242; font-weight: 700; transition: color .5s}
-.sector-card__text{margin-top: 10px; color: #cba242; font-weight: 400; transition: color .5s}
+.sector-card__text{margin-top: 5px; color: #cba242; font-weight: 400; transition: color .5s; line-height: 1.5}
 .sector-card:hover .sector-card__title {color: whitesmoke}
 .sector-card:hover .sector-card__text {color: whitesmoke}
-.sector-card:hover{background-color: rgba(0,0,0,.2);cursor: pointer;color: #ffffff;}
+.sector-card:hover{background-color: rgb(110 73 0 / 50%);cursor: pointer;color: #ffffff;}
 .sector-cards .grid-collapse > div:not(:last-child) .sector-card {
     border-right: 1px solid #b29550;
 }
 @media (min-width: 1200px){
-    .sector-card {padding: 30px;}
+    .sector-card {padding: 25px 45px;}
     .sector-card__title {font-size: 20px;}
-    .sector-card__text {font-size: 15px;}
+    .sector-card__text {font-size: 12px; line-height: 1.5}
 }
 @media (max-width: 1200px){
     .sector-card {border-bottom:1px solid rgba(200,200,200,.5);padding:20px;}
@@ -890,9 +890,10 @@ table thead tbody {
     margin-right: 20px;
     margin-bottom: 25px;
 }
-.web-header-button__title span{
-    font-size: 20px;
-    line-height: 1.3;
+.web-header-button__title span {
+    margin-bottom: -10px;
+    font-size: 14px;
+    line-height: 1;
     font-family: 'Mogul Adventure';
 
 }

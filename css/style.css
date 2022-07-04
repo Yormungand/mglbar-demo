@@ -490,7 +490,7 @@ body {
 
 
 .intro-body {display: flex;flex-flow: column;min-height: 100vh;}
-.intro-body__container {display:block;overflow:hidden;box-sizing:border-box;margin: 0 auto;padding:0 30px 40px 90px;width:100%;max-width:1350px;}
+.intro-body__container {display:block;overflow:hidden;box-sizing:border-box;margin: 0 auto;padding:0 30px 30px 90px;width:100%;max-width:1350px;}
 .intro-body__wrapper {
     display: flex;
     flex-flow: column;

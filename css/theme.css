@@ -44,13 +44,21 @@
 .discussion-wrapper{}
 
 
-.site-news:active, .site-news:hover .site-news__title{color: #cba242;}
-.site-news-name:hover{background: rgba(42, 42, 45, 0.67);}
+.site-news:hover .site-news__title{color: #cba242!important;}
+
+.article-item__main:hover .name {color: #cba242;}
 .site-news-name span {font-size: 14px;font-weight: 400;color: #FFFFFF;}
 .site-news-name {position: absolute;top: 81%;left: 50%;border: 1px solid #FFFFFF;text-align: center;z-index: 999;
     width: 70%;transform: translate(-50%, -50%); /*background: rgba(42, 42, 45, 0.67);*/height: 30px;line-height: 28px;}
-.site-news__title {margin-top: 10px}
-.site-news__title span {font-size: 14px;text-transform: uppercase;color: #444141;font-weight: 400;}
+.site-news__title{margin-top: 10px}
+
+.site-news__title{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #444141;
+    font-weight: 400;
+    line-height: 1.3;
+}
 .site-news__img {overflow: hidden;padding-bottom: 75%;position: relative;height: 0;}
 .site-news__img img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
     height: 100%;object-fit: cover;}

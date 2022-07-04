@@ -2264,7 +2264,7 @@ blockquote{
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
     .header-section-item{
         display: flex;
         position: relative;

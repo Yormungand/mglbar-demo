@@ -1539,79 +1539,70 @@
 </div>
     <script>
     const sidebar = document.getElementById("sidebar");
-    const siteNew = document.getElementById("site-new");
     const eForum = document.getElementById("eforum");
 
     document.addEventListener("DOMContentLoaded", e=>{
         for(let i =0;i<20;i++){
-            siteNew.innerHTML+='' +
-                '<div class="article-list__item">\n' +
-                '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
-                '</div>';
-            eForum.innerHTML+='' +
-                '<div class="brochure-card__lawyer">\n' +
-                '                                <div class="top">\n' +
-                '                                    <div class="name">Д.Болдбаатар</div>\n' +
-                '                                    <div class="pos">Өмгөөлөгч</div>\n' +
-                '                                </div>\n' +
-                '                                <div class="image">\n' +
-                '                                    <div>\n' +
-                '                                        <img src="" alt="">\n' +
-                '                                    </div>\n' +
-                '                                </div>\n' +
-                '                                <div class="bot">\n' +
-                '                                    <div class="links">\n' +
-                '                                        <a href="javascript:void 0;">Танилцуулга</a>\n' +
-                '                                        <a href="javascript:void 0;">Үйлчилгээ</a>\n' +
-                '                                    </div>\n' +
-                '                                    <div class="contact">\n' +
-                '                                        <div class="contact-item">\n' +
-                '                                            <i class="fas fa-phone fa-flip-horizontal"></i>\n' +
-                '                                            99996666\n' +
-                '                                        </div>\n' +
-                '                                        <div class="contact-item">\n' +
-                '                                            <i class="fas fa-envelope"></i>\n' +
-                '                                            boldbaatar@gmail.com\n' +
-                '                                        </div>\n' +
-                '                                        <div class="contact-item">\n' +
-                '                                            <i class="fas fa-map-marker-alt"></i>\n' +
-                '                                            Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, Их эзэн Чингис хааны нэрэмжит талбай-7, Хууль зүйн үндэсний хүрээлэн\n' +
-                '                                        </div>\n' +
-                '                                    </div>\n' +
-                '                                </div>\n' +
-                '                            </div>';
+            Forum.innerHTML+=
+                `<div class="brochure-card__lawyer">
+                    <div class="top">
+                        <div class="name">Д.Болдбаатар</div>
+                        <div class="pos">Өмгөөлөгч</div>
+                    </div>
+                    <div class="image">
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div class="links">
+                            <a href="javascript:void 0;">Танилцуулга</a>
+                            <a href="javascript:void 0;">Үйлчилгээ</a>
+                        </div>
+                        <div class="contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone fa-flip-horizontal"></i>
+                                99996666
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                boldbaatar@gmail.com
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Монгол улс, Улаанбаатар хот, Чингэлтэй дүүрэг, Их эзэн Чингис хааны нэрэмжит талбай-7, Хууль зүйн үндэсний хүрээлэн
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
         }
         for(let i = 0; i<11;i++){
-            document.getElementById('article-post').innerHTML+='' +
-                '<a href="javascript:void 0" class="post-item__mini">\n' +
-                '                                <div class="content">\n' +
-                '                                    <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>\n' +
-                '                                    <div class="text">\n' +
-                '                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis\n' +
-                '                                        odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus\n' +
-                '                                        praesentium similique voluptates!\n' +
-                '                                    </div>\n' +
-                '                                    <div class="author">\n' +
-                '                                        <div class="author__img">\n' +
-                '                                            <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="author__intel">\n' +
-                '                                            <div class="author__address">Boldbaatar.E-lawyer.MN</div>\n' +
-                '                                            ' +
-                '                                        </div>\n' +
-                '                                    </div>\n' +
-                '                                </div>\n' +
-                '                            </a>'
+            document.getElementById('article-post').innerHTML += `
+                <a href="javascript:void 0" class="post-item__mini">
+                    <div class="content">
+                        <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis
+                            odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus
+                            praesentium similique voluptates!
+                        </div>
+                        <div class="author">
+                            <div class="author__img">
+                                <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>
+                            </div>
+                            <div class="author__intel">
+                                <div class="author__address">Boldbaatar.E-lawyer.MN</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>`
         };
-        siteNew.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 140 + 'px';
         eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 140 + 'px';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
         } else {
             new PerfectScrollbar(eForum);
-            new PerfectScrollbar(siteNew);
         }
     })
 </script>

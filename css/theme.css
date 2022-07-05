@@ -331,7 +331,17 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     font-weight: 400; margin-top: 30px; cursor: pointer}
 
 
-.sidebar-text p{display: -webkit-box; text-align: justify; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
+.sidebar-text p{
+    display: -webkit-box;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    max-height: 260px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    overflow: hidden;
+    transition: max-height .5s}
 /*#sidebar-main.active p{display: block}*/
 
 .more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #b79850}

@@ -930,6 +930,10 @@ table thead tbody {
 .sector-header__mid-title-color{color: #cba242!important;}
 .sector-header__mid-title{display: flex; flex-direction: column; width: 40px;margin-top: 28px; margin-left: 10px}
 .sector-header__mid-title span{text-transform: uppercase; color: #000000; font-size: 16px; font-weight: 500}
+
+.sector-header__mid-logo-wrapper {display: block; max-width: 70px;}
+.sector-header__mid-logo-wrapper svg {width: 100%}
+
 .sector-header-click__button-list{display: flex; justify-content: center; align-items: center; gap: 0.3rem}
 .sector-header-click__button-list a{color: #ffffff; font-size: 16px; font-weight: 400}
 .sector-header-click__button span{font-size: 14px; color: #ffffff}
@@ -1105,7 +1109,7 @@ li{list-style: none}
 .sector-header__mid__wrapper{display: flex; justify-content: space-between}
 .sector-header__menus .menus a:not(:last-child):after {content: "/";margin-left: 10px;margin-right: 5px;}
 .sector-header__menus{display: flex;-webkit-align-self: center;-ms-flex-item-align: center;align-self: center;}
-.sector-header__menus .menus a {font-size: 14px;font-weight: 300;color: #000000;text-transform: uppercase;}
+.sector-header__menus .menus a {font-size: 14px;font-weight: 400;color: #000000;text-transform: uppercase;}
 
 .sector-header-large {
     display: block;
@@ -1338,7 +1342,8 @@ li{list-style: none}
     }
     .mglbar-border-grid > *:nth-child(2)::before {
         left: 30px;
-        top: 60px;
+        top: 30px;
+        height: calc(100% - 30px);
     }
 }
 
@@ -1536,7 +1541,7 @@ ol#podcast-video-list-view {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
+    font-size: 22px;
     color: #000000;
     font-weight: 600;
     margin-left: 11px;
@@ -1823,8 +1828,8 @@ ol#podcast-video-list-view {
     position: relative;
     display: block;
     overflow: hidden;
-    padding-bottom: 12.23%;
-    width: 80%;
+    padding-bottom: 11.94%;
+    width: 100%;
     height: 0;
  }
 
@@ -1840,8 +1845,6 @@ ol#podcast-video-list-view {
 .header-banner{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 @media (max-width: 700px){

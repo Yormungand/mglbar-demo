@@ -533,7 +533,7 @@ body {
 @media (hover: none){.button-signin:active {border-color: #353334;color: #353334;background-color: #eeca7e;}}
 
 
-.search-card {display: block;border-radius: 15px;background-color: #b29550;padding: 40px;}
+.search-card {display: block;border-radius: 15px;background-color: #b29550;padding: 20px 40px;}
 .search-card .heading {display: block;margin: 0 auto 10px;width: max-content;font-size: 18px;font-weight: 700;text-transform: uppercase;color: #fff;}
 .search-card .desc1,
 .search-card .desc2 {display: block;color: #fff;font-size: 14px;word-break: break-word;text-align: center;}
@@ -546,9 +546,9 @@ body {
 }
 
 .search-card form {padding: 20px 0;display: flex;flex-flow: column;gap: 10px;}
-.search-card form input {border: 1px solid #fff;padding: 10px 20px;border-radius: 10px;outline: none;transition: border .5s;color: #353334;}
+.search-card form input {border: 1px solid #fff;padding: 5px 30px;border-radius: 10px;height: 35px;outline: none;transition: border .5s;color: #353334;}
 .search-card form input:focus {border: 1px solid #333;}
-.search-card form input::placeholder {font-size: 12px;color: #919191;}
+.search-card form input::placeholder {font-size: 12px;color: #666;}
 .search-card form button {
     margin: 10px auto 0;border: 1px solid #2b2b33;border-radius: 8px;padding: 10px 30px;width: max-content;
     font-size: 14px;background-color: #2b2b33;color: #b29550;transition: background-color .5s, color .5s;cursor: pointer;

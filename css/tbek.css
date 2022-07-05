@@ -75,22 +75,18 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 .position-relative{position: relative}
 .overflowFirm {content: '';background: rgba(0, 0, 0, 0.6);left: 0;right: 0;bottom: 0;top: 0;}
 
-.firmCard{display: flex;align-items: center;padding: 30px;width: 500px}
-.firmCard h2{font-size: 30px;line-height: 40px;font-weight: bold;color: #b7833e;text-transform: uppercase}
+.firmCard{display: flex;align-items: center;padding: 15px 30px;width: 500px}
+.firmCard h2{font-size: 22px;line-height: 1.4;font-weight: bold;color: #b7833e;text-transform: uppercase}
 
 .firmDesc p {position: relative;padding-left: 50px;margin-bottom: 15px;font-style: normal;font-weight: 400;font-size: 14px;line-height: 150%;display: flex;align-items: center;color: #fff;}
-.firmDesc p:before {position: absolute;top: 0;left: 15px;content: "\f00c";color: #b7833e;font-size: 25px;font-weight: 600;font-family: 'Font Awesome 5 Free';}
+.firmDesc p:before {position: absolute;top: 0;left: 15px;content: "✔";color: #b7833e;font-size: 26px;font-weight: 400;font-family: 'Font Awesome 5 Free';}
 
 @media (max-width: 1200px){
     .firmCard{width: 100%!important;padding: 40px 0!important;}
-    .firmCard h2{font-size: 20px!important;}
+    .firmCard h2{font-size: 20px}
 }
 
 .overflowContent {content: '';background: rgba(0, 0, 0, 0.6);left: 0;right: 0;bottom: 0;top: 0;}
-.firmCard{display: flex;align-items: center;padding: 30px;width: 500px}
-.firmCard h2{font-size: 30px;line-height: 40px;font-weight: bold;color: #b7833e;text-transform: uppercase}
-.firmDesc p {position: relative;padding-left: 50px;margin-bottom: 15px;font-style: normal;font-weight: 400;font-size: 14px;line-height: 150%;display: flex;align-items: center;color: #fff;}
-.firmDesc p:before {position: absolute;top: 0;left: 15px;content: "\f00c";color: #b7833e;font-size: 25px;font-weight: 600;font-family: 'Font Awesome 5 Free';}
 
 .filterCard{background-color: #b29550;padding: 40px;display: flex;justify-content: center;align-items: center}
 .firmFilterName a{letter-spacing:5px;font-size:18px;line-height:20px;font-weight: 400;color: #fff;}

@@ -192,7 +192,7 @@ ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-de
 
 .sidebar-text .stars {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 10px;
     color: #f1c57c;
     width: -webkit-max-content;
@@ -326,22 +326,12 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 }
 
 
-hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
+hr{border-bottom: 1px solid #E8E8E8; margin-top: 20px}
 .more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px;
     font-weight: 400; margin-top: 30px; cursor: pointer}
 
 
-.sidebar-text p{
-    display: -webkit-box;
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    max-height: 260px;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 11;
-    overflow: hidden;
-    transition: max-height .5s}
+.sidebar-text p{display: -webkit-box; text-align: justify; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
 /*#sidebar-main.active p{display: block}*/
 
 .more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #b79850}
@@ -393,22 +383,25 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     display: flex;
     gap: 2rem;
 }
-.header-section__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    border: 2px solid #ffffff;
-    box-sizing: border-box;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    min-width: 120px;
-    min-height: 120px;
-    margin: 0 auto;
-    transition: border .5s ease;
+.header-section__item img{
+    width: 120px;
 }
+/*.header-section__item{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    border: 2px solid #ffffff;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 50%;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    min-width: 120px;*/
+/*    min-height: 120px;*/
+/*    margin: 0 auto;*/
+/*    transition: border .5s ease;*/
+/*}*/
 .header-section__icon{
     font-size: 26px;
     color: #ffffff;
@@ -898,6 +891,7 @@ table thead tbody {
 
 .weather-text__space{
     margin-left: 1rem;
+    margin-right: 6px;
 }
 .web-header__signin-icons-wrapper{margin-top: 20px}
 
@@ -919,13 +913,21 @@ table thead tbody {
 
 
 
-.web-header-image__title {
+.web-header-image__title{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: row;
     color: #131313;
     margin-left: 10px;
     color: #131313;
+}
+
+.web-header-image__title span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 .web-header-image__title span {
@@ -1060,7 +1062,6 @@ li{list-style: none}
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #cca13c;
     box-sizing: border-box;
     border-radius: 50%;
     width: 100px;
@@ -1070,6 +1071,18 @@ li{list-style: none}
     background: #FFFFFF;
     transition: border .5s ease;
 }
+.sidebar-text p{
+    display: -webkit-box;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    max-height: 260px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    overflow: hidden;
+    transition: max-height .5s}
+
 
 .Page-icon-card {
     position: relative;
@@ -1084,7 +1097,7 @@ li{list-style: none}
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    width: 44px;
+    width: 110px;
     object-fit: cover;
 }
 
@@ -1607,7 +1620,7 @@ ol#podcast-video-list-view {
     margin-top: -50px;
     margin-left: -50px;
     padding: 2% 10% 30px 30px;
-    width: 90%;
+    width: 85%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1639,19 +1652,19 @@ ol#podcast-video-list-view {
     top: 0;
     right: 0;
     border-radius: 50%;
-    width: 11px;
-    height: 11px;
+    width: 8px;
+    height: 8px;
 }
 .home-page__over-text::after {
     content: "";
     top: 0;
-    right: 5px;
+    right: 4px;
     width: 1px;
     height: 100%;
 }
 
-.home-page__over-text__title{font-size: 32px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
-.home-page__over-text__all{color: #ffffff; font-size: 14px; font-weight: 300; text-align: right; padding-right: 5px}
+.home-page__over-text__title{font-size: 40px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
+.home-page__over-text__all{color: #ffffff; font-size: 12px; font-weight: 300; text-align: right; padding-right: 5px}
 .home-page__over-text{
     /*width: 200px;*/
 }
@@ -2550,6 +2563,7 @@ summary {
 .static-title::before {
     content: "";
     position: absolute;
+    top: 25px;
     bottom: 0;
     left: 0;
     width: 40px;
@@ -2623,7 +2637,7 @@ summary {
     }
 }
 
-.sidebar-forum-list{max-height: 2220px!important;}
+.sidebar-forum-list{max-height: 1410px}
 
 .sidebar-forum-item{margin-bottom: 20px;}
 @media (min-width: 1440px) {
@@ -2686,4 +2700,3 @@ summary {
 .siteFeature{font-size: 12px; width: 300px}
 .star{font-size: 12px;}
 .categoryHead h2{display: flex; justify-content: end; width: 45%;}
-.advocate-forum-list{max-height: 2030px !important;}

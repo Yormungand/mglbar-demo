@@ -48,12 +48,16 @@ function seeMore(el) {
 }
 
 function seeMore1(el) {
-    let div = el.parentElement.querySelector("div")
+    let p = el.parentElement.querySelector("p")
     if (el.classList.contains("active")){
         el.classList.remove("active");
-        div.style.maxHeight = '350px';
+        p.style.maxHeight = '260px';
+        setTimeout(()=>{
+            p.style = "max-height: 260px";
+        }, 500)
     } else {
         el.classList.add("active")
-        div.style.maxHeight = el.parentElement.querySelector("div").scrollHeight+'px'
+        p.style = "-webkit-line-clamp:unset";
+        p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
     }
 }

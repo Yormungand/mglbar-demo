@@ -195,7 +195,7 @@
 
 <body>
     <div class="container">
-        <div class="mglbar-border-grid mt-0">
+        <div class="mglbar-border-grid pt-30">
             <div class="width-expand@l">
                 <div class="width-1-1@l">
                     <div class="articles child-width-6-12@l child-width-6-12@m child-width-1-1">
@@ -385,14 +385,13 @@
                     </div>
                 </div>
             </div>
-            <div id="sidebar" class="width-3-10@l">
+            <div id="sidebar" class="sidebar-main width-3-10@l">
                 <div class="banner-image">
                     <img src="images/zu3.jpg">
                 </div>
                 <div class="sidebar-forum mt-40">
-                    <div class="sidebar-forum__title">
-                        <span>E-forum</span>
-                        <hr class="under-line">
+                    <div class="forum-center">
+                        <a href="javascript:void 0" class="sub-heading mt-0 mb-30">E-<span>Forum</span><i class="fas fa-angle-right"></i></a>
                     </div>
                     <div id="eforum" class="article-summary__list sidebar-forum-list">
                         <div class="sidebar-forum-item">
@@ -449,39 +448,33 @@
 </body>
 <script>
     const sidebar = document.getElementById("sidebar");
-    const siteNew = document.getElementById("site-new");
     const eForum = document.getElementById("eforum");
 
     document.addEventListener("DOMContentLoaded", e=>{
         for(let i =0;i<20;i++){
-            siteNew.innerHTML+='' +
-                '<div class="article-list__item">\n' +
-                '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
-                '</div>';
-            eForum.innerHTML+='' +
-                '<div class="sidebar-forum-item">\n' +
-                '   <div class="sidebar-forum-item__info">\n' +
-                '       <div class="sidebar-forum-img">\n' +
-                '           <div class="sidebar-forum-img-wrapper">\n' +
-                '               <img src="images/zu4.jpg">\n' +
-                '           </div>\n' +
-                '       </div>\n' +
-                '       <div class="sidebar-forum__name">\n' +
-                '           <span class="sidebar-forum__name-item">Ч.Лодойсамбуу</span>\n' +
-                '           <span class="sidebar-forum__name-time"><i class=\'far fa-clock\'\n' +
-                '           style="font-size: 13px; margin-right: 5px"></i>2 цагийн өмнө</span>\n' +
-                '       </div>\n' +
-                '   </div>\n' +
-                '   <div class="sidebar-forum__text">\n' +
-                '       <div class="name">orem Ipsum is simply dummy text of the printing and typesetting\n' +
-                '           industry.\n' +
-                '           Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-                '           when an unknown printer took a galley of type and scrambled it to make a type\n' +
-                '           specimen book.\n' +
-                '       </div>\n' +
-                '   </div>\n' +
-                '</div>';
+            eForum.innerHTML+=`
+                    <div class="sidebar-forum-item">
+                       <div class="sidebar-forum-item__info">
+                           <div class="sidebar-forum-img">
+                               <div class="sidebar-forum-img-wrapper">
+                                   <img src="images/zu4.jpg">
+                               </div>
+                           </div>
+                           <div class="sidebar-forum__name">
+                               <span class="sidebar-forum__name-item">Ч.Лодойсамбуу</span>
+                               <span class="sidebar-forum__name-time"><i class="far fa-clock"
+                               style="font-size: 13px; margin-right: 5px"></i>2 цагийн өмнө</span>
+                           </div>
+                       </div>
+                       <div class="sidebar-forum__text">
+                           <div class="name">orem Ipsum is simply dummy text of the printing and typesetting
+                               industry.
+                               Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+                               when an unknown printer took a galley of type and scrambled it to make a type
+                               specimen book.
+                           </div>
+                       </div>
+                    </div>`;
         }
         for(let i = 0; i<11;i++){
             document.getElementById('article-post').innerHTML+='' +
@@ -506,14 +499,12 @@
                 '                            </a>'
         };
 
-        siteNew.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 140 + 'px';
-        eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 140 + 'px';
+        eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].clientHeight) - 300 + 'px';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
         } else {
             new PerfectScrollbar(eForum);
-            new PerfectScrollbar(siteNew);
         }
     })
 </script>

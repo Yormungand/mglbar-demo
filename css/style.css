@@ -257,8 +257,10 @@ body {
 .post-item__mini .author {display: flex;flex-wrap: wrap;margin-top: 20px;}
 .post-item__mini .author__intel {align-self: end;margin-left: 20px;}
 .post-item__mini .author__img {width: 50px;}
-.post-item__mini .author__img-wrapper {position: relative;overflow: hidden;box-sizing: border-box;display: block;padding-bottom: 100%;height: 0;}
-.post-item__mini .author__img-wrapper img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;height: 100%;object-fit: cover;}
+.post-item__mini .author__img-wrapper {position: relative;overflow: hidden;box-sizing: border-box;display: block;
+    padding-bottom: 100%;height: 0;}
+.post-item__mini .author__img-wrapper img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);
+    width: 100%;height: 100%;object-fit: cover;}
 .post-item__mini .author__address {color: #b79f63;}
 .post-item__mini .author__stars {display: inline;color: #b79f63;font-size: 14px;line-height: 1;}
 .post-item__mini .author__stars i {font-size: 10px;color: #f1c57c;width: max-content;line-height: 1;}

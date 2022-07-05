@@ -59,6 +59,7 @@
 .site-news__img img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
     height: 100%;object-fit: cover;}
 .site-news .author{position: absolute; bottom: 10px; left: 0; box-sizing: border-box; padding: 10px 20px; font-size: 14px; color: #e7c66e; background-color: rgba(0,0,0,.5)}
+.book-item-main__image .author{position: absolute; bottom: 10px; left: 0; box-sizing: border-box; padding: 10px 20px; font-size: 14px; color: #e7c66e; background-color: rgba(0,0,0,.5)}
 
 .sector-cards {padding-bottom: 10px;background: rgba(0,0,0,.5);background-clip: content-box}
 .sector-cards__wrapper {display: block;margin:0 auto;max-width: 1390px;box-sizing: border-box;padding: 0}
@@ -1321,6 +1322,62 @@ li{list-style: none}
 }
 @media (min-width: 960px){
     .mglbar-border-grid {
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+    .mglbar-border-grid > * {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .mglbar-border-grid > *:nth-child(2)::before {
+        left: 20px;
+        top: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .mglbar-border-grid {
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+    .mglbar-border-grid > * {
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+    .mglbar-border-grid > *:nth-child(2)::before {
+        left: 15px;
+        top: 40px;
+    }
+}
+@media (min-width: 1440px) {
+    .mglbar-border-grid {
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    .mglbar-border-grid > * {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .mglbar-border-grid > *:nth-child(2)::before {
+        left: 25px;
+        top: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .mglbar-border-grid {
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+    .mglbar-border-grid > * {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .mglbar-border-grid > *:nth-child(2)::before {
+        left: 25px;
+        top: 50px;
+    }
+}
+@media (min-width: 1600px) {
+    .mglbar-border-grid {
         margin-top: -60px;
         margin-left: -60px;
     }
@@ -1837,6 +1894,7 @@ ol#podcast-video-list-view {
 
 .muted-box{
     background-color: #e5e4e4;
+    margin-top: 50px;
     padding-bottom: 0;
     overflow: hidden;
 }
@@ -2400,6 +2458,8 @@ blockquote{
     text-transform: uppercase;
     font-weight: 700;
     color: #a38b56;
+    margin-bottom: 30px;
+    margin-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -2603,4 +2663,8 @@ summary {
         left: 30px;
         top: 30px;
     }
+}
+.side-bar__article {
+    display: block;
+    cursor: pointer;
 }

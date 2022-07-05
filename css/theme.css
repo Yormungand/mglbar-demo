@@ -901,7 +901,7 @@ table thead tbody {
     display: flex;
     flex-direction: column;
     background: #b29550;
-    padding: 25px 25px 35px 25px;
+    padding: 25px 25px 30px 25px;
     border-radius: 0 0 35px 35px;
     transition: box-shadow .5s, transform .8s;
 }

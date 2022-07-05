@@ -1366,12 +1366,12 @@ li{list-style: none}
     left: 14px;
     height: 100%;
     width: 1px;
-    background-color: #e5e5e5;
+    background-color: #f0f0f0;
 }
 .article-grid > *::before {
     content: "";
     position: absolute;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #f0f0f0;
     top: 15px;
     left: 30px;
     height: 1px;

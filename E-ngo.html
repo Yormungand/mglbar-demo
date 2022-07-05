@@ -253,7 +253,7 @@
 <body>
     <div>
         <div class="container">
-            <div class="mglbar-border-grid p-30">
+            <div class="mglbar-border-grid pt-30">
                 <div class="width-expand@l">
                     <div class="width-1-1@l">
                         <div class="grid-30 child-width-6-12@l child-width-6-12@m child-width-1-1">
@@ -506,16 +506,10 @@
     </div>
     <script>
         const sidebar = document.getElementById("sidebar");
-        const siteNew = document.getElementById("site-new");
         const eForum = document.getElementById("eforum");
 
         document.addEventListener("DOMContentLoaded", e=>{
             for(let i =0;i<20;i++){
-                siteNew.innerHTML+='' +
-                    '<div class="article-list__item">\n' +
-                    '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                    '   <div class="published"><i class="fa fa-history"></i> <div>29 минутын өмнө</div></div>\n' +
-                    '</div>';
                 eForum.innerHTML+='' +
                     '<div class="sidebar-forum-item">\n' +
                     '   <div class="sidebar-forum-item__info">\n' +
@@ -562,9 +556,7 @@
                     '                                </div>\n' +
                     '                            </a>'
             };
-
-            siteNew.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 80 + 'px';
-            eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].offsetHeight) / 2 - 80 + 'px';
+            eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].clientHeight) - 300 + 'px';
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 

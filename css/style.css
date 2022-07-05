@@ -603,3 +603,18 @@ body {
 @media (max-width: 1200px) {
     .bg-image__overlay {align-items: flex-end; padding-bottom: 20px}
 }
+
+
+
+.dot-divider {
+    width: 100%;
+    text-align: center;
+}
+.dot-divider::before {
+    content: "\2022\2022\2022";
+    font-size: 22px;
+    letter-spacing: 20px;
+    color: #c5c5c5;
+    text-align: center;
+    
+}

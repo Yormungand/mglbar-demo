@@ -195,10 +195,10 @@
 
 <body>
     <div class="container">
-        <div class="mglbar-border-grid p-30">
+        <div class="mglbar-border-grid mt-0">
             <div class="width-expand@l">
                 <div class="width-1-1@l">
-                    <div class="grid-30 child-width-6-12@l child-width-6-12@m child-width-1-1">
+                    <div class="articles child-width-6-12@l child-width-6-12@m child-width-1-1">
                         <div>
                             <a href="javascript:void(0);" class="article-item border-bottom pb-30">
                                 <div class="context">
@@ -389,28 +389,13 @@
                 <div class="banner-image">
                     <img src="images/zu3.jpg">
                 </div>
-                <div>
-                    <div class="sidebar-header">
-                        <span class="sidebar-title">Шинэ</span>
-                        <div class="all-icons">
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="overview-btn" class="mobile__CTA--btn active"><i class="fa fa-clock"></i></a>
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="structure-btn" class="mobile__CTA--btn"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="surface-btn" class="mobile__CTA--btn"><i class="fa fa-comment-dots"></i></a>
-                        </div>
-                    </div>
-                    <div id="site-new" class="article-summary__list article-sidebar-list">
-                        <div class="article-list__item">
-                            <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>
-                            <div class="published"><i class="fa fa-history"></i><div> 29 минутын өмнө</div></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="sidebar-forum mt-40">
-                    <div class="forum-center">
-                        <a href="javascript:void 0" class="sub-heading mt-0 mb-30">E-<span>Forum</span><i class="fas fa-angle-right"></i></a>
+                    <div class="sidebar-forum__title">
+                        <span>E-forum</span>
+                        <hr class="under-line">
                     </div>
-                    <div id="eforum" class="article-summary__list article-sidebar-list">
-                        <div class="sidebar-forum-item border-bottom pb-20 mb-20">
+                    <div id="eforum" class="article-summary__list sidebar-forum-list">
+                        <div class="sidebar-forum-item">
                             <div class="sidebar-forum-item__info">
                                 <div class="sidebar-forum-img">
                                     <div class="sidebar-forum-img-wrapper">
@@ -470,12 +455,12 @@
     document.addEventListener("DOMContentLoaded", e=>{
         for(let i =0;i<20;i++){
             siteNew.innerHTML+='' +
-                ' <div class="article-list__item">\n' +
-                '                            <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                '                            <div class="published"><i class="fa fa-history"></i><div> 29 минутын өмнө</div></div>\n' +
-                '                        </div>';
+                '<div class="article-list__item">\n' +
+                '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
+                '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
+                '</div>';
             eForum.innerHTML+='' +
-                '<div class="sidebar-forum-item mp-20 pb-20 border-bottom">\n' +
+                '<div class="sidebar-forum-item">\n' +
                 '   <div class="sidebar-forum-item__info">\n' +
                 '       <div class="sidebar-forum-img">\n' +
                 '           <div class="sidebar-forum-img-wrapper">\n' +

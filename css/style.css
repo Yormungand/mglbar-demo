@@ -20,6 +20,11 @@
     }
 }
 
+.border-top {border-top: 1px solid #e5e5e5;}
+.border-right {border-right: 1px solid #e5e5e5;}
+.border-bottom {border-bottom: 1px solid #e5e5e5;}
+.border-left {border-left: 1px solid #e5e5e5;}
+
 body {
     margin: 0;
     padding: 0;
@@ -79,9 +84,8 @@ body {
 .articles > *:nth-last-child(1) .article-item {border-bottom: 1px solid transparent;}
 
 .articles {display: flex;flex-wrap: wrap;}
-.article-item {display: block;border-bottom: 1px solid #e5e5e5;}
-.article-item.border-bottom {border-bottom: 1px solid #e5e5e5;}
-.article-item .name {padding-bottom: 20px;font-family: "Roboto Condensed";font-size: var(--content-title);font-weight: 500;line-height: 1.3;text-align: left;text-transform: uppercase;letter-spacing: 1px;color: #353334;transition: color .3s;}
+.article-item {display: block}
+.article-item .name {font-family: "Roboto Condensed";font-size: var(--content-title);font-weight: 500;line-height: 1.3;text-align: left;text-transform: uppercase;letter-spacing: 1px;color: #353334;transition: color .3s;}
 .article-item .stars {position: relative;margin: 0 auto 20px;font-size: 12px;color: #f1c57c;width: max-content;}
 .article-item .image {margin-bottom: 10px;}
 .article-item .image > div {position: relative;display: block;padding-bottom: 63.88%;height: 0;overflow: hidden;background-color: #b7b7b7;}
@@ -98,7 +102,7 @@ body {
 @media (max-width: 1000px) {
     .articles {margin-top: -15px;margin-left: -15px;}
     .articles > * {padding-top: 15px;padding-left: 15px;}
-    .article-item .name {--content-title: 12px;padding-bottom: 15px;display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .article-item .name {--content-title: 12px;display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
     .article-item .stars {margin: 0 auto 15px;}
     .article-item .image .author {font-size: 10px;}
     .article-item .stars i {font-size: 10px;}
@@ -303,8 +307,6 @@ body {
     align-items: center;
     font-weight: 700;
     color: #000;
-    margin-bottom: 30px;
-    margin-top: 30px;
     padding-bottom: 10px;
 }
 

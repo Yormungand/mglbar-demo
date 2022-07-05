@@ -2501,7 +2501,6 @@ blockquote{
     background-color: #a38b56;
 }
 .forum-center .sub-heading:hover::before {
-    width: 100%;
     background-color: #a38b56;
 }
 
@@ -2691,3 +2690,21 @@ summary {
     display: block;
     cursor: pointer;
 }
+
+.book-item-main__image .author {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 26px;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #e7c66e;
+    background-color: rgba(0,0,0,.5);
+    width: 60%;
+}
+
+.article-list__item:hover > div *{ color: #cba242}
+.published{display: flex}

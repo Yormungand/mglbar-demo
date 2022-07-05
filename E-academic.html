@@ -195,10 +195,10 @@
 
 <body>
     <div class="container">
-        <div class="mglbar-border-grid mt-0">
+        <div class="mglbar-border-grid p-30">
             <div class="width-expand@l">
                 <div class="width-1-1@l">
-                    <div class="articles child-width-6-12@l child-width-6-12@m child-width-1-1">
+                    <div class="grid-30 child-width-6-12@l child-width-6-12@m child-width-1-1">
                         <div>
                             <a href="javascript:void(0);" class="article-item border-bottom pb-30">
                                 <div class="context">
@@ -401,17 +401,16 @@
                     <div id="site-new" class="article-summary__list article-sidebar-list">
                         <div class="article-list__item">
                             <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>
-                            <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>
+                            <div class="published"><i class="fa fa-history"></i><div> 29 минутын өмнө</div></div>
                         </div>
                     </div>
                 </div>
                 <div class="sidebar-forum mt-40">
-                    <div class="sidebar-forum__title">
-                        <span>E-forum</span>
-                        <hr class="under-line">
+                    <div class="forum-center">
+                        <a href="javascript:void 0" class="sub-heading mt-0 mb-30">E-<span>Forum</span><i class="fas fa-angle-right"></i></a>
                     </div>
                     <div id="eforum" class="article-summary__list article-sidebar-list">
-                        <div class="sidebar-forum-item">
+                        <div class="sidebar-forum-item border-bottom pb-20 mb-20">
                             <div class="sidebar-forum-item__info">
                                 <div class="sidebar-forum-img">
                                     <div class="sidebar-forum-img-wrapper">
@@ -471,12 +470,12 @@
     document.addEventListener("DOMContentLoaded", e=>{
         for(let i =0;i<20;i++){
             siteNew.innerHTML+='' +
-                '<div class="article-list__item">\n' +
-                '   <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
-                '   <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>\n' +
-                '</div>';
+                ' <div class="article-list__item">\n' +
+                '                            <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>\n' +
+                '                            <div class="published"><i class="fa fa-history"></i><div> 29 минутын өмнө</div></div>\n' +
+                '                        </div>';
             eForum.innerHTML+='' +
-                '<div class="sidebar-forum-item">\n' +
+                '<div class="sidebar-forum-item mp-20 pb-20 border-bottom">\n' +
                 '   <div class="sidebar-forum-item__info">\n' +
                 '       <div class="sidebar-forum-img">\n' +
                 '           <div class="sidebar-forum-img-wrapper">\n' +

@@ -612,6 +612,7 @@ body {
 }
 .dot-divider::before {
     content: "\2022\2022\2022";
+    margin-left: 20px;
     font-size: 22px;
     letter-spacing: 20px;
     color: #c5c5c5;

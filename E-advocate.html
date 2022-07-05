@@ -101,7 +101,7 @@
                     <div class="pt-20 pb-20">
                         <div class="flex@m justify-content-end">
                             <div class="link">
-                                <span>Ангилаж үзэх бол үсэг сонгоно уу!</span> <i class="fa fa-chevron-right"></i>
+                                <span>Ангилаж үзэх бол үсэг сонгоно уу!</span> <i class="fa"></i>
                             </div>
                             <div>
                                 <div class="categoryFilter">
@@ -136,10 +136,25 @@
                                     <a href="javascript:void(0)"><span>Э</span></a>
                                     <a href="javascript:void(0)"><span>Ю</span></a>
                                     <a href="javascript:void(0)"><span>Я</span></a>
+                                    <span class="indicator"></span>
                                 </div>
                             </div>
+                            <script>
+                                let indicator = document.querySelector('.categoryFilter .indicator');
+                                document.addEventListener("DOMContentLoaded", e=>{
+                                    indicator.style.left = document.querySelector('.categoryFilter a.active').offsetLeft+'px'
+                                    document.querySelectorAll('.categoryFilter a').forEach(el=>{
+                                        el.addEventListener('mouseover',ev=>{
+                                            indicator.style.left = el.offsetLeft+'px'
+                                        })
+                                        el.addEventListener('mouseleave',ev=>{
+                                            indicator.style.left = document.querySelector('.categoryFilter a.active').offsetLeft+'px'
+                                        })
+                                    })
+                                })
+                            </script>
                             <div class="link">
-                                <i class="fa fa-chevron-right"></i><span>Бүгдийг үзэх бол үсэг сонгоно уу!</span>
+                                <i class="fa"></i><span>Бүгдийг үзэх бол үсэг сонгоно уу!</span>
                             </div>
                         </div>
                         <div class="pt-40 pb-40">

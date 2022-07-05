@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.css">
 </head>
 
-
+<header></header>
 
 <body>
-    <header></header>
     <div class="container">
-        <div class="home-page-image">
+        <div class="mt-30">
+            <div class="home-page-image mt-30">
             <img src="images/5.jpg">
             <div class="typo-steps">
                 <div class="width-4-12">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="mglbar-static-grid mt-0">
+            <div class="mglbar-static-grid mt-0">
             <div class="width-expand@l">
                 <div href="javascript:void 0" class="static-title mt-0"><span>МОНГОЛЫН ХУУЛЬЧДЫН ХОЛБОО</span></div>
                 <div class="width-1-1">
@@ -228,25 +228,26 @@
             </div>
             <div id="sidebarText" class="width-3-10@l sidebar-main"></div>
         </div>
+        </div>
     </div>
-    <footer></footer>
-    <script>
-        /** @code Sidebar text */
-        fetch('include/web-header.html').then(data=>{return data.text()}).then(data=>{document.querySelector("header").innerHTML = data})
-        /** @code Sidebar text */
-        fetch('include/sidebar-text.html').then(data=>{return data.text()}).then(data=>{document.getElementById("sidebarText").innerHTML = data})
-         /** @code Sidebar text */
-        fetch('include/footer.html').then(data=>{return data.text()}).then(data=>{document.querySelector("footer").innerHTML = data})
-        function seeMore(el) {
-            let p = el.parentElement.querySelector("p")
-            if (el.classList.contains("active")){
-                el.classList.remove("active");
-                p.style.maxHeight = '260px';
-            } else {
-                el.classList.add("active")
-                p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
-            }
-        }
-    </script>
 </body>
+<footer></footer>
+<script>
+    /** @code Sidebar text */
+    fetch('include/web-header.html').then(data=>{return data.text()}).then(data=>{document.querySelector("header").innerHTML = data})
+    /** @code Sidebar text */
+    fetch('include/sidebar-text.html').then(data=>{return data.text()}).then(data=>{document.getElementById("sidebarText").innerHTML = data})
+     /** @code Sidebar text */
+    fetch('include/footer.html').then(data=>{return data.text()}).then(data=>{document.querySelector("footer").innerHTML = data})
+    function seeMore(el) {
+        let p = el.parentElement.querySelector("p")
+        if (el.classList.contains("active")){
+            el.classList.remove("active");
+            p.style.maxHeight = '260px';
+        } else {
+            el.classList.add("active")
+            p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
+        }
+    }
+</script>
 </html>

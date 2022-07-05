@@ -1673,19 +1673,19 @@ ol#podcast-video-list-view {
     top: 0;
     right: 0;
     border-radius: 50%;
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
 }
 .home-page__over-text::after {
     content: "";
     top: 0;
-    right: 4px;
+    right: 4.5px;
     width: 1px;
     height: 100%;
 }
 
 .home-page__over-text__title{font-size: 40px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
-.home-page__over-text__all{color: #ffffff; font-size: 12px; font-weight: 300; text-align: right; padding-right: 5px}
+.home-page__over-text__all{color: #ffffff; font-size: 12px; font-weight: 400; text-align: right; padding-right: 5px}
 .home-page__over-text{
     /*width: 200px;*/
 }

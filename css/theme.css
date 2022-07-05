@@ -305,7 +305,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 .mgl-bar-footer__phone span{display: block; color: #cba242;font-size: 12px; font-weight: 400}
 .mgl-bar-footer__email span{color: #cba242;font-size: 12px; font-weight: 400}
 .mgl-bar-footer__location span{color: #cba242;font-size: 12px; font-weight: 400;}
-.mgl-bar-footer{background: #322d2d; padding-bottom: 20px; margin-top: 40px; padding-top: 20px}
+.mgl-bar-footer{background: #322d2d; padding-bottom: 20px; margin-top: 50px; padding-top: 20px}
 .mgl-bar-footer-main{background: #322d2d; padding-bottom: 20px;padding-top: 20px}
 .mgl-bar-footer-3{background: #322d2d; padding-bottom: 20px;}
 .mgl-bar-footer-icon i{color: #b29550; font-size: 19px}
@@ -1055,6 +1055,7 @@ li{list-style: none}
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #cca13c;
     box-sizing: border-box;
     border-radius: 50%;
     width: 100px;
@@ -1089,7 +1090,7 @@ li{list-style: none}
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    width: 110px;
+    width: 44px;
     object-fit: cover;
 }
 
@@ -1124,7 +1125,7 @@ li{list-style: none}
 .sector-header__mid__wrapper{display: flex; justify-content: space-between}
 .sector-header__menus .menus a:not(:last-child):after {content: "/";margin-left: 10px;margin-right: 5px;}
 .sector-header__menus{display: flex;-webkit-align-self: center;-ms-flex-item-align: center;align-self: center;}
-.sector-header__menus .menus a {font-size: 14px;font-weight: 400;color: #000000;text-transform: uppercase;}
+.sector-header__menus .menus a {font-size: 12px;font-weight: 400;color: #000000;text-transform: uppercase;}
 
 .sector-header-large {
     display: block;
@@ -1168,12 +1169,12 @@ li{list-style: none}
     justify-content: space-between;
     padding: 20px 20px 20px 0px
 }
-.header-sector__sign-in{background-color: #b29550; padding: 21px; display: block; cursor: pointer}
+.header-sector__sign-in{background-color: #b29550; margin-left: 15px; padding: 21px; display: block; cursor: pointer}
 .header-section__sign-in{text-align: center; display: flex; justify-content: center; align-items: center}
 .header-section__sign-in span{color: #ffffff}
 .sector-header__icon i{color: #ffffff; font-size: 18px}
 .sector-header__icon{display: flex;justify-content: center;align-items: center;padding: 20px}
-.sector-header__icons{display: flex; flex-direction: row-reverse;padding: 0px}
+.sector-header__icons{display: flex; margin-right: 10px; flex-direction: row-reverse;padding: 0px}
 
 .sector-header-wrapper{background-color: #5c5a5a;}
 @media (min-width: 1200px){
@@ -1644,19 +1645,19 @@ ol#podcast-video-list-view {
     top: 0;
     right: 0;
     border-radius: 50%;
-    width: 9px;
-    height: 9px;
+    width: 11px;
+    height: 11px;
 }
 .home-page__over-text::after {
     content: "";
     top: 0;
-    right: 4.5px;
+    right: 5px;
     width: 1px;
     height: 100%;
 }
 
-.home-page__over-text__title{font-size: 40px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
-.home-page__over-text__all{color: #ffffff; font-size: 12px; font-weight: 400; text-align: right; padding-right: 5px}
+.home-page__over-text__title{font-size: 32px; color: #ffffff;font-weight: 700; text-align: right; padding-right: 5px}
+.home-page__over-text__all{color: #ffffff; font-size: 14px; font-weight: 300; text-align: right; padding-right: 5px}
 .home-page__over-text{
     /*width: 200px;*/
 }
@@ -2464,7 +2465,6 @@ blockquote{
     left: 27px;
     width: 40px;
     height: 3px;
-    background-color: #b9b9b9;
     transition: width .5s, background-color .5s;
 }
 .forum-center .sub-heading:hover i {
@@ -2708,32 +2708,6 @@ summary {
 .article-item .image .author{padding: 10px 50px;}
 .desc2{font-size: 12px !important;}
 
-.header-section__item{
-    width: 100%;
-    height: 100%;
-}
-
-.header-section__item{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    padding-bottom: 100%;
-    height: 0;
-}
-.header-section__item img{
-    width: 140px;
-}
-
-/*.header-section__item img {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    right: 50%;*/
-/*    transform: translate(50%, -50%);*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*}*/
+.search-card .heading{margin: 0 auto 20px;}
+.search-card form input{margin-bottom: 10px;}
+.infoNews span sup{font-size: 8px}

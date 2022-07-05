@@ -2613,7 +2613,7 @@ summary {
     }
 }
 
-.sidebar-forum-list{max-height: 1410px}
+.sidebar-forum-list{max-height: 2220px!important;}
 
 .sidebar-forum-item{margin-bottom: 20px;}
 @media (min-width: 1440px) {
@@ -2677,3 +2677,4 @@ summary {
 .siteFeature{font-size: 12px; width: 300px}
 .star{font-size: 12px;}
 .categoryHead h2{display: flex; justify-content: end; width: 45%;}
+.advocate-forum-list{max-height: 2030px !important;}

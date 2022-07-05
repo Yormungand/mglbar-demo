@@ -1163,12 +1163,12 @@ li{list-style: none}
     justify-content: space-between;
     padding: 20px 20px 20px 0px
 }
-.header-sector__sign-in{background-color: #b29550; padding: 21px; display: block; cursor: pointer}
+.header-sector__sign-in{background-color: #b29550; margin-left: 15px; padding: 21px; display: block; cursor: pointer}
 .header-section__sign-in{text-align: center; display: flex; justify-content: center; align-items: center}
 .header-section__sign-in span{color: #ffffff}
 .sector-header__icon i{color: #ffffff; font-size: 18px}
 .sector-header__icon{display: flex;justify-content: center;align-items: center;padding: 20px}
-.sector-header__icons{display: flex; flex-direction: row-reverse;padding: 0px}
+.sector-header__icons{display: flex; margin-right: 10px; flex-direction: row-reverse;padding: 0px}
 
 .sector-header-wrapper{background-color: #5c5a5a;}
 @media (min-width: 1200px){
@@ -2694,10 +2694,12 @@ summary {
 .desc2{line-height: 20px;}
 .firmFilterName a{font-size: 20px;}
 .post-item__mini .author__intel{align-self: center; margin-left: 10px;}
-.search-card{background-color: #7f6a3f; padding: 40px}
-.filterCard{background: rgba(178,149,80, .6); content: ''; left: 0; right: 0; top: 0; bottom: 0}
+.search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
+.filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
 .firmCard{padding: 45px 30px 10px;}
 .article-grid>*{padding-top: 60px}
 .article-grid>::before {top: 25px}
 .article-item .image .author{padding: 10px 50px;}
 .desc2{font-size: 12px !important;}
+.search-card .heading{margin: 0 auto 20px;}
+.search-card form input{margin-bottom: 10px;}

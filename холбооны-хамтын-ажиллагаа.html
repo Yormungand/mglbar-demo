@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/roboto/fonts.css">
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/roboto-condensed/fonts.css">
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.min.css">
+    <link rel="stylesheet" href="fonts/mogul-adventure/font.css">
     <script src="dist/js/root.min.js"></script>
 </head>
 <header></header>
@@ -180,8 +181,12 @@
         if (el.classList.contains("active")){
             el.classList.remove("active");
             p.style.maxHeight = '260px';
+            setTimeout(()=>{
+                p.style = "max-height: 260px";
+            }, 500)
         } else {
             el.classList.add("active")
+            p.style = "-webkit-line-clamp:unset";
             p.style.maxHeight = el.parentElement.querySelector("p").scrollHeight+'px'
         }
     }

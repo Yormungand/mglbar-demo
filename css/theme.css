@@ -1394,12 +1394,35 @@ li{list-style: none}
 .article-grid {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -50px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 .article-grid > * {
-    padding-top: 50px;
-    padding-left: 20px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.article-grid > *:nth-child(-n+4)::before {
+    content: unset;
+}
+.article-grid > *:not(:nth-child(4n-7))::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    height: 100%;
+    width: 1px;
+    background-color: #e5e5e5;
+}
+.article-grid > *::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #e5e5e5;
+    top: 15px;
+    left: 30px;
+    height: 1px;
+    width: calc(100% - 30px);
+    /*background-color: #e5e5e5;*/
 }
 
 .article-list__item .name{
@@ -1499,7 +1522,7 @@ ol#podcast-video-list-view {
     width: 100%;
 }
 
-.poll-answer {margin-top: 15px}
+.poll-answer {}
 .poll-answer span{color: #353334; font-size: 16px; font-weight: 500}
 
 .poll-date {

@@ -258,7 +258,7 @@ ol#video-player-list__lists {margin: 0;padding: 0;overflow: hidden;}
 ol#video-player-list__lists a {text-decoration: none;background-color: #222;display: block;}
 ol#video-player-list__lists a:hover {background-color: #b29550}
 ol#video-player-list__lists a:hover>.vid-desc {color: #333}
-ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active {background-color: #B29550}
+ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active {background-color: rgb(180 148 76)}
 ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-desc {color: #333}
 .video-player-list-video {display: flex;margin-top: 40px;}
 .video-player-list-view__video {position: relative;padding-bottom: 25%;padding-top: 30px;height: 0;width: 50%;float: left;}
@@ -294,7 +294,7 @@ ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-de
     position: relative;
     margin-bottom: 2px;
     font-size: 10px;
-    color: #f1c57c;
+    color: #c4a46b;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -503,14 +503,14 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end; width: 100%; color: #b79850; cursor: pointer; font-size: 16px;
+.more-button{display: flex; justify-content: end; width: 100%; color: #c4a46b; cursor: pointer; font-size: 16px;
     font-weight: 400; cursor: pointer}
 
 
 .sidebar-text p{display: -webkit-box; text-align: justify; font-size: 14px; font-weight: 300; line-height: 24px; max-height: 260px; -webkit-box-orient: vertical; overflow: hidden; transition: max-height .5s}
 /*#sidebar-main.active p{display: block}*/
 
-.more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: rgb(192,148,84)}
+.more-button:not(.active)::before{content: 'Цааш нь...'; cursor: pointer; color: #c4a46b}
 .more-button.active::before{content: 'Буцаах';}
 
 .title-under{width: 30px;border-bottom: 3px solid #b79850; display: flex; align-items: start; margin-bottom: 20px;}
@@ -1902,8 +1902,8 @@ ol#podcast-video-list-view {
     gap: 1px;
     height: 54px;
     margin-left: 2px;
-    border: 1px solid #cba242;
-    background: #cba242;
+    border: 1px solid rgb(180 148 76) ;
+    background: rgb(180 148 76) ;
 }
 .book-item-main__button{
     color: #FFFFFF;
@@ -2994,3 +2994,4 @@ summary {
 .post-item__mini .text{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 4; overflow: hidden}
 .brochure-forum-list{max-height: 836px;}
 .partner-forum-list{max-height: 2164px !important;}
+.sub-heading::before{background-color: rgb(180 148 76)}

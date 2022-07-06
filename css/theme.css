@@ -157,7 +157,7 @@
 .book-item-main-text__title {text-align: start}
 .book-item-main-text__title span {text-transform: uppercase;font-size: 20px;font-weight: 700;color: #000000}
 .book-item-main-text__sub-title span{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #817777;
 }
@@ -269,12 +269,13 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
     overflow: hidden;
     box-sizing: border-box;
     display: block;
-    padding-bottom: 80%;
+    padding-bottom: 100%;
     height: 0;
     border-radius: 50%;
 }
 .sidebar-forum-img {
-    width: 50px;
+    width: 42px;
+    height: 42px;
     border: 2px solid #2b2b33;
     border-radius: 50%;
 }

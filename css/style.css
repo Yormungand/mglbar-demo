@@ -85,7 +85,8 @@ body {
 
 .articles {display: flex;flex-wrap: wrap;}
 .article-item {display: block}
-.article-item .name {font-family: "Roboto Condensed";font-size: var(--content-title);font-weight: 500;line-height: 1.3;text-align: left;text-transform: uppercase;letter-spacing: 1px;color: #353334;transition: color .3s;}
+.article-item .name {font-family: "Roboto Condensed";font-size: var(--content-title);font-weight: 500;line-height: 1.3;
+    text-align: left;text-transform: uppercase;letter-spacing: 1px;color: #2a292a;transition: color .3s;}
 .article-item .stars {position: relative;margin: 0 auto 20px;font-size: 12px;color: #f1c57c;width: max-content;}
 .article-item .image {margin-bottom: 10px;}
 .article-item .image > div {position: relative;display: block;padding-bottom: 63.88%;height: 0;overflow: hidden;background-color: #b7b7b7;}

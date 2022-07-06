@@ -158,8 +158,16 @@
 .book-item-price {background-color: #b29550;color: #ffffff;padding: 0px 10px 0px 2px}
 .book-item-main-text {display: flex;flex-flow: column;height: 100%;}
 .book-item-main-text-desc {flex: 1;font-size: 16px;color: #131313;text-align: justify;line-height: 20px;}
-.book-item-main-text__title {text-align: center}
+.book-item-main-text__title {text-align: start}
 .book-item-main-text__title span {text-transform: uppercase;font-size: 20px;font-weight: 700;color: #000000}
+.book-item-main-text__sub-title span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #817777;
+}
+.book-item-main-text__sub-title{
+    margin: 10px 0px;
+}
 
 .book-item-main>*{padding-left: 30px !important;}
 

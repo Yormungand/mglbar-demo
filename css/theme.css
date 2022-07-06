@@ -2807,12 +2807,12 @@ summary {
 
 .article-list__item:hover > div *{ color: #cba242}
 .published{display: flex}
-.categoryName span {font-size: 12px;}
+.categoryName span {font-size: 14px !important;}
 .font10{font-size: 10px}
 .font14{font-size: 14px}
 .siteFeature{font-size: 12px; width: 300px}
 .star{font-size: 10px; line-height: 0}
-.categoryHead h2{display: flex; justify-content: end; width: 37%;}
+.categoryHead h2{display: flex; justify-content: end; font-size: 16px; width: 27%;}
 .advocate-forum-list{max-height: 1970px !important;}
 .firmCard h2{font-size: 24px; color: #b49350}
 .infoSocial span{margin-right: 10px;}
@@ -2850,13 +2850,17 @@ summary {
 
 .search-card form input{margin-bottom: 8px;}
 
-.link i {margin: 0 9px;}
-.categoryFilter a{font-size: 14px}
-.categoryFilter a.active{font-size: 18px}
+.link i {margin: 0 8px; height: 7px}
+.categoryFilter a{font-size: 16px}
+.categoryFilter a.active{font-size: 20px}
 .thank-you{font-size: 16px;}
+.categoryHead{text-transform: uppercase}
+.onlinePage{margin-bottom: 20px;}
+.onlinePage a{font-size: 12px;}
 
 .home-border-bottom{
     border-bottom: 16px solid #726d6d;
 }
-.link span{font-size: 11px;}
-.search-advoice{background: rgba(178,149,80, .6)}
+.link span{font-size: 13px;}
+.search-advoice{background: rgba(178,149,80, .6); height: 78%}
+.category__pct-wrap{margin-top: -6px}

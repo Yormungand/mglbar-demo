@@ -273,13 +273,14 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
     overflow: hidden;
     box-sizing: border-box;
     display: block;
-    padding-bottom: 70%;
+    padding-bottom: 80%;
     height: 0;
-    border: 2px solid #2b2b33;
     border-radius: 50%;
 }
 .sidebar-forum-img {
     width: 50px;
+    border: 2px solid #2b2b33;
+    border-radius: 50%;
 }
 .sidebar-forum-img img {
     position: absolute;
@@ -1258,7 +1259,7 @@ li{list-style: none}
 }
 
 .sector-header__mid {
-    padding: 20px 0;
+    /*padding: 20px 0;*/
 }
 .infoNews{padding: 20px 0}
 .infoNews span{margin-right: 10px; color: #ffffff; font-size: 14px; font-weight: 400}
@@ -2752,7 +2753,7 @@ summary {
     }
 }
 
-.sidebar-forum-list{max-height: 1410px}
+.sidebar-forum-list{max-height: 2194px !important;}
 
 .sidebar-forum-item{margin-bottom: 20px;}
 @media (min-width: 1440px) {
@@ -2827,7 +2828,7 @@ summary {
 .search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
 .filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
 .firmCard{padding: 45px 30px 10px;}
-.article-item .image .author{padding: 10px 50px; bottom: 17px;}
+.article-item .image .author{padding: 10px 50px; bottom: 17px; margin-bottom: 10px;}
 .desc2{font-size: 12px !important;}
 .search-card .heading{margin: 0 auto 20px;}
 .search-card form input{margin-bottom: 10px;}
@@ -2862,5 +2863,3 @@ summary {
 }
 .link span{font-size: 11px;}
 .search-advoice{background: rgba(178,149,80, .6)}
-.onlinePage{background: rgba(178,149,80, .6)}
-.onlinePage:before{border-right: 20px solid rgba(178,149,80, .6)}

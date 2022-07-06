@@ -130,11 +130,11 @@ a, button {cursor: pointer;border: none;outline: none;background: none;text-tran
 .star{margin-right:5px;color: #cba242;font-size: 14px;line-height: 20px;}
 .categoryName span{font-size: 14px;line-height: 30px;font-weight: 600;color: #fff;}
 .category__pct-wrap{position: relative; width: 100%;margin: 0}
-.category__pct-result{padding-bottom: 3px; width: 0; background-color: #cba242}
+.category__pct-result{padding-bottom: 3px; width: 30%; background-color: #cba242}
 
 .onlinePage {height: 20px;position: relative;background: #b29550;margin-bottom: 30px;}
-.onlinePage:after {content: "";position: absolute;right: 0;bottom: 0;width: 0;height: 0;border-right: 20px solid rgb(54 48 35);border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
-.onlinePage:before {content: "";position: absolute;left: -20px;bottom: 0;width: 0;height: 0;border-right: 20px solid #b29550;border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
+.onlinePage:after {content: "";position: absolute;right: 0;bottom: 0;width: 0;height: 0;border-right: 10px solid rgb(54 48 35);border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
+.onlinePage:before {content: "";position: absolute;left: -10px;bottom: 0;width: 0;height: 0;border-right: 10px solid #b29550;border-top: 10px solid transparent;border-bottom: 10px solid transparent;}
 
 .thank-you{margin-bottom: 10px;text-align: right;font-size: 14px;line-height: 20px;font-weight: bold;color: #b29550}
 .description{text-align: right;font-size: 14px;line-height: 20px;font-style: italic;font-weight: 400;color: #b29550}

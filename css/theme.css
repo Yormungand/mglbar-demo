@@ -1475,15 +1475,17 @@ li{list-style: none}
     }
 }
 
+
+
 .article-grid {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+    margin-top: -60px;
     margin-left: -30px;
 }
 .article-grid > * {
     position: relative;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-left: 30px;
 }
 .article-grid > *:nth-child(-n+4)::before {
@@ -1502,7 +1504,7 @@ li{list-style: none}
     content: "";
     position: absolute;
     border-top: 1px solid #f0f0f0;
-    top: 15px;
+    top: 30px;
     left: 30px;
     height: 1px;
     width: calc(100% - 30px);
@@ -2813,8 +2815,6 @@ summary {
 .search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
 .filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
 .firmCard{padding: 45px 30px 10px;}
-.article-grid>*{padding-top: 60px}
-.article-grid>::before {top: 25px}
 .article-item .image .author{padding: 10px 50px;}
 .desc2{font-size: 12px !important;}
 .search-card .heading{margin: 0 auto 20px;}

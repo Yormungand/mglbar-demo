@@ -1492,7 +1492,7 @@ li{list-style: none}
 .article-grid > *:not(:nth-child(4n-7))::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 60px;
     left: 14px;
     height: 100%;
     width: 1px;

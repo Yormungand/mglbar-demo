@@ -2568,8 +2568,8 @@ blockquote{
 
 .forum-center .sub-heading i{
     margin-left: 15px;
-    border: 1px solid #ada750;
-    color: #ada750;
+    border: 1px solid #c4a46b;
+    color: #c4a46b;
     padding: 0 4px;
     transition: background-color .5s, color .5s;
 }
@@ -2594,7 +2594,7 @@ blockquote{
     left: 27px;
     width: 40px;
     height: 3px;
-    background-color: #ada750;
+    background-color: #c4a46b;
     transition: width .5s, background-color .5s;
 }
 .forum-center .sub-heading:hover i {
@@ -2823,7 +2823,7 @@ summary {
 .star{font-size: 10px; line-height: 0}
 .categoryHead h2{display: flex; justify-content: end; font-size: 16px; width: 27%;}
 .advocate-forum-list{max-height: 1970px !important;}
-.firmCard h2{font-size: 24px; color: #b49350}
+.firmCard h2{font-size: 24px; color: #c4a46b}
 .infoSocial span{margin-right: 10px;}
 .infoSocial span sup{font-size: 7px}
 .firmDesc p{font-size: 16px; padding-left: 30px;}
@@ -2879,4 +2879,5 @@ summary {
 .category__pct-wrap{margin-top: -6px}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
 .search-advoice input::placeholder{color: #333}
-.sub-heading span{color: #ada750 !important;}
+.sub-heading span{color: #c4a46b !important;}
+.post-item__mini .author__address{color: #c4a46b}

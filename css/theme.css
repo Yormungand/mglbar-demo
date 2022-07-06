@@ -1269,10 +1269,10 @@ li{list-style: none}
 
 @media (min-width: 1200px){
     .Page-icon-card {
-        width: 125px;
-        height: 125px;
-        min-width: 125px;
-        min-height: 125px;
+        width: 105px;
+        height: 105px;
+        min-width: 105px;
+        min-height: 105px;
     }
     .Page-icon-card__title span {
         font-size: 14px;
@@ -2076,7 +2076,6 @@ ol#podcast-video-list-view {
 
 .muted-box{
     background-color: #e5e4e4;
-    margin-top: 50px;
     padding-bottom: 0;
     overflow: hidden;
 }

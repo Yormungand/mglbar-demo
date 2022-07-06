@@ -689,7 +689,7 @@
                     <div class="forum-center">
                         <a href="javascript:void 0" class="sidebar-heading mt-0 mb-30">E-<span>Forum</span><i class="fas fa-angle-right"></i></a>
                     </div>
-                    <div id="eforum" class="article-summary__list advocate-forum-list">
+                    <div id="eforum" class="article-summary__list advocate-forum-list mb-20">
                         <div class="sidebar-forum-item">
                             <div class="sidebar-forum-item__info">
                                 <div class="sidebar-forum-img">
@@ -1651,6 +1651,7 @@
                             </div>
                         </div>
                     </div>
+                    <div id="brochureTarget" class="article-summary__list brochure-forum-list"></div>
                 </div>
             </div>
         </div>
@@ -1659,10 +1660,11 @@
     <script>
     const sidebar = document.getElementById("sidebar");
     const eForum = document.getElementById("eforum");
+    const brochureTarget = document.getElementById("brochureTarget");
 
     document.addEventListener("DOMContentLoaded", e=>{
         for(let i =0;i<20;i++){
-            Forum.innerHTML+=
+            brochureTarget.innerHTML+=
                 `<div class="brochure-card__lawyer">
                     <div class="top">
                         <div class="name">Д.Болдбаатар</div>

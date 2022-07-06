@@ -2905,7 +2905,7 @@ summary {
 .siteFeature{font-size: 12px; width: 300px}
 .star{font-size: 10px; line-height: 0}
 .categoryHead h2{display: flex; justify-content: end; font-size: 16px; width: 27%;}
-.advocate-forum-list{max-height: 1970px !important;}
+.advocate-forum-list{max-height: 1120px !important;}
 .firmCard h2{font-size: 24px; color: #c4a46b}
 .infoSocial span{margin-right: 10px;}
 .infoSocial span sup{font-size: 7px}
@@ -2978,3 +2978,4 @@ summary {
 .academic-section__button{top: 92px !important;}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
 .post-item__mini .text{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 4; overflow: hidden}
+.brochure-forum-list{max-height: 836px;}

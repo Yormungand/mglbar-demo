@@ -1277,7 +1277,7 @@ li{list-style: none}
     justify-content: space-between;
     padding: 20px 20px 20px 0px
 }
-.header-sector__sign-in{background-color: #b29550; margin-left: 15px; padding: 18px; display: block; cursor: pointer}
+.header-sector__sign-in{background-color: rgb(180 148 76); margin-left: 15px; padding: 18px; display: block; cursor: pointer}
 .header-section__sign-in{text-align: center; display: flex; justify-content: center; align-items: center}
 .header-section__sign-in span{color: #ffffff}
 .sector-header__icon i{color: #ffffff; font-size: 18px}
@@ -2831,8 +2831,8 @@ summary {
 .desc2{line-height: 20px;}
 .firmFilterName a{font-size: 20px;}
 .post-item__mini .author__intel{align-self: center; margin-left: 10px;}
-.search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
-.filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
+.search-card{background-color: rgb(180, 148, 76, .6) ; padding: 40px 40px 20px 40px}
+.filterCard{background: rgb(180, 148, 76, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
 .firmCard{padding: 45px 0 10px;}
 
 .article-item .image .author {
@@ -2868,14 +2868,14 @@ summary {
 .categoryFilter a.active{font-size: 20px}
 .thank-you{font-size: 16px;}
 .categoryHead{text-transform: uppercase}
-.onlinePage{margin-bottom: 20px;}
+.onlinePage{margin-bottom: 20px; background: rgb(180, 148, 76, .6 );}
 .onlinePage a{font-size: 12px;}
 
 .home-border-bottom{
     border-bottom: 16px solid #726d6d;
 }
 .link span{font-size: 13px;}
-.search-advoice{background: rgba(178,149,80, .6); height: 78%}
+.search-advoice{background: rgb(180, 148, 76, .6 ); height: 78%}
 .category__pct-wrap{margin-top: -6px}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
 .search-advoice input::placeholder{color: #333}

@@ -2753,7 +2753,7 @@ summary {
     }
 }
 
-.sidebar-forum-list{max-height: 1410px}
+.sidebar-forum-list{max-height: 2194px !important;}
 
 .sidebar-forum-item{margin-bottom: 20px;}
 @media (min-width: 1440px) {

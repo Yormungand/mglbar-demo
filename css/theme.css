@@ -129,7 +129,7 @@
 
 
 .member-card-vertical__text {position: relative;top: 65%;left: 49%;width: 100%;transform: translate(-50%, -50%);}
-.member-card-vertical__article {font-size: 16px;font-weight: 400;color: #2b2b33}
+.member-card-vertical__article {text-align: justify; font-size: 14px;font-weight: 400;color: #2b2b33}
 .member-card-vertical__sub-title {font-size: 18px;font-weight: 400;color: #2b2b33}
 .member-card-vertical__name {font-size: 50px;font-weight: 600;color: #222222}
 .member-card-vertical__img{overflow: hidden;padding-bottom: 65%;position: relative;height: 0;}
@@ -139,8 +139,9 @@
 
 .director-card-name_sub{font-size: 14px;font-weight: 400;color: #2b2b33;padding-bottom: 2px;}
 .director-card-name{position: absolute;top: 89%;left: 50%;padding: 5px 0;text-align: center;z-index: 999;width: 100%;
-    transform: translate(-50%, -50%);background-color: rgba(255, 255, 255, 0.5); /*height: 40px;*/display: flex;
+    transform: translate(-50%, -50%);background-color: rgba(255, 255, 255, 0.5); height: 40px; display: flex;
     flex-direction: column;justify-content: center;align-items: center;}
+
 .director-card-name span {font-size: 24px;font-weight: 700;text-transform: uppercase;color: #1e1d1d}
 .director-card-img {overflow: hidden;padding-bottom: 68%;position: relative;height: 0;}
 .director-card-img img {position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;
@@ -1528,7 +1529,7 @@ li{list-style: none}
     ustify-content: center;
     align-items: center;
     display: block;
-    margin-left: 14px;
+    margin-left: 10px;
     line-height: 1;
 }
 

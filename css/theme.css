@@ -508,7 +508,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 
 
 hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
-.more-button{display: flex; justify-content: end; width: 100%; color: #c4a46b; cursor: pointer; font-size: 16px;
+.more-button{display: flex; justify-content: end; width: auto; color: #c4a46b; cursor: pointer; font-size: 16px;
     font-weight: 400; cursor: pointer}
 
 
@@ -3001,3 +3001,5 @@ summary {
 .partner-forum-list{max-height: 2164px !important;}
 .sub-heading::before{background-color: rgb(180 148 76)}
 .advocate:hover .name{background-color: #fff; color: #000; transition: .3s}
+.director-card:hover .director-card-name{background-color: #fff; color: #000; transition: .3s}
+.more-button-grid{width: 100%; display: flex; justify-content: end}

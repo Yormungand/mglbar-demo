@@ -165,7 +165,7 @@
     margin: 10px 0px;
 }
 
-.book-item-main>*{padding-left: 30px !important;}
+.book-item-main>*{padding-left: 20px !important;}
 
 .home-page__block-par{font-size: 14px;color: #555;text-align: center;line-height: 1.5;width: calc(100% - 10%);
     margin: 30px auto 0;font-weight: 400;}

@@ -2547,9 +2547,6 @@ blockquote{
 }
 
 
-.forum-center .sub-heading span{
-    color: #cba242!important;
-}
 .forum-center .sub-heading i{
     margin-left: 15px;
     border: 1px solid #b39550;
@@ -2577,7 +2574,6 @@ blockquote{
     left: 27px;
     width: 40px;
     height: 3px;
-    background-color: #b9b9b9;
     transition: width .5s, background-color .5s;
 }
 .forum-center .sub-heading:hover i {

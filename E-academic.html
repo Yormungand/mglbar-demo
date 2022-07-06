@@ -474,7 +474,7 @@
                            </div>
                        </div>
                        <div class="sidebar-forum__text">
-                           <div class="name">orem Ipsum is simply dummy text of the printing and typesetting
+                           <div class="name">Lorem Ipsum is simply dummy text of the printing and typesetting
                                industry.
                                Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
                                when an unknown printer took a galley of type and scrambled it to make a type
@@ -484,26 +484,26 @@
                     </div>`;
         }
         for(let i = 0; i<11;i++){
-            document.getElementById('article-post').innerHTML+='' +
-                '<a href="javascript:void 0" class="post-item__mini">\n' +
-                '                                <div class="content">\n' +
-                '                                    <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>\n' +
-                '                                    <div class="text">\n' +
-                '                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis\n' +
-                '                                        odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus\n' +
-                '                                        praesentium similique voluptates!\n' +
-                '                                    </div>\n' +
-                '                                    <div class="author">\n' +
-                '                                        <div class="author__img">\n' +
-                '                                            <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>\n' +
-                '                                        </div>\n' +
-                '                                        <div class="author__intel">\n' +
-                '                                            <div class="author__address">Boldbaatar.E-lawyer.MN</div>\n' +
-                '                                            ' +
-                '                                        </div>\n' +
-                '                                    </div>\n' +
-                '                                </div>\n' +
-                '                            </a>'
+            document.getElementById('article-post').innerHTML+=`
+                    <a href="javascript:void 0" class="post-item__mini">
+                        <div class="content">
+                            <div class="name">Улсын өмгөөлөгчийн сонгон зарлагдлаа</div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, consequatur facilis
+                                odit perferendis quidem suscipit totam? Beatae dicta laborum pariatur, placeat possimus
+                                praesentium similique voluptates!
+                            </div>
+                            <div class="author">
+                                <div class="author__img">
+                                    <div class="author__img-wrapper"><img src="images/zu4.jpg" alt=""></div>
+                                </div>
+                                <div class="author__intel">
+                                    <div class="author__address">Boldbaatar.E-lawyer.MN</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>`
         };
 
         eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].clientHeight) - 300 + 'px';

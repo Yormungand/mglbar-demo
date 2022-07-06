@@ -113,15 +113,24 @@
 
 
 .organisation-card__link {margin-top: 10px;color: #6993f3}
-.organisation-card__title{border-top: 1px dashed #E8E8E8; margin: 20px; padding: 5px; display: flex;
-    flex-direction: column}
+
+.organisation-card__title {
+    border-top: 1px dashed #E8E8E8;
+    margin: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 .organisation-card__title span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #2b2b33
 }
-
+.article-list__item:hover {
+    color: #cba242;
+}
 .organisation-card {
     border-style: solid;
     border-width: 1px;
@@ -130,7 +139,7 @@
 
 .organisation-card__img {
     overflow: hidden;
-    padding-bottom: 57%;
+    padding-bottom: 52%;
     position: relative;
     height: 0;
 }
@@ -2688,6 +2697,9 @@ blockquote{
     background-color: #a38b56;
 }
 
+.sidebar-heading p{
+    margin-bottom: 4px;
+}
 .bt {
     margin-top: 25px;
     padding-top: 25px;
@@ -2712,12 +2724,15 @@ summary {
     justify-content: end;
     cursor: pointer;
     background: white;
-    padding: 15px 0px;
+    padding: 10px 0px;
     color: black;
     font-weight: bold;
     list-style: none;
     color: #af8f52;
     font-size: 20px;
+}
+.organisation-card__img-wrapper{
+    padding: 20px;
 }
 
 /*font-size: 18px;line-height:1.3;font-family:'Mogul Propisi';*/
@@ -2750,7 +2765,8 @@ summary {
     color: #212125!important;
 }
 
-.static-title {
+.static-title
+{
     position: relative;
     display: block;
     width: max-content;
@@ -2760,8 +2776,6 @@ summary {
     align-items: center;
     font-weight: 700;
     color: #000;
-    margin-bottom: 30px;
-    margin-top: 30px;
     padding-bottom: 10px;
 }
 

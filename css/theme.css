@@ -50,7 +50,7 @@
     width: 140px;
     padding-top: 17px;
 }
-.inquiring-card-name svg path{color: #b29550}
+.inquiring-card-name svg path{color: #e5e4e4}
 .inquiring-card-name a{text-transform: uppercase;font-size: 18px; font-weight: 500; color: #cba242}
 .inquiring-card-name div{text-transform: uppercase;font-size: 14px; color: #000000}
 .inquiring-card-name{display: flex; flex-direction: column; text-align: center}

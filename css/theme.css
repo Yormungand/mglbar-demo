@@ -2852,11 +2852,12 @@ summary {
 
 .search-card form input{margin-bottom: 8px;}
 
-.link i {margin: 0 9px;}
-.categoryFilter a{font-size: 12px}
-.categoryFilter a.active{font-size: 14px}
+.link i {margin: 0 12px;}
+.categoryFilter a{font-size: 13px}
+.categoryFilter a.active{font-size: 15px}
 .thank-you{font-size: 16px;}
 
 .home-border-bottom{
     border-bottom: 16px solid #726d6d;
 }
+.link span{font-size: 11px;}

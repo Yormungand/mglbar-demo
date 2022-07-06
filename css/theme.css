@@ -273,7 +273,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
     overflow: hidden;
     box-sizing: border-box;
     display: block;
-    padding-bottom: 79%;
+    padding-bottom: 70%;
     height: 0;
     border: 2px solid #2b2b33;
     border-radius: 50%;
@@ -2520,9 +2520,17 @@ blockquote{
 .sideber-foru__comment{
     display: flex;
 }
+
+.sideber-foru__comment span{
+    margin-left: 5px;
+}
 .sidebar-forum__bottom{
     display: flex;
     align-items: center;
+}
+
+.sidebar-forum__bottom span{
+    margin-left: 5px;
 }
 
 .sidebar-forum__button{
@@ -2537,6 +2545,10 @@ blockquote{
     padding: 8px 10px;
     font-size: 14px;
     color: #999;
+}
+
+.sidebar-forum__view span i{
+    margin-right: 3px;
 }
 .sidebar-forum__button{
     color: #262424;

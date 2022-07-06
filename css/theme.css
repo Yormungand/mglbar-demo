@@ -91,8 +91,8 @@
 .sector-cards {padding-bottom: 10px;background: rgba(0,0,0,.5);background-clip: content-box}
 .sector-cards__wrapper {display: block;margin:0 auto;max-width: 1390px;box-sizing: border-box;padding: 0}
 .sector-card{display: flex; flex-direction: column; background-size: contain;transition: background-color .5s}
-.sector-card__title{color: #cba242; font-weight: 700; transition: color .5s}
-.sector-card__text{margin-top: 5px; color: #cba242; font-weight: 400; transition: color .5s; line-height: 1.5}
+.sector-card__title{color: rgb(243,204,133); font-weight: 700; transition: color .5s}
+.sector-card__text{margin-top: 5px; color: rgb(243,204,133); font-weight: 400; transition: color .5s; line-height: 1.5}
 .sector-card:hover .sector-card__title {color: whitesmoke}
 .sector-card:hover .sector-card__text {color: whitesmoke}
 .sector-card:hover{background-color: rgb(110 73 0 / 50%);cursor: pointer;color: #ffffff;}

@@ -2827,7 +2827,7 @@ summary {
 .search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
 .filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
 .firmCard{padding: 45px 30px 10px;}
-.article-item .image .author{padding: 10px 50px; bottom: 20px;}
+.article-item .image .author{padding: 10px 50px; bottom: 17px;}
 .desc2{font-size: 12px !important;}
 .search-card .heading{margin: 0 auto 20px;}
 .search-card form input{margin-bottom: 10px;}

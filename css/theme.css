@@ -2821,7 +2821,7 @@ summary {
 .firmCard h2{font-size: 24px; color: #b49350}
 .infoSocial span{margin-right: 10px;}
 .infoSocial span sup{font-size: 7px}
-.firmDesc p{font-size: 13px; padding-left: 30px;}
+.firmDesc p{font-size: 16px; padding-left: 30px;}
 .firmDesc p:before{content: "\f00c"; left: 0; font-weight: 600; font-size: 16px;}
 .desc2{line-height: 20px;}
 .firmFilterName a{font-size: 20px;}

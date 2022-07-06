@@ -43,7 +43,7 @@
 }
 
 .inquiring-card-hat img{
-    width: 140px;
+    width: 125px;
     padding-top: 17px;
 }
 .inquiring-card-name svg path{color: #b29550}
@@ -1529,6 +1529,7 @@ li{list-style: none}
     align-items: center;
     display: block;
     margin-left: 14px;
+    line-height: 1;
 }
 
 .mgl-bar-footer__logo-title span {

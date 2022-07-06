@@ -125,22 +125,24 @@
                 </div>
             </div>
             <div  class="width-4-12@l">
-                <div class="banner-image">
-                    <img src="images/zu3.jpg">
-                </div>
-                <div>
-                    <div class="sidebar-header">
-                        <span class="sidebar-title">Шинэ</span>
-                        <div class="all-icons">
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="overview-btn" class="mobile__CTA--btn active"><i class="fa fa-clock"></i></a>
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="structure-btn" class="mobile__CTA--btn"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                            <a href="javascript:void 0;" onclick="activateList(this);" id="surface-btn" class="mobile__CTA--btn"><i class="fa fa-comment-dots"></i></a>
-                        </div>
+                <div class="article-side-bar">
+                    <div class="banner-image">
+                        <img src="images/zu3.jpg">
                     </div>
-                    <div id="site-new" class="article-summary__list" style="min-height: 800px">
-                        <div class="article-list__item">
-                            <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>
-                            <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>
+                    <div>
+                        <div class="sidebar-header">
+                            <span class="sidebar-title">Шинэ</span>
+                            <div class="all-icons">
+                                <a href="javascript:void 0;" onclick="activateList(this);" id="overview-btn" class="mobile__CTA--btn active"><i class="fa fa-clock"></i></a>
+                                <a href="javascript:void 0;" onclick="activateList(this);" id="structure-btn" class="mobile__CTA--btn"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                <a href="javascript:void 0;" onclick="activateList(this);" id="surface-btn" class="mobile__CTA--btn"><i class="fa fa-comment-dots"></i></a>
+                            </div>
+                        </div>
+                        <div id="site-new" class="article-summary__list" style="min-height: 800px">
+                            <div class="article-list__item">
+                                <div class="name">ОУВС: АНУ, Европын зарим оронд инфляци сүүлийн 40 жилийн дээд түвшинд хүрлээ</div>
+                                <div class="published"><i class="fa fa-history"></i> 29 минутын өмнө</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -206,3 +208,15 @@
     }
 </script>
 
+<script>
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+            $('article-side-bar').addClass('fixed-header');
+            $('nav div').addClass('visible-title');
+        }
+        else {
+            $('article-side-bar').removeClass('fixed-header');
+            $('nav div').removeClass('visible-title');
+        }
+    });
+</script>

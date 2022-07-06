@@ -497,7 +497,7 @@ body {
 
 
 .intro-body {display: flex;flex-flow: column;min-height: 100vh;}
-.intro-body__container {display:block;overflow:hidden;box-sizing:border-box;margin: 0 auto;padding:0 30px 20px 90px;width:100%;max-width:1350px;}
+.intro-body__container {display:block;overflow:hidden;box-sizing:border-box;margin: 0 auto;padding:0 30px 30px 90px;width:100%;max-width:1350px;}
 .intro-body__wrapper {
     display: flex;
     flex-flow: column;
@@ -517,7 +517,7 @@ body {
     .intro-address {order: 2;font-size: 14px;}
     .intro-address {padding-left: 30px}
     .intro-subtitle {margin-top: 20px;font-size: 14px; line-height: 1.2}
-    .intro-body__wrapper {padding-top: 30px;}
+    .intro-body__wrapper {padding-top: 20px;}
 }
 @media (max-width:1200px){
     .intro-count {order: 2;}

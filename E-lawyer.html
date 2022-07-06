@@ -428,7 +428,7 @@
                         <div class="forum-center">
                             <a href="javascript:void 0" class="sub-heading mt-0 mb-30">E-<span>Forum</span><i class="fas fa-angle-right"></i></a>
                         </div>
-                        <div id="eforum" class="article-summary__list sidebar-forum-list">
+                        <div id="eforum" class="article-summary__list forum-lists">
                             <div class="sidebar-forum-item">
                                 <div class="sidebar-forum-item__info">
                                     <div class="sidebar-forum-img">
@@ -484,7 +484,6 @@
         </div>
     </div>
     <script>
-        const sidebar = document.getElementById("sidebar");
         const eForum = document.getElementById("eforum");
 
         document.addEventListener("DOMContentLoaded", e=>{
@@ -536,7 +535,7 @@
                     </a>`
             };
 
-            eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].clientHeight) - 150 + 'px';
+            eForum.style.maxHeight = (sidebar.clientHeight - sidebar.querySelectorAll('.banner-image')[0].clientHeight) - 160 + 'px';
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 

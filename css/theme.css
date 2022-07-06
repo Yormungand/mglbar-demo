@@ -1262,6 +1262,7 @@ li{list-style: none}
 }
 .infoNews{padding: 20px 10px}
 .infoNews span{margin-left: 10px; color: #ffffff; font-size: 14px; font-weight: 400}
+.infoNews span sup{font-size: 8px}
 
 .sector-header__text{color: #ffffff; font-size: 16px; font-weight: 500}
 .sector-header__text{display: flex; justify-content: space-between;padding: 20px 20px 20px 0px}
@@ -1277,7 +1278,7 @@ li{list-style: none}
     justify-content: space-between;
     padding: 20px 20px 20px 0px
 }
-.header-sector__sign-in{background-color: #b29550; margin-left: 15px; padding: 21px; display: block; cursor: pointer}
+.header-sector__sign-in{background-color: #b29550; margin-left: 15px; padding: 18px; display: block; cursor: pointer}
 .header-section__sign-in{text-align: center; display: flex; justify-content: center; align-items: center}
 .header-section__sign-in span{color: #ffffff}
 .sector-header__icon i{color: #ffffff; font-size: 18px}

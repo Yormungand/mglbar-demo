@@ -240,7 +240,7 @@
      /** @code Sidebar text */
     fetch('include/footer.html').then(data=>{return data.text()}).then(data=>{document.querySelector("footer").innerHTML = data})
     function seeMore(el) {
-        let p = el.parentElement.querySelector("p")
+        let p = el.parentElement.querySelector("div")
         if (el.classList.contains("active")){
             el.classList.remove("active");
             p.style.maxHeight = '260px';

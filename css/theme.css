@@ -2568,7 +2568,8 @@ blockquote{
 
 .forum-center .sub-heading i{
     margin-left: 15px;
-    border: 1px solid #b39550;
+    border: 1px solid #ada750;
+    color: #ada750;
     padding: 0 4px;
     transition: background-color .5s, color .5s;
 }
@@ -2593,6 +2594,7 @@ blockquote{
     left: 27px;
     width: 40px;
     height: 3px;
+    background-color: #ada750;
     transition: width .5s, background-color .5s;
 }
 .forum-center .sub-heading:hover i {
@@ -2877,3 +2879,4 @@ summary {
 .category__pct-wrap{margin-top: -6px}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
 .search-advoice input::placeholder{color: #444}
+.sub-heading span{color: #ada750 !important;}

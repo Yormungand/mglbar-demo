@@ -1,5 +1,5 @@
 /***todo */
-console.log();
+
 function main() {
     var dots2 = document.getElementById("dots2");
     var moreText2 = document.getElementById("more2");

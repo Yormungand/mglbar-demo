@@ -1064,7 +1064,7 @@ table thead tbody {
 .sector-header__text-lists-title{margin-bottom: 40px}
 .sector-header__text-lists-title span{font-size: 30px; color: #b29550; font-weight: 600}
 li{list-style: none}
-.Page-icon-card__title{display: flex; margin-top: 8px;}
+.Page-icon-card__title{display: flex; margin-top: 5px;}
 
 .Page-icon-card__title span {
     font-size: 14px;
@@ -1087,16 +1087,8 @@ li{list-style: none}
 
 .Page-icon-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #cca13c;
-    box-sizing: border-box;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    min-height: 100px;
-    transition: border .5s ease;
+    justify-content: start;
+    align-items: start;
 }
 .sidebar-text p{
     display: -webkit-box;

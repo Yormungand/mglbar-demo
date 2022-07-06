@@ -2856,3 +2856,7 @@ summary {
 .categoryFilter a{font-size: 12px}
 .categoryFilter a.active{font-size: 14px}
 .thank-you{font-size: 16px;}
+
+.home-border-bottom{
+    border-bottom: 16px solid #726d6d;
+}

@@ -1908,7 +1908,7 @@ ol#podcast-video-list-view {
     color: #888;
 }
 
-.description{font-style: normal}
+.description{font-style: italic}
 
 .articles-grid{margin-left: 25px; padding-left: 0; border-top: 1px solid #e6e6e6}
 

@@ -52,7 +52,7 @@
 .inquiring-card-name{display: flex; flex-direction: column; text-align: center}
 .inquiring-card-desc{padding: 25px; text-align: center}
 .inquiring-card-desc span{font-size: 14px; font-weight: 400; color: #ffffff}
-.inquiring-card{background-color: #cba242; padding: 4px}
+.inquiring-card{background-color: rgb(180 148 76); padding: 4px}
 .inquiring-card-name svg{width: 100px; height: 100px}
 .inquiring-card-name{padding: 10px; background-color: #e5e4e4}
 

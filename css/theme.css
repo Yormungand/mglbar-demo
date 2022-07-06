@@ -3000,3 +3000,4 @@ summary {
 .brochure-forum-list{max-height: 836px;}
 .partner-forum-list{max-height: 2164px !important;}
 .sub-heading::before{background-color: rgb(180 148 76)}
+.advocate:hover .name{background-color: #fff; color: #000; transition: .3s}

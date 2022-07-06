@@ -255,7 +255,9 @@
         }
     }
     document.addEventListener('DOMContentLoaded', e => {
-        applyLargestWidth();
+        setTimeout(()=>{
+            applyLargestWidth();
+        }, 50)
         window.addEventListener("resize", e=>{
             applyLargestWidth();
         });

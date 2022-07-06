@@ -1975,7 +1975,7 @@ ol#podcast-video-list-view {
 }
 .article-feature .desc{
     line-height: 15px;
-    color: #131313;
+    color: #888;
     text-align: justify;
     font-size: 14px;
     padding-top: 10px;
@@ -2977,5 +2977,4 @@ summary {
 .search-advoice input::placeholder{color: #333}
 .post-item__mini .author__address{color: #c4a46b}
 .academic-section__button{top: 92px !important;}
-.sub-heading span{color: #c4a46b !important;}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}

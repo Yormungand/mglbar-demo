@@ -2977,3 +2977,4 @@ summary {
 .post-item__mini .author__address{color: #c4a46b}
 .academic-section__button{top: 92px !important;}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
+.post-item__mini .text{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 4; overflow: hidden}

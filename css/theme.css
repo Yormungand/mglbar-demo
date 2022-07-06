@@ -292,7 +292,7 @@ hr.under-line{width: 40px;border-top: 3px solid #ddae3d; top: 0px; padding-botto
 }
 
 .sidebar-forum__text{margin-top: 20px}
-.forum-lists {}
+.forum-lists {max-height: 2166px !important;}
 @media(max-width: 1200px) {
     .forum-lists {max-height: 400px}
 }
@@ -2756,7 +2756,7 @@ summary {
     }
 }
 
-.sidebar-forum-list{max-height: 2194px !important;}
+.sidebar-forum-list{max-height: 2168px !important;}
 
 .sidebar-forum-item{margin-bottom: 20px;}
 @media (min-width: 1440px) {
@@ -2830,7 +2830,7 @@ summary {
 .post-item__mini .author__intel{align-self: center; margin-left: 10px;}
 .search-card{background-color: #7f6a3f; padding: 40px 40px 20px 40px}
 .filterCard{background: rgba(178,149,80, .4); content: ''; left: 0; right: 0; top: 0; bottom: 0}
-.firmCard{padding: 45px 10px 10px;}
+.firmCard{padding: 45px 0 10px;}
 
 .article-item .image .author {
     padding: 10px 50px;
@@ -2874,3 +2874,4 @@ summary {
 .link span{font-size: 13px;}
 .search-advoice{background: rgba(178,149,80, .6); height: 78%}
 .category__pct-wrap{margin-top: -6px}
+.post-item__mini .author__img-wrapper{padding-bottom: 100%}

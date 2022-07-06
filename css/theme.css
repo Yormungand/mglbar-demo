@@ -2787,7 +2787,7 @@ summary {
     left: 0;
     width: 40px;
     height: 3px;
-    background-color: rgb(192, 152, 64);
+    background-color: rgb(180 148 76);
     transition: width .5s, background-color .5s;
 }
 

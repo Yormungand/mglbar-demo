@@ -1918,6 +1918,7 @@ ol#podcast-video-list-view {
     .articles > * {
         padding-left: 25px;
     }
+    .search-card .desc2 span{max-width: 60%}
 }
 
 
@@ -2834,7 +2835,7 @@ summary {
     padding: 10px 20px;
     bottom: 16px;
 }
-.desc2{font-size: 13px !important;}
+.desc2{font-size: 14px !important;}
 .search-card .heading{margin: 0 auto 20px;}
 .search-card form input{margin-bottom: 10px;}
 .infoNews span sup{font-size: 8px}

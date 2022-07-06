@@ -437,7 +437,7 @@ body {
 @media (min-width: 1200px) {  .intro-text {order: 3;min-width: 1px;flex: 8;}  }
 @media (max-width: 1200px) {  .intro-text {order: 1; margin-bottom: 40px}  }
 
-.intro-title {font-size: 32px;font-weight: 700;text-transform: uppercase;line-height: 1.3}
+.intro-title {font-size: 36px;font-weight: 700;text-transform: uppercase;line-height: 1.3}
 .intro-subtitle {font-style: italic; font-weight: 400; font-family: 'Arial Cyrillic'}
 .intro-button {display: block;border-style: none;box-sizing: border-box;border-radius: 10px;font-size: 16px;
     width: max-content;
@@ -465,8 +465,8 @@ body {
 .unit-count span::before {content: "";position: absolute;top: 0;right: 0;height: 2px;background-color: #b29550}
 .unit-count:not(:last-child) {margin-bottom: 10px;}
 
-.intro-logo__box {margin: 0 auto auto; padding: 0 30px 20px 90px;width: 100%;max-width: 1300px;user-select: none; pointer-events: none}
-.intro-logo {width: 5%;}
+.intro-logo__box {margin: auto auto 20px; padding: 0 30px 20px 90px;width: 100%;max-width: 1300px;user-select: none; pointer-events: none}
+.intro-logo {width: 7%;}
 .intro-logo > *{border-radius: 50%; position: relative;overflow: hidden;box-sizing: border-box;padding-bottom: 100%;height: 0;}
 .intro-logo img{position: absolute;top: 50%;right: 50%;transform: translate(50%, -50%);width: 100%;height: 100%;object-fit: cover;}
 @media (min-width: 1200px){
@@ -487,7 +487,7 @@ body {
 @media (min-width: 1200px){
     .intro-address {padding-left: 30px;}
     .unit-count {font-size: 14px;}
-    .unit-count span {font-size: 32px;}
+    .unit-count span {font-size: 36px;}
 }
 @media (max-width: 1200px){
     .intro-address {margin-left: 40px;}

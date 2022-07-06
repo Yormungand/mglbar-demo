@@ -2876,3 +2876,4 @@ summary {
 .search-advoice{background: rgba(178,149,80, .6); height: 78%}
 .category__pct-wrap{margin-top: -6px}
 .post-item__mini .author__img-wrapper{padding-bottom: 100%}
+.search-advoice input::placeholder{color: #444}

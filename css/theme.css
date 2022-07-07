@@ -122,10 +122,12 @@
 }
 
 
+.organisation-card__link {
+    margin-top: 10px;
+    color: #6993f3!important;
+}
 
-.organisation-card__link {margin-top: 10px;color: #6993f3}
-
-.organisation-card__title {
+.organisation-card__title{
     border-top: 1px dashed #E8E8E8;
     margin: 20px;
     padding-top: 10px;
@@ -134,7 +136,7 @@
     text-align: center;
 }
 
-.organisation-card__title span {
+.organisation-card__title a{
     font-size: 14px;
     font-weight: 400;
     color: #2b2b33
@@ -236,8 +238,8 @@
 .book-item-main-text__title span {text-transform: uppercase;font-size: 20px;font-weight: 700;color: #000000}
 .book-item-main-text__sub-title span{
     font-size: 14px;
-    font-weight: bold;
-    color: #817777;
+    font-weight: 500;
+    color: #787171;
 }
 .book-item-main-text__sub-title{
     margin: 10px 0px;
@@ -2735,7 +2737,6 @@ summary {
     display: flex;
     justify-content: end;
     cursor: pointer;
-    background: white;
     padding: 10px 0px;
     color: black;
     font-weight: bold;

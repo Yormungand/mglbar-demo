@@ -55,7 +55,7 @@
     font-weight: 500;
     color: #cba242
 }
-.inquiring-card-name div{text-transform: uppercase;font-size: 14px; color: #000000}
+.inquiring-card-name .subtitle{text-transform: uppercase;font-size: 14px; color: #000000}
 .inquiring-card-name{display: flex; flex-direction: column; text-align: center}
 
 .inquiring-card-desc {
@@ -139,9 +139,7 @@
     font-weight: 400;
     color: #2b2b33
 }
-.article-list__item:hover {
-    color: #cba242;
-}
+
 .organisation-card {
     border-style: solid;
     border-width: 1px;
@@ -2731,6 +2729,7 @@ blockquote{
 details {
     overflow: hidden;
 }
+
 
 summary {
     display: flex;

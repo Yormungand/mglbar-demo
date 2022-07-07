@@ -115,7 +115,13 @@ body {
 }
 
 
-.article-summary__list {position: relative;padding-right: 10px;max-height: 1px;overflow: auto;}
+.article-summary__list {
+    position: relative;
+    padding-right: 10px;
+    max-height: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .article-summary__list .article-list__item{display: block; border-bottom: 1px solid #e5e5e5;margin-bottom: 10px;padding-bottom: 10px; cursor: pointer}
 .article-list__item .name {font-size: 14px; color: #131313}
 

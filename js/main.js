@@ -26,7 +26,7 @@ function seeMore(el) {
 }
 
 function seeMore1(el) {
-    let div = el.parentElement.querySelector("div")
+    let div = el.parentElement.querySelector("p")
     if (el.classList.contains("active")){
         el.classList.remove("active");
         div.style.maxHeight = '350px';

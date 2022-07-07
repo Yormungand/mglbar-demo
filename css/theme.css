@@ -286,7 +286,7 @@ ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-de
 .accordion-open .fa-plus:before{content: "\f068"; font-weight: 700}
 .accordion-open .accordion__icon{transform: none}
 .accordion__header{padding: 20px 20px 10px;}
-.accordion__description{padding: 0 40px 10px 60px;}
+.accordion__description{padding: 0 40px 10px 60px; line-height: 20px;}
 
 /*@media (max-width: 624px) {*/
 /*    .video-player-list-view__video{width: 100%; height: auto}*/

@@ -3003,3 +3003,4 @@ summary {
 .advocate:hover .name{background-color: #fff; color: #000; transition: .3s}
 .director-card:hover .director-card-name{background-color: #fff; color: #000; transition: .3s}
 .more-button-grid{width: 100%; display: flex; justify-content: end}
+.ngo-forum-lists{max-height: 2164px !important;}

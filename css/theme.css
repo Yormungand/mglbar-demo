@@ -539,7 +539,6 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
     .more-button span{font-size: 14px;}
 }
 
-.sidebar-text{margin-top: 30px; }
 .home-page-image{
     overflow: hidden;
     padding-bottom: 35.23%;
@@ -558,7 +557,6 @@ hr{border-bottom: 1px solid #E8E8E8; margin-top: 30px}
 }
 .purpose-text{margin-top: 10px; font-size: 14px; font-weight: 300; line-height: 24px;}
 .sidebar-text__title{text-transform: uppercase; font-size: 20px; color: #000000}
-.sidebar-text {margin-bottom: 30px}
 .sidebar-text__text span{font-size: 14px; font-weight: 400; line-height: 24px}
 
 /*.header-section{background-image: url("../images/gray.jpg");}*/

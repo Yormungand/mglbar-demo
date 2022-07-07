@@ -269,7 +269,7 @@ ol#video-player-list__lists {margin: 0;padding: 0;overflow: hidden;}
 ol#video-player-list__lists a {text-decoration: none;background-color: #222;display: block;}
 ol#video-player-list__lists a:hover {background-color: #b29550}
 ol#video-player-list__lists a:hover>.vid-desc {color: #333}
-ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active {background-color: rgb(180 148 76)}
+ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active {background-color: rgb(180 148 76); transition: 0.6s}
 ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-desc {color: #333}
 .video-player-list-video {display: flex;margin-top: 40px;}
 .video-player-list-view__video {position: relative;padding-bottom: 25%;padding-top: 30px;height: 0;width: 50%;float: left;}

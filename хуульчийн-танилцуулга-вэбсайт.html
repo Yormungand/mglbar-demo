@@ -61,7 +61,7 @@
                 <div class="pt-40 pb-40">
                     <div class="lawyer-page-main__title mt-30 mb-30">gunbileg.e-lawyer.mn</div>
                     <div class="lawyer-page-text__box">
-                        <div class="lawyer-page-main__name">Болдбаатарын<br><span>Гүнбилэг</span></div>
+                        <div class="lawyer-page-main__name">Болдбаатарын<br><span class="lawyer-page-name__other">Гүнбилэг</span></div>
                         <div class="lawyer-page-main__text mt-30">Монголын хуульчдын холбооны<br>гишүүн хуульч.<span>Хууль зүйн доктор</span></div>
                         <div class="lawyer-page-main__button mt-40">
                             <a href="javascript:void(0)">Миний тухай</a>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lawyer-border mb-10"></div>
+            <div class="lawyer-border"></div>
         </div>
     </div>
 </header>
@@ -1618,6 +1618,9 @@
 </script>
 
 <style>
+    .lawyer-page-name__other{
+        font-weight: 700!important;
+    }
     #botoes {
         float: center;
         position: absolute;
@@ -1886,7 +1889,7 @@
     .lawyer-information__title::before{
         content: "";
         position: absolute;
-        bottom: 345px;
+        bottom: 327px;
         width: 100px;
         height: 1px;
         background-color: #a38b56;
@@ -1930,6 +1933,8 @@
     .lawyer-border{
         width: 38%;
         border-bottom: 1px solid #cba242;
+        position: relative;
+        display: inline-block;
     }
     .lawyer-text{
     }

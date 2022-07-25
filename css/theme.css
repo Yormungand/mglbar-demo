@@ -864,29 +864,29 @@ a {
 }
 
 
-table tr th{
+.table-list table tr th{
   font-size: 16px;
   color: #000000;
   font-weight: 500;
 }
-table  tr td{
+.table-list table  tr td{
     font-size: 14px;
     color: #363636;
     font-weight: 400;
 }
-table{border-collapse: separate!important;border-spacing: 0 8px!important;background-color: transparent; width: 100%}
-tr th:first-child,
-tr td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px;text-align: center}
-tr th:last-child,
-tr td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
-table th td{
+.table-list table{border-collapse: separate!important;border-spacing: 0 8px!important;background-color: transparent; width: 100%}
+.table-list table tr th:first-child,
+.table-list table tr td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px;text-align: center}
+.table-list table tr th:last-child,
+.table-list table tr td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.table-list table th td{
     border-collapse: separate;
     border-spacing: 50px 0;
 }
-td {
+.table-list table tr td {
     padding: 10px 0;
 }
-table tr{
+.table-list table tr{
     background: #F0F0F0;
     transition: background-color .5s;
 }
@@ -894,15 +894,15 @@ table tr{
     background: #d5d5d5;
 }
 
-table thead{border-radius: 10px}
-table th{
+.table-list table thead{border-radius: 10px}
+.table-list table th{
     border: none;
     background: #d7d5d5;
 }
-table tr th{
+.table-list table tr th{
     text-align: start;
 }
-th,
+.table-list table th,
 td {
     margin-top: 10px;
     padding: .3em 1.5em;

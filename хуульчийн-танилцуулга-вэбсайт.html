@@ -544,8 +544,8 @@
                     <div class="lawyer-post__title">
                         <span>Товчхон<span class="lawyer-post__title-color"> "post"</span></span>
                     </div>
-                    <div class="grid mt-30">
-                        <div style="--swiper-navigation-color: #cca13c; --swiper-pagination-color: #cca13c; --swiper-pagination-bullet: #a2a1a1" class="swiper slider">
+                    <div class="grid">
+                        <div style="--swiper-navigation-color: #cca13c; --swiper-pagination-color: #cca13c; --swiper-pagination-bullet: #a2a1a1; --swiper-pagination-size: 12px" class="swiper slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div>
@@ -1646,12 +1646,16 @@
 </script>
 
 <style>
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px)!important;
+    }
     span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #cba242;
         opacity: 1;
         display: inline-block;
-        width: 0.7rem;
-        height: 0.7rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-right: 20px;
     }
 
     /* target all bullets */
@@ -1659,8 +1663,8 @@
         background-color: #706d6d;
         opacity: 1;
         display: inline-block;
-        width: 0.7rem;
-        height: 0.7rem;
+        width: 0.6rem;
+        height: 0.6rem;
     }
     .lawyer-post__image{
         position: relative;
@@ -1841,7 +1845,7 @@
     .lawyer-information__title::before{
         content: "";
         position: absolute;
-        top: 643px;
+        top: 632px;
         width: 100px;
         height: 1px;
         background-color: #a38b56;
@@ -1925,7 +1929,7 @@
         content: "";
         position: absolute;
         bottom: 0;
-        top: 322px;
+        top: 326px;
         width: 115px;
         height: 3px;
         background-color: #a38b56;

@@ -57,6 +57,7 @@
     </div>
       <div class="grid">
           <div class="multi-bg-lawyer">
+              <div class="lawyer-page__head-color"></div>
           </div>
           <div class="multi-bg-lawyer__logo">
               <div class="multi-bg-lawyer__img">
@@ -93,46 +94,48 @@
                       </div>
                   </div>
               </div>
-              <div class="lawyer-border"></div>
-              <div class="container">
-                  <div class="grid">
-                      <div class="width-4-12">
-                          <div class="lawyer-text">
-                              <div class="lawyer-date mt-20 mb-20">
-                                  <span>2022/06/06</span>
-                              </div>
-                              <div class="lawyer-city mt-20 mb-20">
-                                  <span>Улаанбаатар +22<sup>0</sup>C</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="width-8-12">
-                          <div class="lawyer-menu">
-                              <a href="javascript:void 0" class="lawyer-page-menu__home">
-                                  <i class="fa fa-home" aria-hidden="true"></i>
-                              </a>
-                              <a href="javascript:void 0" class="lawyer-page-menu">
-                                  <span>Эхлэл</span>
-                              </a>
-                              <a href="javascript:void 0" class="lawyer-page-menu">
-                                  <span>Үйл явдал</span>
-                              </a>
-                              <a href="javascript:void 0" class="lawyer-page-menu">
-                                  <span>Үзэл бодол</span>
-                              </a>
-                              <a href="javascript:void 0" class="lawyer-page-menu">
-                                  <span>Бүтээл</span>
-                              </a>
-                              <a href="javascript:void 0" class="lawyer-page-menu">
-                                  <span>Бусад</span>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="lawyer-border"></div>
           </div>
       </div>
+    <div style="background-color: #2a292a; margin: -5px; height: 76px">
+        <div class="lawyer-border pt-10"></div>
+        <div class="container">
+            <div class="grid">
+                <div class="width-4-12">
+                    <div class="lawyer-text">
+                        <div class="lawyer-date mt-20 mb-20">
+                            <span>2022/06/06</span>
+                        </div>
+                        <div class="lawyer-city mt-20 mb-20">
+                            <span>Улаанбаатар +22<sup>0</sup>C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-8-12">
+                    <div class="lawyer-menu" style=" position: relative; z-index: 110;">
+                        <a href="javascript:void 0" class="lawyer-page-menu__home">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void 0" class="lawyer-page-menu">
+                            <span>Эхлэл</span>
+                        </a>
+                        <a href="javascript:void 0" class="lawyer-page-menu">
+                            <span>Үйл явдал</span>
+                        </a>
+                        <a href="javascript:void 0" class="lawyer-page-menu">
+                            <span>Үзэл бодол</span>
+                        </a>
+                        <a href="javascript:void 0" class="lawyer-page-menu">
+                            <span>Бүтээл</span>
+                        </a>
+                        <a href="javascript:void 0" class="lawyer-page-menu">
+                            <span>Бусад</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lawyer-border"></div>
+    </div>
 </header>
 <body style="background: #424242">
     <div class="pt-30">
@@ -1410,8 +1413,6 @@
 </footer>
 </html>
 
-
-
 <script>
     var videoPlayButton,
         videoWrapper = document.getElementsByClassName('video-wrapper')[0],
@@ -1447,6 +1448,14 @@
 </script>
 
 <style>
+    .lawyer-page__head-color{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(48,48,48,.8);
+    }
     .multi-bg-lawyer__img{
         position: relative;
         left: 193px;
@@ -1466,11 +1475,11 @@
         z-index: 2;
     }
     .multi-bg-lawyer{
-        background-image: url('images/Web 1 grey.jpg');
-        background-size: cover;
+        background-image: url('images/Web 1.jpg');
+        background-size: 100%;
         background-repeat: no-repeat;
         width: 60%;
-        height: 498px;
+        height: 420px;
         background-position: center;
         position: relative;
         z-index: 2;
@@ -1489,7 +1498,11 @@
         display: block;
         padding-bottom: 62.6%;
         height: 0;
-        filter: drop-shadow(0 -6mm 4mm rgb(9, 9, 9));
+        filter: drop-shadow(50px 10px 10px rgb(9, 9, 9));
+    }
+
+
+    }
     }
     .lawyer-page__social-icon a {
         display: block;
@@ -1816,7 +1829,7 @@
     .lawyer-information__title::before{
         content: "";
         position: absolute;
-        bottom: 310px;
+        top: 643px;
         width: 100px;
         height: 1px;
         background-color: #a38b56;
@@ -1861,6 +1874,7 @@
     .lawyer-menu{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .lawyer-border{
         width: 38%;

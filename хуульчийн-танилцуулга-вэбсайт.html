@@ -1450,6 +1450,29 @@
 </script>
 
 <style>
+    .lawyer-page__social-icon .sector-header__icon:hover {
+        box-shadow: inset 2px 2px 5px 5px rgb(0 0 0 / 15%);
+    }
+    .lawyer-page__social-icon .sector-header__icon {
+        display: block;
+        border-radius: 50%;
+        padding: 10px;
+        color: #fff;
+        -webkit-transition: box-shadow .8s;
+        transition: box-shadow .8s;
+    }
+    .intro-header__bot a:active,
+    .lawyer-page-main__button a:hover{
+        background: #ffc107;
+    }
+    .header-sector__sign-in:active,
+    .header-sector__sign-in:hover {
+        background: #ffc107;
+    }
+    .lawyer-menu a:active,
+   .lawyer-menu a:hover {
+        background: #ffc107;
+   }
     .lawyer-page__menu-wrapper {
         position: relative;
         top: 0;
@@ -1988,9 +2011,11 @@
 
     .lawyer-page__social-icon {
         display: flex;
-        margin-right: 9px;
-        margin-left: 0px;
+        align-items: center;
+        justify-content: start;
         position: relative;
         left: -15px;
+        top: 10px;
+        gap: 10px;
     }
 </style>

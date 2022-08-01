@@ -3332,6 +3332,8 @@ summary {
     font-size: 12px;
 }
 .article-text span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
     line-height: 22px;
     color: #999;
     overflow: hidden;

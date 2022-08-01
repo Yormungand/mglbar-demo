@@ -3597,3 +3597,31 @@ form{
 .searchform input[type="text"] {
     padding-right: 40px;
 }
+.article-pagination ul.page-numbers a.Previous, .article-pagination ul.page-numbers .prev {
+    position: absolute;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    left: 0;
+    top: 0;
+    width: auto;
+    padding: 0 25px;
+}
+.tw-image-hover:hover:before {
+    opacity: 1;
+}
+
+.tw-image-hover:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 21, 21, 0.2);
+    transition: opacity 0.3s ease;
+    display: block;
+    content: '';
+    opacity: 0;
+    z-index: 1;
+}

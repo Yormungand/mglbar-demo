@@ -118,7 +118,6 @@ body {
 .article-summary__list {
     position: relative;
     padding-right: 10px;
-    max-height: 1px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -628,3 +627,27 @@ body {
     text-align: center;
     
 }
+input, textarea{
+    padding: 20px !important;
+}
+.article-view-comm{}
+.article-view-comm-section-title{margin: 20px 0; display: flex; font-size: 14px; font-weight: 700; line-height: 20px; text-transform: uppercase; color: #1a1146}
+.article-view-comm-section-title>i{margin-right: 10px; font-size: 14px; font-weight: 700; line-height: 20px; text-transform: uppercase; color: #1a1146}
+.article-view-comm-section-title-total{margin-left: 10px; background-color: #FF4B4C; color: #fff; border-radius: 5px; padding: 2px 5px;}
+
+.article-view-comm-text{margin-bottom: 22px; border: 1px solid #DADADA;}
+.article-view-comm-text-write{padding: 10px 15px; border-bottom: 1px dashed #DADADA}
+.article-view-comm-text-name{padding: 10px 15px;}
+.article-view-comm-text-submit{display: flex; margin-bottom: 22px; width: 100px; justify-content: center; padding: 5px 13px; align-items: center; border: 1px solid #FF4B4C; border-radius: 3px; font-size: 16px; font-weight: 400; line-height: 20px; color: #0A2749}
+
+.article-view-comm-user{margin-bottom: 20px;}
+.article-view-comm-user-name{display: flex; font-size: 16px; font-weight: 700; line-height: 20px; color: #1A1146; margin-right: 5px}
+.article-view-comm-user-id{margin-left: 10px; color: #999; font-size: 11px;}
+.article-view-comm-user-desc{margin: 10px 0; color: #000;}
+
+.article-view-comm-user-info{color: #999;}
+.article-view-comm-user-info>i{margin-right: 5px;}
+.article-view-comm-user-info-like{margin-left: 10px; color: #999;}
+.article-view-comm-user-info-like>i{margin-right: 5px}
+.article-view-comm-user-info-unlike{margin-left: 10px; color: #999;}
+.article-view-comm-user-info-unlike>i{margin-right: 5px}

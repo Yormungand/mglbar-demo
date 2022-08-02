@@ -1762,9 +1762,9 @@ ol#podcast-video-list-view {
     margin-left: 11px;
 }
 
-
-
-
+.sector-header__logo-text a{
+    color: #000000;
+}
 .member-card-vertical-wrapper{
     margin-top: 40px;
 }

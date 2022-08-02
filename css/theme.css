@@ -277,7 +277,7 @@ ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-de
 .video-player-list-view__video iframe,
 .video-player-list-view__video object,
 .video-player-list-view__video embed {position: absolute;top: 0;left: 0;width: 100%;}
-.video-player-list-video-items {min-width: 1px;width:50%; height: 315px;overflow: hidden;}
+.video-player-list-video-items {min-width: 1px;max-height: 100% !important; height: 315px;overflow: hidden;}
 .video-player-list-podcast-items {min-width: 1px;height: 265px;overflow: hidden;}
 .vid-desc {font-size: 13px;font-weight: 500;text-transform: uppercase;color: #fff}
 .video-player-list__title {border-bottom: 2px solid #b29550;padding-bottom: 6px;margin-top: 40px;width: 30px}
@@ -3638,3 +3638,4 @@ form{
     opacity: 0;
     z-index: 1;
 }
+.uk-link:hover, a:hover{color: initial !important;}

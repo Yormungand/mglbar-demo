@@ -3406,20 +3406,20 @@ summary {
 .fa-arrow-right:before {
     content: "\f061";
 }
-select:not([multiple]):not([size]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 25px;
-    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-}
-input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([multiple]):not([size]) {
-    height: 40px;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 36px;
-}
+/*select:not([multiple]):not([size]) {*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    padding-right: 25px;*/
+/*    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 98% 50%;*/
+/*}*/
+/*input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([multiple]):not([size]) {*/
+/*    height: 40px;*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    line-height: 36px;*/
+/*}*/
 .tw-archive select {
     padding: 0 14px;
     color: #666;
@@ -3430,14 +3430,14 @@ input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([m
 .tw-archive select:last-child {
     border-right: 1px solid #e6e6e6;
 }
-select:not([multiple]):not([size]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 25px;
-    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-}
+/*select:not([multiple]):not([size]) {*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    padding-right: 25px;*/
+/*    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 98% 50%;*/
+/*}*/
 .tw-archive .fa-arrow-down, .tw-archive .fa-arrow-right {
     position: unset;
     line-height: 40px;
@@ -3454,21 +3454,21 @@ select:not([multiple]):not([size]) {
 .fa, .fas {
     font-weight: 900;
 }
-select:not([multiple]):not([size]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 25px;
-    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-}
+/*select:not([multiple]):not([size]) {*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    padding-right: 25px;*/
+/*    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 98% 50%;*/
+/*}*/
 
-input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([multiple]):not([size]) {
-    height: 40px;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 36px;
-}
+/*input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([multiple]):not([size]) {*/
+/*    height: 40px;*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    line-height: 36px;*/
+/*}*/
 .tw-archive select {
     padding: 0 14px;
     color: #666;
@@ -3497,15 +3497,8 @@ input, .button, select, textarea, .uk-input, .uk-select, .uk-textarea {
     width: 31%;
 }
 
-select:not([multiple]):not([size]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 25px;
-    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-}
-input, .button, .uk-input, select:not([multiple]):not([size]), .uk-select:not([multiple]):not([size]) {
+
+input, .button, .uk-input, .uk-select:not([multiple]):not([size]) {
     height: 40px;
     vertical-align: middle;
     display: inline-block;

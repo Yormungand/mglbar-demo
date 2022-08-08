@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="calendar-target">
+    <div class="kal">
+        <div class="kal__navigation">
+            <div class="kal__next"><span class="fa fa-angle-right"></span></div>
+            <div class="kal__prev"><span class="fa fa-angle-left"></span></div>
+            <div class="kal__today" onclick="getToday()">Өнөөдөр</div>
+        </div>
+        <h3 class="kal__month">2020.4</h3>
+        <div class="kal__labels">
+            <div class="kal__day  kal__label kal__day--weekend">Ням</div>
+            <div class="kal__day kal__label">Дав</div>
+            <div class="kal__day kal__label">Мяг</div>
+            <div class="kal__day kal__label">Лха</div>
+            <div class="kal__day kal__label">Пүр</div>
+            <div class="kal__day kal__label">Баа</div>
+            <div class="kal__day  kal__label kal__day--weekend">Бям</div>
+        </div>
+        <div class="kal__days"><div class="kal__day kal__day--empty"><div class="kal__inner"></div></div><div class="kal__day kal__day--empty"><div class="kal__inner"></div></div><div class="kal__day kal__day--empty"><div class="kal__inner"></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-01" data-date="2020-04-01"><div class="kal__solar">1</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-02" data-date="2020-04-02"><div class="kal__solar">2</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-03" data-date="2020-04-03"><div class="kal__solar">3</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-04" data-date="2020-04-04"><div class="kal__solar">4</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-05" data-date="2020-04-05"><div class="kal__solar">5</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-06" data-date="2020-04-06"><div class="kal__solar">6</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-07" data-date="2020-04-07"><div class="kal__solar">7</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-08" data-date="2020-04-08"><div class="kal__solar">8</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-09" data-date="2020-04-09"><div class="kal__solar">9</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-10" data-date="2020-04-10"><div class="kal__solar">10</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-11" data-date="2020-04-11"><div class="kal__solar">11</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-12" data-date="2020-04-12"><div class="kal__solar">12</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-13" data-date="2020-04-13"><div class="kal__solar">13</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-14" data-date="2020-04-14"><div class="kal__solar">14</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-15" data-date="2020-04-15"><div class="kal__solar">15</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-16" data-date="2020-04-16"><div class="kal__solar">16</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-17" data-date="2020-04-17"><div class="kal__solar">17</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-18" data-date="2020-04-18"><div class="kal__solar">18</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-19" data-date="2020-04-19"><div class="kal__solar">19</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-20" data-date="2020-04-20"><div class="kal__solar">20</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-21" data-date="2020-04-21"><div class="kal__solar">21</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-22" data-date="2020-04-22"><div class="kal__solar">22</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-23" data-date="2020-04-23"><div class="kal__solar">23</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-24" data-date="2020-04-24"><div class="kal__solar">24</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-25" data-date="2020-04-25"><div class="kal__solar">25</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-26" data-date="2020-04-26"><div class="kal__solar">26</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-27" data-date="2020-04-27"><div class="kal__solar">27</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-28" data-date="2020-04-28"><div class="kal__solar">28</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-29" data-date="2020-04-29"><div class="kal__solar">29</div></div></div><div class="kal__day"><div class="kal__inner kal-2020-04-30" data-date="2020-04-30"><div class="kal__solar">30</div></div></div></div>
+
+        <div class="kal__meta">
+            <table style="width:100%; margin-top: 30px;">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="calendar-desc" style="cursor: text;">
+                            <div class="calendar-desc__logo" style="background-color: #fec64f;"><span style="transform: rotate(-90deg);" class="fa fa-scissors"></span></div>
+                            <div class="calendar-desc__title">Үс засуулахад сайн</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc" style="cursor: text;">
+                                <div class="calendar-desc__logo" style="background-color: #09a274">Б</div>
+                                <div class="calendar-desc__title">Балжинням</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc" style="cursor: text;">
+                                <div class="calendar-desc__logo" style="background-color: #e57d04">Д</div>
+                                <div class="calendar-desc__title">Дашням</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc__logo" style="background-color: #dc0030">М</div>
+                            <div class="calendar-desc__title">Модон хохимой</div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc__logo" style="background-color: #b10058">Т</div>
+                            <div class="calendar-desc__title">Тэрсүүд</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc__logo" style="background-color: #f5f5f5"><span style="    width: 12px; height: 12px; display: inline-block;    border-radius: 50%; overflow: hidden; background: #666666 "></span></div>
+                            <div class="calendar-desc__title">Сар битүү болно</div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc__logo" style="background-color: #f5f5f5"><span class="calendar-half-moon"></span></div>
+                            <div class="calendar-desc__title">Сар тал болно</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="calendar-desc">
+                            <div class="calendar-desc__logo" style="background-color: #f5f5f5"><span style="width: 12px; height: 12px; display: inline-block;    border-radius: 50%; overflow: hidden; background: #e1e2e3 "></span></div>
+                            <div class="calendar-desc__title">Сар тэргэл болно</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <style>
+
+                #calendar-target{font-family: "Roboto", sans-serif; margin-bottom: 50px; float: left; width: 50%; padding-right: 20px;}
+                .kal{color: #5b5a5a;}
+                .kal__days {padding: 0 2px;}
+                .kal__days:after, .kal__days:before{content: ""; display: table}
+                .kal__days:after{clear: both;}
+                .kal__day{float: left; width: 14.4379%; min-height: 26px; text-align: center;
+                    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(229,229,229,1);
+                    -moz-box-shadow: inset 0px 0px 0px 1px rgba(229,229,229,1);
+                    box-shadow: inset 0px 0px 0px 1px rgba(229,229,229,1);
+                    margin-right: -1px;
+                    margin-bottom: -1px;
+                }
+                .kal__labels{overflow: hidden; width: 100%;}
+                .kal__label{line-height: 26px; box-shadow: none; color: #000000; font-weight: bold;}
+                .kal__day--weekend {color: #ed1c24;}
+                .kal__day--empty{}
+                .kal--active{background-color: #f5f5f5;
+                    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(187,25,25,1);
+                    -moz-box-shadow: inset 0px 0px 0px 1px rgba(187,25,25,1);
+                    box-shadow: inset 0px 0px 0px 1px rgba(187,25,25,1);
+                }
+                .kal__inner{height: 0; padding-bottom: 90%; width: 100%; position: relative; cursor: pointer;}
+                .kal__solar{position: absolute; font-size: 16px; top: 0; left: 0; width: 50%; height: 50%; padding-top: 6%; padding-left: 6%;}
+                .kal__lunar{position: absolute; font-size: 11px; bottom: 0; right: 0; color: #666666; width: 33.3333%; height: 33.3333%}
+                .kal__additional{position: absolute; font-size: 10px; bottom: 0; left: 33.3333%; height: 33.3333%; text-align: center; width: 33.3333%}
+                .kal__additional span.dash-balj{color: #3465aa}
+                .kal__additional span.mod-hohi{color: #dc0030}
+                .kal__additional span.ters{color: #b10058}
+                .kal__additional span.dash{color: #e57d04}
+                .kal__additional span.balj{color: #09a274}
+                .kal__moon{position: absolute; top: 0; right: 0; width: 12px; height: 12px; border-radius: 50%;  margin-right: 12%; margin-top: 12%; overflow: hidden}
+                .kal__moon.no-moon{background: #e1e2e3}
+                .kal__moon.full-moon{background: #666666}
+                .kal__moon.half-moon:before{content: ""; position: absolute; width: 50%; left: 0; top: 0; height: 100%; background: #666;}
+                .kal__moon.half-moon:after{content: ""; position: absolute; width: 50%; right: 0; top: 0; height: 100%; background: #e1e2e3;}
+                .kal__haircut{position: absolute; bottom: 0; left: 0; width: 33.3333%; height: 33.3333%; text-align: center;margin-bottom: 4%;}
+                .kal__haircut span{color: #fec64f;
+                    -ms-transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    font-size: 10px;
+                }
+                .kal__month {text-align: center; background: #bb1919; line-height: 34px; color: #fff; padding: 5px; font-size: 18px;}
+                .kal__navigation{overflow: hidden; margin-bottom: 5px;}
+                .kal__navigation:after, .kal__navigation:before{content: ""; display: table}
+                .kal__navigation:after{clear: both;}
+                .kal__next,.kal__prev, .kal__today{float: right; cursor: pointer; color: rgba(0,0,0,.6); padding: 10px; color: #fff; background: #bb1919;
+                    -webkit-transition: all .2s;
+                    -moz-transition: all .2s;
+                    -ms-transition: all .2s;
+                    -o-transition: all .2s;
+                    transition: all .2s;
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+                .kal__next, .kal__prev{padding: 10px 15px;}
+                .kal__next{margin-right: 0;}
+                .kal__today{font-family: "Roboto Condensed", sans-serif}
+                .kal__next,.kal__prev, .kal__today span{color: #fff;}
+                .kal__next:hover,.kal__prev:hover, .kal__today:hover{background: #ffad00;}
+
+                #details-target{float: left; color: #000; width: 50%;}
+                #details-target h2{margin-bottom: 20px; font-weight: bold; font-family: "Roboto Condensed", sans-serif;  text-transform: uppercase}
+                #details-target h6{text-transform: uppercase; font-size: 18px;  font-family: "Roboto Condensed", sans-serif;  color: #bb1919; }
+                /*details:before{font-family: 'FontAwesome'; content: '\f059';}*/
+
+                @media(max-width: 800px){
+                    #calendar-target{width: 100%; padding-right: 0;}
+                    #details-target{width: 100%;}
+                }
+                @media(max-width: 344px){
+                    .kal__day{width: 14.58%;}
+                }
+            </style>
+        </div>
+    </div>
+</div>
+<script>
+
+
+    var month;
+    var year;
+    var currentDate;
+
+    var $calTarget = $('#calendar-target');
+    var makeCalendar = function (y, m) {
+        year = y;
+        month = m;
+        $.ajax({
+            dataType: 'jsonp',
+            url: "//siskin.sodonsolution.com/p/lunarday/list.json?year="+year+"&month="+month
+        });
+    };
+
+    var showDetails = function (data, date) {
+        currentMoment = moment(date);
+        var day = data[date];
+        if (day!==undefined){
+            $calTarget.find('.kal__inner').removeClass('kal--active');
+            $calTarget.find('.kal-'+date).addClass('kal--active');
+            currentDate = date;
+            $('#details-target').html('' +
+                '<h2>'+date+' / Билгийн тооллын '+day.udur+'</h2>' +
+                '<h6>'+day.month.name+'ын <br> '+day.mark+' мэнгэтэй '+day.color+' '+day.animal+' өдөр</h6>' +
+                '<br>' +
+                '<div class="det-text" style="color: #5b5a5a; margin-bottom: 5px; display: block;">Үс засуулбал: <strong>'+day.hairCut.reaction+'</strong></div>' +
+                '<div class="det-text " style="color: #5b5a5a; margin-bottom: 5px; display: block;">Наран ургах, шингэх: <strong>'+sunInfo(true, false)+'</strong></div>' +
+                '<div class="det-text tooltip" style="color: #5b5a5a; margin-bottom: 5px; display: block;">🡢 Барилдлага: <strong>'+day.barildlaga.name+'</strong>'+'<span class="tooltiptext">'+day.barildlaga.description+'</span>'+'</div>' +
+                '<div class="det-text tooltip" style="color: #5b5a5a; margin-bottom: 5px; display: block;">🡢 Шүтэн барилдлага: <strong>'+day.shutenBarildlaga.name+'</strong>'+'<span class="tooltiptext">'+day.shutenBarildlaga.description+'</span>'+'</div>' +
+                '<div class="det-text" style="color: #5b5a5a; margin-bottom: 5px;">Суудал: <strong>'+day.seat+'</strong></div>' +
+                '<br>' +
+                '<div style="color: #5b5a5a;">'+day.description+'</div>' +
+                '<br>' +
+                '<div><strong>'+(day.dashnyam?'Дашням; ':'')+(day.baljinnyam?'Балжинням; ':'')+(day.dashnyamBaljinnyam?'Дашням, Балжинням; ':'')+(day.modonHohimoi?'Модон хохимой; ':'')+(day.tersuud?'Тэрсүүд;':'')+'</strong></div>');
+        }
+    };
+    var showDetailsMobile = function (data, date) {
+        currentMoment = moment(date);
+        var day = data[date];
+        if (day!==undefined){
+            $calTarget.find('.kal__inner').removeClass('kal--active');
+            $calTarget.find('.kal-'+date).addClass('kal--active');
+            currentDate = date;
+            $('#details-target').html('' +
+                '<h2>'+date+' / Билгийн тооллын '+day.udur+'</h2>' +
+                '<h6>'+day.month.name+'ын <br> '+day.mark+' мэнгэтэй '+day.color+' '+day.animal+' өдөр</h6>' +
+                '<br>' +
+                '<div class="det-text" style="color: #5b5a5a; margin-bottom: 5px; display: block;">Үс засуулбал: <strong>'+day.hairCut.reaction+'</strong></div>' +
+                '<div class="det-text" style="color: #5b5a5a; margin-bottom: 5px; display: block;">Наран ургах, шингэх: <strong>'+sunInfo(true, false)+'</strong></div>' +
+                '<details><summary><div class="det-text" style="color: #5b5a5a; margin-bottom: 5px;">Барилдлага: <strong>'+day.barildlaga.name+'</strong></summary>'+'<span style="color: #5b5a5a;">'+day.barildlaga.description+'</span>'+'</details></div>' +
+                '<details><summary><div class="det-text" style="color: #5b5a5a; margin-bottom: 5px;">Шүтэн барилдлага: <strong>'+day.shutenBarildlaga.name+'</strong></summary>'+'<span style="color: #5b5a5a;">'+day.shutenBarildlaga.description+'</span>'+'</details></div>' +
+                '<div class="det-text" style="color: #5b5a5a; margin-bottom: 5px;">Суудал: <strong>'+day.seat+'</strong></div>' +
+                '<br>' +
+                '<div style="color: #5b5a5a;">'+day.description+'</div>' +
+                '<br>' +
+                '<div><strong>'+(day.dashnyam?'Дашням; ':'')+(day.baljinnyam?'Балжинням; ':'')+(day.dashnyamBaljinnyam?'Дашням, Балжинням; ':'')+(day.modonHohimoi?'Модон хохимой; ':'')+(day.tersuud?'Тэрсүүд;':'')+'</strong></div>');
+        }
+    };
+
+    function _lunarDayList(data){
+
+        $calTarget.off('click', '.kal__prev');
+        $calTarget.off('click', '.kal__next');
+
+
+        var $kalDays = $calTarget.find('.kal__days');
+        var current = moment();
+        current.date(1);
+        current.month(month-1);
+        current.year(year);
+        $kalDays.html('');
+        var currentDay = current.day();
+        for (var i=0; i<currentDay; i++){
+            $kalDays.append('<div class="kal__day kal__day--empty"><div class="kal__inner"></div></div>');
+        }
+        var endOfMonth = current.endOf('month').date();
+        for (i=1; i<=endOfMonth; i++){
+            var dateString = year+'-'+(month>9?month:'0'+month)+'-'+(i>9?i:'0'+i);
+            $kalDays.append('<div class="kal__day"><div class="kal__inner kal-'+dateString+'" data-date="'+dateString+'"><div class="kal__solar">'+i+'</div></div></div>');
+            var day = data[dateString];
+            if (day!==undefined){
+                $calTarget.find('.kal-'+dateString).append('<div class="kal__lunar">'+day.udur+'</div>');
+                if(day.udur == 1){
+                    $calTarget.find('.kal-'+dateString).append('<div class="kal__moon full-moon" title="Сар битүү болно"></div>');
+                }
+                if(day.udur == 15){
+                    $calTarget.find('.kal-'+dateString).append('<div class="kal__moon no-moon" title="Сар тэргэл болно"></div>');
+                }
+                if($.inArray(month, [1, 3, 5, 7, 8, 10, 12])){
+                    if(day.udur == 8 || day.udur == 23){
+                        $calTarget.find('.kal-'+dateString).append('<div class="kal__moon half-moon" title="Сар тал болно"></div>');
+                    }
+                }else{
+                    if(day.udur == 7 || day.udur == 23){
+                        $calTarget.find('.kal-'+dateString).append('<div class="kal__moon half-moon" title="Сар тал болно"></div>');
+                    }
+                }
+                if (day.hairCut.good){
+                    $calTarget.find('.kal-'+dateString).append('<div class="kal__haircut" title="'+day.hairCut.reaction+'"><span class="fa fa-scissors"></span></div>');
+                }
+                var additionalHtml = '<div class="kal__additional">';
+                if (day.dashnyam){
+                    additionalHtml += '<span title="Дашням" class="dash">Д </span>';
+                }
+                if (day.baljinnyam){
+                    additionalHtml += '<span title="Балжинням" class="balj">Б </span>';
+                }
+                if (day.dashnyamBaljinnyam){
+                    additionalHtml += '<span title="Дашням, Балжинням" class="dash-balj">ДБ </span>';
+                }
+                if (day.modonHohimoi){
+                    additionalHtml += '<span title="Модон хохимой" class="mod-hohi">М </span>';
+                }
+                if (day.tersuud){
+                    additionalHtml += '<span title="Тэрсүүд" class="ters">Т </span>';
+                }
+                additionalHtml += '</div>';
+                $calTarget.find('.kal-'+dateString).append(additionalHtml);
+            }
+
+            $calTarget.on('click', '.kal-'+dateString, function () {
+                if(window.innerWidth > 600){
+                    showDetails(data, $(this).attr('data-date'));
+                }else{
+                    showDetailsMobile(data, $(this).attr('data-date'));
+                }
+
+            });
+        }
+        current.date(1);
+        $calTarget.find('.kal__month').text(current.year()+'.'+(current.month()+1));
+
+        var nextMonth = current.clone().add(1,'months');
+        $calTarget.on('click', '.kal__next', function () {
+            makeCalendar(nextMonth.year(),nextMonth.month()+1);
+        });
+
+        var prevMonth = current.clone().subtract(1,'months');
+        $calTarget.on('click', '.kal__prev', function () {
+            makeCalendar(prevMonth.year(),prevMonth.month()+1);
+        });
+
+        if (window.innerWidth > 600) {
+            showDetails(data, currentMoment.format('YYYY-MM-DD'));
+        } else {
+            showDetailsMobile(data, currentMoment.format('YYYY-MM-DD'));
+        }
+    }
+
+    var currentMoment = moment();
+    makeCalendar(currentMoment.year(),currentMoment.month()+1);
+    function getToday(){
+        var currentMoment = moment();
+        makeCalendar(currentMoment.year(),currentMoment.month()+1);
+    }
+
+    var sunInfo = function() {
+        var ub = {
+            "lat": 47.8917438,
+            "lng": 106.8316603
+        };
+        var times = SunCalc.getTimes(new Date(), ub["lat"], ub["lng"]);
+        return times.sunrise.getHours() + ':' + times.sunrise.getMinutes() + " - " + times.sunset.getHours() + ':' + times.sunset.getMinutes();
+    };
+</script>
+</body>
+</html>

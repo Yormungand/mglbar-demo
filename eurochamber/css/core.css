@@ -1,0 +1,1730 @@
+:root {
+    --br-point-xl: 1600px;
+    --br-point-n: 1200px;
+    --br-point-l: 1200px;
+    --br-point-m: 960px;
+    --br-point-s: 640px;
+}
+
+.flex {display: flex;}
+.flex-wrap {display: flex;flex-wrap: wrap;}
+.flex-column {display: flex;flex-flow: column;}
+.flex-row {display: flex;flex-direction: row;}
+.flex-middle {align-items: center}
+.flex-center {justify-content: center}
+.flex-center-self {align-self: center}
+.flex-middle-self {justify-self: center}
+
+@media (min-width: 1600px){
+    .flex\@xl {display: flex;}
+    .flex-wrap\@xl {display: flex;flex-wrap: wrap;}
+    .flex-column\@xl {display: flex;flex-flow: column;}
+    .flex-row\@xl {display: flex;flex-direction: row;}
+    .flex-middle\@xl {align-items: center}
+    .flex-center\@xl {justify-content: center}
+    .flex-center-self\@xl {align-self: center}
+    .flex-middle-self\@xl {justify-self: center}
+}
+@media (min-width: 1440px){
+    .flex\@n {display: flex;}
+    .flex-wrap\@n {display: flex;flex-wrap: wrap;}
+    .flex-column\@n {display: flex;flex-flow: column;}
+    .flex-row\@n {display: flex;flex-direction: row;}
+    .flex-middle\@n {align-items: center}
+    .flex-center\@n {justify-content: center}
+    .flex-center-self\@n {align-self: center}
+    .flex-middle-self\@n {justify-self: center}
+}
+@media (min-width: 1200px){
+    .flex\@l {display: flex;}
+    .flex-wrap\@l {display: flex;flex-wrap: wrap;}
+    .flex-column\@l {display: flex;flex-flow: column;}
+    .flex-row\@l {display: flex;flex-direction: row;}
+    .flex-middle\@l {align-items: center}
+    .flex-center\@l {justify-content: center}
+    .flex-center-self\@l {align-self: center}
+    .flex-middle-self\@l {justify-self: center}
+}
+@media (min-width: 960px){
+    .flex\@m {display: flex;}
+    .flex-wrap\@m {display: flex;flex-wrap: wrap;}
+    .flex-column\@m {display: flex;flex-flow: column;}
+    .flex-row\@m {display: flex;flex-direction: row;}
+    .flex-middle\@m {align-items: center}
+    .flex-center\@m {justify-content: center}
+    .flex-center-self\@m {align-self: center}
+    .flex-middle-self\@m {justify-self: center}
+}
+@media (min-width: 640px){
+    .flex\@s {display: flex;}
+    .flex-wrap\@s {display: flex;flex-wrap: wrap;}
+    .flex-column\@s {display: flex;flex-flow: column;}
+    .flex-row\@s {display: flex;flex-direction: row;}
+    .flex-middle\@s {align-items: center}
+    .flex-center\@s {justify-content: center}
+    .flex-center-self\@s {align-self: center}
+    .flex-middle-self\@s {justify-self: center}
+}
+
+*[class^='grid'], *[class*=' grid-'] {display: flex;flex-wrap: wrap;box-sizing: border-box;}
+.grid-collapse {}
+.grid-collapse > * {box-sizing: border-box}
+.grid-5 {margin-top: -5px;margin-left: -5px}
+.grid-5 > * {padding-top: 5px;padding-left: 5px}
+.grid-5_10 {margin-top: -5px;margin-left: -10px}
+.grid-5_10 > * {padding-top: 5px;padding-left: 10px}
+.grid-10 {margin-top: -10px;margin-left: -10px}
+.grid-10 > * {padding-top: 10px;padding-left: 10px}
+.grid-15 {margin-top: -15px;margin-left: -15px}
+.grid-15 > * {padding-top: 15px;padding-left: 15px}
+.grid-10_20 {margin-top: -10px;margin-left: -20px}
+.grid-10_20 > * {padding-top: 10px;padding-left: 20px}
+.grid-20 {margin-top: -20px;margin-left: -20px}
+.grid-20 > * {padding-top: 20px;padding-left: 20px}
+.grid-20_10 {margin-top: -20px;margin-left: -10px}
+.grid-20_10 > * {padding-top: 20px;padding-left: 10px}
+.grid-30 {margin-top: -30px;margin-left: -30px}
+.grid-30 > * {padding-top: 30px;padding-left: 30px}
+.grid-40 {margin-top: -40px;margin-left: -40px}
+.grid-40 > * {padding-top: 40px;padding-left: 40px}
+@media (min-width: 640px) {
+    .grid-5\@s {margin-top: -5px;margin-left: -5px;}
+    .grid-5_10\@s {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@s > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@s {margin-top: -10px;margin-left: -10px}
+    .grid-10\@s > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@s {margin-top: -15px;margin-left: -15px}
+    .grid-15\@s > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@s {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@s > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@s {margin-top: -20px;margin-left: -20px}
+    .grid-20\@s > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@s {margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@s > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@s {margin-top: -30px;margin-left: -30px}
+    .grid-30\@s > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@s {margin-top: -40px;margin-left: -40px}
+    .grid-40\@s > * {padding-top: 40px;padding-left: 40px}
+}
+@media (min-width: 960px) {
+    .grid-5\@m {margin-top: -5px;margin-left: -5px}
+    .grid-5\@m > * {padding-top: 5px;padding-left: 5px}
+    .grid-5_10\@m {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@m > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@m {margin-top: -10px;margin-left: -10px}
+    .grid-10\@m > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@m {margin-top: -15px;margin-left: -15px}
+    .grid-15\@m > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@m {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@m > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@m {margin-top: -20px;margin-left: -20px}
+    .grid-20\@m > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@m {margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@m > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@m {margin-top: -30px;margin-left: -30px}
+    .grid-30\@m > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@m {margin-top: -40px;margin-left: -40px}
+    .grid-40\@m > * {padding-top: 40px;padding-left: 40px}
+}
+@media (min-width: 1200px) {
+    .grid-5\@l {margin-top: -5px;margin-left: -5px}
+    .grid-5\@l > * {padding-top: 5px;padding-left: 5px}
+    .grid-5_10\@l {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@l > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@l {margin-top: -10px;margin-left: -10px}
+    .grid-10\@l > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@l {margin-top: -15px;margin-left: -15px}
+    .grid-15\@l > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@l {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@l > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@l {margin-top: -20px;margin-left: -20px}
+    .grid-20\@l > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@l {display: flex;flex-wrap: wrap;box-sizing: border-box;margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@l > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@l {margin-top: -30px;margin-left: -30px}
+    .grid-30\@l > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@l {margin-top: -40px;margin-left: -40px}
+    .grid-40\@l > * {padding-top: 40px;padding-left: 40px}
+}
+@media (min-width: 1440px) {
+    .grid-5\@n {margin-top: -5px;margin-left: -5px}
+    .grid-5\@n > * {padding-top: 5px;padding-left: 5px}
+    .grid-5_10\@n {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@n > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@n {margin-top: -10px;margin-left: -10px}
+    .grid-10\@n > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@n {margin-top: -15px;margin-left: -15px}
+    .grid-15\@n > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@n {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@n > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@n {margin-top: -20px;margin-left: -20px}
+    .grid-20\@n > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@n {margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@n > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@n {margin-top: -30px;margin-left: -30px}
+    .grid-30\@n > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@n {margin-top: -40px;margin-left: -40px}
+    .grid-40\@n > * {padding-top: 40px;padding-left: 40px}
+}
+@media (min-width: 1600px) {
+    .grid-5\@xl {margin-top: -5px;margin-left: -5px}
+    .grid-5\@xl > * {padding-top: 5px;padding-left: 5px}
+    .grid-5_10\@xl {margin-top: -5px;margin-left: -10px}
+    .grid-5_10\@xl > * {padding-top: 5px;padding-left: 10px}
+    .grid-10\@xl {margin-top: -10px;margin-left: -10px}
+    .grid-10\@xl > * {padding-top: 10px;padding-left: 10px}
+    .grid-15\@xl {margin-top: -15px;margin-left: -15px}
+    .grid-15\@xl > * {padding-top: 15px;padding-left: 15px}
+    .grid-10_20\@xl {margin-top: -10px;margin-left: -20px}
+    .grid-10_20\@xl > * {padding-top: 10px;padding-left: 20px}
+    .grid-20\@xl {margin-top: -20px;margin-left: -20px}
+    .grid-20\@xl > * {padding-top: 20px;padding-left: 20px}
+    .grid-20_10\@xl {margin-top: -20px;margin-left: -10px}
+    .grid-20_10\@xl > * {padding-top: 20px;padding-left: 10px}
+    .grid-30\@xl {margin-top: -30px;margin-left: -30px}
+    .grid-30\@xl > * {padding-top: 30px;padding-left: 30px}
+    .grid-40\@xl {margin-top: -40px;margin-left: -40px}
+    .grid-40\@xl > * {padding-top: 40px;padding-left: 40px}
+}
+
+
+.p-5 {padding: 5px}
+.p-10 {padding: 10px}
+.p-15 {padding: 15px}
+.p-20 {padding: 20px}
+.p-25 {padding: 25px}
+.p-30 {padding: 30px}
+.p-35 {padding: 35px}
+.p-40 {padding: 40px}
+.p-45 {padding: 45px}
+.pt-5 {padding-top: 5px}
+.pt-10 {padding-top: 10px}
+.pt-15 {padding-top: 15px}
+.pt-20 {padding-top: 20px}
+.pt-25 {padding-top: 25px}
+.pt-30 {padding-top: 30px}
+.pt-35 {padding-top: 35px}
+.pt-40 {padding-top: 40px}
+.pt-45 {padding-top: 45px}
+.pr-5 {padding-right: 5px}
+.pr-10 {padding-right: 10px}
+.pr-15 {padding-right: 15px}
+.pr-20 {padding-right: 20px}
+.pr-25 {padding-right: 25px}
+.pr-30 {padding-right: 30px}
+.pr-35 {padding-right: 35px}
+.pr-40 {padding-right: 40px}
+.pr-45 {padding-right: 45px}
+.pl-5 {padding-left: 5px}
+.pl-10 {padding-left: 10px}
+.pl-15 {padding-left: 15px}
+.pl-20 {padding-left: 20px}
+.pl-25 {padding-left: 25px}
+.pl-30 {padding-left: 30px}
+.pl-35 {padding-left: 35px}
+.pl-40 {padding-left: 40px}
+.pl-45 {padding-left: 45px}
+.pb-5 {padding-bottom: 5px}
+.pb-10 {padding-bottom: 10px}
+.pb-15 {padding-bottom: 15px}
+.pb-20 {padding-bottom: 20px}
+.pb-25 {padding-bottom: 25px}
+.pb-30 {padding-bottom: 30px}
+.pb-35 {padding-bottom: 35px}
+.pb-40 {padding-bottom: 40px}
+.pb-45 {padding-bottom: 45px}
+.p-5-10 {padding: 5px 10px}
+.p-10-15 {padding: 10px 15px}
+.p-7-14 {padding: 10px 15px}
+.p-15-10 {padding: 15px 10px}
+.p-20-30 {padding: 20px 30px}
+.p-15-30 {padding: 15px 30px}
+.p-10-30 {padding: 10px 30px}
+.p-10-20 {padding: 10px 20px}
+@media (min-width: 1600px) {
+    .p-5\@xl {padding: 5px}
+    .p-10\@xl {padding: 10px}
+    .p-15\@xl {padding: 15px}
+    .p-20\@xl {padding: 20px}
+    .p-25\@xl {padding: 25px}
+    .p-30\@xl {padding: 30px}
+    .p-35\@xl {padding: 35px}
+    .p-40\@xl {padding: 40px}
+    .p-45\@xl {padding: 45px}
+    .pt-5\@xl {padding-top: 5px}
+    .pt-10\@xl {padding-top: 10px}
+    .pt-15\@xl {padding-top: 15px}
+    .pt-20\@xl {padding-top: 20px}
+    .pt-25\@xl {padding-top: 25px}
+    .pt-30\@xl {padding-top: 30px}
+    .pt-35\@xl {padding-top: 35px}
+    .pt-40\@xl {padding-top: 40px}
+    .pt-45\@xl {padding-top: 45px}
+    .pr-5\@xl {padding-right: 5px}
+    .pr-10\@xl {padding-right: 10px}
+    .pr-15\@xl {padding-right: 15px}
+    .pr-20\@xl {padding-right: 20px}
+    .pr-25\@xl {padding-right: 25px}
+    .pr-30\@xl {padding-right: 30px}
+    .pr-35\@xl {padding-right: 35px}
+    .pr-40\@xl {padding-right: 40px}
+    .pr-45\@xl {padding-right: 45px}
+    .pl-5\@xl {padding-left: 5px}
+    .pl-10\@xl {padding-left: 10px}
+    .pl-15\@xl {padding-left: 15px}
+    .pl-20\@xl {padding-left: 20px}
+    .pl-25\@xl {padding-left: 25px}
+    .pl-30\@xl {padding-left: 30px}
+    .pl-35\@xl {padding-left: 35px}
+    .pl-40\@xl {padding-left: 40px}
+    .pl-45\@xl {padding-left: 45px}
+    .pb-5\@xl {padding-bottom: 5px}
+    .pb-10\@xl {padding-bottom: 10px}
+    .pb-15\@xl {padding-bottom: 15px}
+    .pb-20\@xl {padding-bottom: 20px}
+    .pb-25\@xl {padding-bottom: 25px}
+    .pb-30\@xl {padding-bottom: 30px}
+    .pb-35\@xl {padding-bottom: 35px}
+    .pb-40\@xl {padding-bottom: 40px}
+    .pb-45\@xl {padding-bottom: 45px}
+    .p-5-10\@xl {padding: 5px 10px}
+    .p-10-15\@xl {padding: 10px 15px}
+    .p-7-14\@xl {padding: 10px 15px}
+    .p-15-10\@xl {padding: 15px 10px}
+    .p-20-30\@xl {padding: 20px 30px}
+    .p-15-30\@xl {padding: 15px 30px}
+    .p-10-30\@xl {padding: 10px 30px}
+    .p-10-20\@xl {padding: 10px 20px}
+}
+@media (min-width: 1440px) {
+    .p-5\@n {padding: 5px}
+    .p-10\@n {padding: 10px}
+    .p-15\@n {padding: 15px}
+    .p-20\@n {padding: 20px}
+    .p-25\@n {padding: 25px}
+    .p-30\@n {padding: 30px}
+    .p-35\@n {padding: 35px}
+    .p-40\@n {padding: 40px}
+    .p-45\@n {padding: 45px}
+    .pt-5\@n {padding-top: 5px}
+    .pt-10\@n {padding-top: 10px}
+    .pt-15\@n {padding-top: 15px}
+    .pt-20\@n {padding-top: 20px}
+    .pt-25\@n {padding-top: 25px}
+    .pt-30\@n {padding-top: 30px}
+    .pt-35\@n {padding-top: 35px}
+    .pt-40\@n {padding-top: 40px}
+    .pt-45\@n {padding-top: 45px}
+    .pr-5\@n {padding-right: 5px}
+    .pr-10\@n {padding-right: 10px}
+    .pr-15\@n {padding-right: 15px}
+    .pr-20\@n {padding-right: 20px}
+    .pr-25\@n {padding-right: 25px}
+    .pr-30\@n {padding-right: 30px}
+    .pr-35\@n {padding-right: 35px}
+    .pr-40\@n {padding-right: 40px}
+    .pr-45\@n {padding-right: 45px}
+    .pl-5\@n {padding-left: 5px}
+    .pl-10\@n {padding-left: 10px}
+    .pl-15\@n {padding-left: 15px}
+    .pl-20\@n {padding-left: 20px}
+    .pl-25\@n {padding-left: 25px}
+    .pl-30\@n {padding-left: 30px}
+    .pl-35\@n {padding-left: 35px}
+    .pl-40\@n {padding-left: 40px}
+    .pl-45\@n {padding-left: 45px}
+    .pb-5\@n {padding-bottom: 5px}
+    .pb-10\@n {padding-bottom: 10px}
+    .pb-15\@n {padding-bottom: 15px}
+    .pb-20\@n {padding-bottom: 20px}
+    .pb-25\@n {padding-bottom: 25px}
+    .pb-30\@n {padding-bottom: 30px}
+    .pb-35\@n {padding-bottom: 35px}
+    .pb-40\@n {padding-bottom: 40px}
+    .pb-45\@n {padding-bottom: 45px}
+    .p-5-10\@n {padding: 5px 10px}
+    .p-10-15\@n {padding: 10px 15px}
+    .p-7-14\@n {padding: 10px 15px}
+    .p-15-10\@n {padding: 15px 10px}
+    .p-20-30\@n {padding: 20px 30px}
+    .p-15-30\@n {padding: 15px 30px}
+    .p-10-30\@n {padding: 10px 30px}
+    .p-10-20\@n {padding: 10px 20px}
+}
+@media (min-width: 1200px) {
+    .p-5\@l {padding: 5px}
+    .p-10\@l {padding: 10px}
+    .p-15\@l {padding: 15px}
+    .p-20\@l {padding: 20px}
+    .p-25\@l {padding: 25px}
+    .p-30\@l {padding: 30px}
+    .p-35\@l {padding: 35px}
+    .p-40\@l {padding: 40px}
+    .p-45\@l {padding: 45px}
+    .pt-5\@l {padding-top: 5px}
+    .pt-10\@l {padding-top: 10px}
+    .pt-15\@l {padding-top: 15px}
+    .pt-20\@l {padding-top: 20px}
+    .pt-25\@l {padding-top: 25px}
+    .pt-30\@l {padding-top: 30px}
+    .pt-35\@l {padding-top: 35px}
+    .pt-40\@l {padding-top: 40px}
+    .pt-45\@l {padding-top: 45px}
+    .pr-5\@l {padding-right: 5px}
+    .pr-10\@l {padding-right: 10px}
+    .pr-15\@l {padding-right: 15px}
+    .pr-20\@l {padding-right: 20px}
+    .pr-25\@l {padding-right: 25px}
+    .pr-30\@l {padding-right: 30px}
+    .pr-35\@l {padding-right: 35px}
+    .pr-40\@l {padding-right: 40px}
+    .pr-45\@l {padding-right: 45px}
+    .pl-5\@l {padding-left: 5px}
+    .pl-10\@l {padding-left: 10px}
+    .pl-15\@l {padding-left: 15px}
+    .pl-20\@l {padding-left: 20px}
+    .pl-25\@l {padding-left: 25px}
+    .pl-30\@l {padding-left: 30px}
+    .pl-35\@l {padding-left: 35px}
+    .pl-40\@l {padding-left: 40px}
+    .pl-45\@l {padding-left: 45px}
+    .pb-5\@l {padding-bottom: 5px}
+    .pb-10\@l {padding-bottom: 10px}
+    .pb-15\@l {padding-bottom: 15px}
+    .pb-20\@l {padding-bottom: 20px}
+    .pb-25\@l {padding-bottom: 25px}
+    .pb-30\@l {padding-bottom: 30px}
+    .pb-35\@l {padding-bottom: 35px}
+    .pb-40\@l {padding-bottom: 40px}
+    .pb-45\@l {padding-bottom: 45px}
+    .p-5-10\@l {padding: 5px 10px}
+    .p-10-15\@l {padding: 10px 15px}
+    .p-7-14\@l {padding: 10px 15px}
+    .p-15-10\@l {padding: 15px 10px}
+    .p-20-30\@l {padding: 20px 30px}
+    .p-15-30\@l {padding: 15px 30px}
+    .p-10-30\@l {padding: 10px 30px}
+    .p-10-20\@l {padding: 10px 20px}
+}
+@media (min-width: 960px) {
+    .p-5\@m {padding: 5px}
+    .p-10\@m {padding: 10px}
+    .p-15\@m {padding: 15px}
+    .p-20\@m {padding: 20px}
+    .p-25\@m {padding: 25px}
+    .p-30\@m {padding: 30px}
+    .p-35\@m {padding: 35px}
+    .p-40\@m {padding: 40px}
+    .p-45\@m {padding: 45px}
+    .pt-5\@m {padding-top: 5px}
+    .pt-10\@m {padding-top: 10px}
+    .pt-15\@m {padding-top: 15px}
+    .pt-20\@m {padding-top: 20px}
+    .pt-25\@m {padding-top: 25px}
+    .pt-30\@m {padding-top: 30px}
+    .pt-35\@m {padding-top: 35px}
+    .pt-40\@m {padding-top: 40px}
+    .pt-45\@m {padding-top: 45px}
+    .pr-5\@m {padding-right: 5px}
+    .pr-10\@m {padding-right: 10px}
+    .pr-15\@m {padding-right: 15px}
+    .pr-20\@m {padding-right: 20px}
+    .pr-25\@m {padding-right: 25px}
+    .pr-30\@m {padding-right: 30px}
+    .pr-35\@m {padding-right: 35px}
+    .pr-40\@m {padding-right: 40px}
+    .pr-45\@m {padding-right: 45px}
+    .pl-5\@m {padding-left: 5px}
+    .pl-10\@m {padding-left: 10px}
+    .pl-15\@m {padding-left: 15px}
+    .pl-20\@m {padding-left: 20px}
+    .pl-25\@m {padding-left: 25px}
+    .pl-30\@m {padding-left: 30px}
+    .pl-35\@m {padding-left: 35px}
+    .pl-40\@m {padding-left: 40px}
+    .pl-45\@m {padding-left: 45px}
+    .pb-5\@m {padding-bottom: 5px}
+    .pb-10\@m {padding-bottom: 10px}
+    .pb-15\@m {padding-bottom: 15px}
+    .pb-20\@m {padding-bottom: 20px}
+    .pb-25\@m {padding-bottom: 25px}
+    .pb-30\@m {padding-bottom: 30px}
+    .pb-35\@m {padding-bottom: 35px}
+    .pb-40\@m {padding-bottom: 40px}
+    .pb-45\@m {padding-bottom: 45px}
+    .p-5-10\@m {padding: 5px 10px}
+    .p-10-15\@m {padding: 10px 15px}
+    .p-7-14\@m {padding: 10px 15px}
+    .p-15-10\@m {padding: 15px 10px}
+    .p-20-30\@m {padding: 20px 30px}
+    .p-15-30\@m {padding: 15px 30px}
+    .p-10-30\@m {padding: 10px 30px}
+    .p-10-20\@m {padding: 10px 20px}
+}
+@media (min-width: 640px) {
+    .p-5\@s {padding: 5px}
+    .p-10\@s {padding: 10px}
+    .p-15\@s {padding: 15px}
+    .p-20\@s {padding: 20px}
+    .p-25\@s {padding: 25px}
+    .p-30\@s {padding: 30px}
+    .p-35\@s {padding: 35px}
+    .p-40\@s {padding: 40px}
+    .p-45\@s {padding: 45px}
+    .pt-5\@s {padding-top: 5px}
+    .pt-10\@s {padding-top: 10px}
+    .pt-15\@s {padding-top: 15px}
+    .pt-20\@s {padding-top: 20px}
+    .pt-25\@s {padding-top: 25px}
+    .pt-30\@s {padding-top: 30px}
+    .pt-35\@s {padding-top: 35px}
+    .pt-40\@s {padding-top: 40px}
+    .pt-45\@s {padding-top: 45px}
+    .pr-5\@s {padding-right: 5px}
+    .pr-10\@s {padding-right: 10px}
+    .pr-15\@s {padding-right: 15px}
+    .pr-20\@s {padding-right: 20px}
+    .pr-25\@s {padding-right: 25px}
+    .pr-30\@s {padding-right: 30px}
+    .pr-35\@s {padding-right: 35px}
+    .pr-40\@s {padding-right: 40px}
+    .pr-45\@s {padding-right: 45px}
+    .pl-5\@s {padding-left: 5px}
+    .pl-10\@s {padding-left: 10px}
+    .pl-15\@s {padding-left: 15px}
+    .pl-20\@s {padding-left: 20px}
+    .pl-25\@s {padding-left: 25px}
+    .pl-30\@s {padding-left: 30px}
+    .pl-35\@s {padding-left: 35px}
+    .pl-40\@s {padding-left: 40px}
+    .pl-45\@s {padding-left: 45px}
+    .pb-5\@s {padding-bottom: 5px}
+    .pb-10\@s {padding-bottom: 10px}
+    .pb-15\@s {padding-bottom: 15px}
+    .pb-20\@s {padding-bottom: 20px}
+    .pb-25\@s {padding-bottom: 25px}
+    .pb-30\@s {padding-bottom: 30px}
+    .pb-35\@s {padding-bottom: 35px}
+    .pb-40\@s {padding-bottom: 40px}
+    .pb-45\@s {padding-bottom: 45px}
+    .p-5-10\@s {padding: 5px 10px}
+    .p-10-15\@s {padding: 10px 15px}
+    .p-7-14\@s {padding: 10px 15px}
+    .p-15-10\@s {padding: 15px 10px}
+    .p-20-30\@s {padding: 20px 30px}
+    .p-15-30\@s {padding: 15px 30px}
+    .p-10-30\@s {padding: 10px 30px}
+    .p-10-20\@s {padding: 10px 20px}
+}
+
+
+
+.mt-auto {margin-top: auto;}
+.ml-auto {margin-left: auto;}
+.mr-auto {margin-right: auto;}
+.m-auto {margin: auto;}
+.mh-auto {margin: 0 auto;}
+.mv-auto {margin: auto 0;}
+.m-0{margin: 0 !important;}
+.mt-0{margin-top: 0 !important;}
+.mb-0{margin-bottom: 0 !important;}
+.mr-0{margin-right: 0 !important;}
+.ml-0{margin-left: 0 !important;}
+.m-5 {margin: 5px}
+.m-10 {margin: 10px}
+.m-15 {margin: 15px}
+.m-20 {margin: 20px}
+.m-25 {margin: 25px}
+.m-30 {margin: 30px}
+.m-35 {margin: 35px}
+.m-40 {margin: 40px}
+.m-45 {margin: 45px}
+.mt-5 {margin-top: 5px}
+.mt-10 {margin-top: 10px}
+.mt-15 {margin-top: 15px}
+.mt-20 {margin-top: 20px}
+.mt-25 {margin-top: 25px}
+.mt-30 {margin-top: 30px}
+.mt-35 {margin-top: 35px}
+.mt-40 {margin-top: 40px}
+.mt-45 {margin-top: 45px}
+.mr-5 {margin-right: 5px}
+.mr-10 {margin-right: 10px}
+.mr-15 {margin-right: 15px}
+.mr-20 {margin-right: 20px}
+.mr-25 {margin-right: 25px}
+.mr-30 {margin-right: 30px}
+.mr-35 {margin-right: 35px}
+.mr-40 {margin-right: 40px}
+.mr-45 {margin-right: 45px}
+.ml-5 {margin-left: 5px}
+.ml-10 {margin-left: 10px}
+.ml-15 {margin-left: 15px}
+.ml-20 {margin-left: 20px}
+.ml-25 {margin-left: 25px}
+.ml-30 {margin-left: 30px}
+.ml-35 {margin-left: 35px}
+.ml-40 {margin-left: 40px}
+.ml-45 {margin-left: 45px}
+.mb-5 {margin-bottom: 5px}
+.mb-10 {margin-bottom: 10px}
+.mb-15 {margin-bottom: 15px}
+.mb-20 {margin-bottom: 20px}
+.mb-25 {margin-bottom: 25px}
+.mb-30 {margin-bottom: 30px}
+.mb-35 {margin-bottom: 35px}
+.mb-40 {margin-bottom: 40px}
+.mb-45 {margin-bottom: 45px}
+@media (min-width: 1600px) {
+    .mt-auto\@xl {margin-top: auto;}
+    .ml-auto\@xl {margin-left: auto;}
+    .mr-auto\@xl {margin-right: auto;}
+    .m-auto\@xl {margin: auto;}
+    .mh-auto\@xl {margin: 0 auto;}
+    .mv-auto\@xl {margin: auto 0;}
+    .m-5\@xl {margin: 5px}
+    .m-10\@xl {margin: 10px}
+    .m-15\@xl {margin: 15px}
+    .m-20\@xl {margin: 20px}
+    .m-25\@xl {margin: 25px}
+    .m-30\@xl {margin: 30px}
+    .m-35\@xl {margin: 35px}
+    .m-40\@xl {margin: 40px}
+    .m-45\@xl {margin: 45px}
+    .mt-5\@xl {margin-top: 5px}
+    .mt-10\@xl {margin-top: 10px}
+    .mt-15\@xl {margin-top: 15px}
+    .mt-20\@xl {margin-top: 20px}
+    .mt-25\@xl {margin-top: 25px}
+    .mt-30\@xl {margin-top: 30px}
+    .mt-35\@xl {margin-top: 35px}
+    .mt-40\@xl {margin-top: 40px}
+    .mt-45\@xl {margin-top: 45px}
+    .mr-5\@xl {margin-right: 5px}
+    .mr-10\@xl {margin-right: 10px}
+    .mr-15\@xl {margin-right: 15px}
+    .mr-20\@xl {margin-right: 20px}
+    .mr-25\@xl {margin-right: 25px}
+    .mr-30\@xl {margin-right: 30px}
+    .mr-35\@xl {margin-right: 35px}
+    .mr-40\@xl {margin-right: 40px}
+    .mr-45\@xl {margin-right: 45px}
+    .ml-5\@xl {margin-left: 5px}
+    .ml-10\@xl {margin-left: 10px}
+    .ml-15\@xl {margin-left: 15px}
+    .ml-20\@xl {margin-left: 20px}
+    .ml-25\@xl {margin-left: 25px}
+    .ml-30\@xl {margin-left: 30px}
+    .ml-35\@xl {margin-left: 35px}
+    .ml-40\@xl {margin-left: 40px}
+    .ml-45\@xl {margin-left: 45px}
+    .mb-5\@xl {margin-bottom: 5px}
+    .mb-10\@xl {margin-bottom: 10px}
+    .mb-15\@xl {margin-bottom: 15px}
+    .mb-20\@xl {margin-bottom: 20px}
+    .mb-25\@xl {margin-bottom: 25px}
+    .mb-30\@xl {margin-bottom: 30px}
+    .mb-35\@xl {margin-bottom: 35px}
+    .mb-40\@xl {margin-bottom: 40px}
+    .mb-45\@xl {margin-bottom: 45px}
+}
+@media (min-width: 1440px) {
+    .mt-auto\@n {margin-top: auto;}
+    .ml-auto\@n {margin-left: auto;}
+    .mr-auto\@n {margin-right: auto;}
+    .m-auto\@n {margin: auto;}
+    .mh-auto\@n {margin: 0 auto;}
+    .mv-auto\@n {margin: auto 0;}
+    .m-5\@n {margin: 5px}
+    .m-10\@n {margin: 10px}
+    .m-15\@n {margin: 15px}
+    .m-20\@n {margin: 20px}
+    .m-25\@n {margin: 25px}
+    .m-30\@n {margin: 30px}
+    .m-35\@n {margin: 35px}
+    .m-40\@n {margin: 40px}
+    .m-45\@n {margin: 45px}
+    .mt-5\@n {margin-top: 5px}
+    .mt-10\@n {margin-top: 10px}
+    .mt-15\@n {margin-top: 15px}
+    .mt-20\@n {margin-top: 20px}
+    .mt-25\@n {margin-top: 25px}
+    .mt-30\@n {margin-top: 30px}
+    .mt-35\@n {margin-top: 35px}
+    .mt-40\@n {margin-top: 40px}
+    .mt-45\@n {margin-top: 45px}
+    .mr-5\@n {margin-right: 5px}
+    .mr-10\@n {margin-right: 10px}
+    .mr-15\@n {margin-right: 15px}
+    .mr-20\@n {margin-right: 20px}
+    .mr-25\@n {margin-right: 25px}
+    .mr-30\@n {margin-right: 30px}
+    .mr-35\@n {margin-right: 35px}
+    .mr-40\@n {margin-right: 40px}
+    .mr-45\@n {margin-right: 45px}
+    .ml-5\@n {margin-left: 5px}
+    .ml-10\@n {margin-left: 10px}
+    .ml-15\@n {margin-left: 15px}
+    .ml-20\@n {margin-left: 20px}
+    .ml-25\@n {margin-left: 25px}
+    .ml-30\@n {margin-left: 30px}
+    .ml-35\@n {margin-left: 35px}
+    .ml-40\@n {margin-left: 40px}
+    .ml-45\@n {margin-left: 45px}
+    .mb-5\@n {margin-bottom: 5px}
+    .mb-10\@n {margin-bottom: 10px}
+    .mb-15\@n {margin-bottom: 15px}
+    .mb-20\@n {margin-bottom: 20px}
+    .mb-25\@n {margin-bottom: 25px}
+    .mb-30\@n {margin-bottom: 30px}
+    .mb-35\@n {margin-bottom: 35px}
+    .mb-40\@n {margin-bottom: 40px}
+    .mb-45\@n {margin-bottom: 45px}
+}
+@media (min-width: 1200px) {
+    .mt-auto\@l {margin-top: auto;}
+    .ml-auto\@l {margin-left: auto;}
+    .mr-auto\@l {margin-right: auto;}
+    .m-auto\@l {margin: auto;}
+    .mh-auto\@l {margin: 0 auto;}
+    .mv-auto\@l {margin: auto 0;}
+    .m-5\@l {margin: 5px}
+    .m-10\@l {margin: 10px}
+    .m-15\@l {margin: 15px}
+    .m-20\@l {margin: 20px}
+    .m-25\@l {margin: 25px}
+    .m-30\@l {margin: 30px}
+    .m-35\@l {margin: 35px}
+    .m-40\@l {margin: 40px}
+    .m-45\@l {margin: 45px}
+    .mt-5\@l {margin-top: 5px}
+    .mt-10\@l {margin-top: 10px}
+    .mt-15\@l {margin-top: 15px}
+    .mt-20\@l {margin-top: 20px}
+    .mt-25\@l {margin-top: 25px}
+    .mt-30\@l {margin-top: 30px}
+    .mt-35\@l {margin-top: 35px}
+    .mt-40\@l {margin-top: 40px}
+    .mt-45\@l {margin-top: 45px}
+    .mr-5\@l {margin-right: 5px}
+    .mr-10\@l {margin-right: 10px}
+    .mr-15\@l {margin-right: 15px}
+    .mr-20\@l {margin-right: 20px}
+    .mr-25\@l {margin-right: 25px}
+    .mr-30\@l {margin-right: 30px}
+    .mr-35\@l {margin-right: 35px}
+    .mr-40\@l {margin-right: 40px}
+    .mr-45\@l {margin-right: 45px}
+    .ml-5\@l {margin-left: 5px}
+    .ml-10\@l {margin-left: 10px}
+    .ml-15\@l {margin-left: 15px}
+    .ml-20\@l {margin-left: 20px}
+    .ml-25\@l {margin-left: 25px}
+    .ml-30\@l {margin-left: 30px}
+    .ml-35\@l {margin-left: 35px}
+    .ml-40\@l {margin-left: 40px}
+    .ml-45\@l {margin-left: 45px}
+    .mb-5\@l {margin-bottom: 5px}
+    .mb-10\@l {margin-bottom: 10px}
+    .mb-15\@l {margin-bottom: 15px}
+    .mb-20\@l {margin-bottom: 20px}
+    .mb-25\@l {margin-bottom: 25px}
+    .mb-30\@l {margin-bottom: 30px}
+    .mb-35\@l {margin-bottom: 35px}
+    .mb-40\@l {margin-bottom: 40px}
+    .mb-45\@l {margin-bottom: 45px}
+}
+@media (min-width: 960px) {
+    .mt-auto\@m {margin-top: auto;}
+    .ml-auto\@m {margin-left: auto;}
+    .mr-auto\@m {margin-right: auto;}
+    .m-auto\@m {margin: auto;}
+    .mh-auto\@m {margin: 0 auto;}
+    .mv-auto\@m {margin: auto 0;}
+    .m-5\@m {margin: 5px}
+    .m-10\@m {margin: 10px}
+    .m-15\@m {margin: 15px}
+    .m-20\@m {margin: 20px}
+    .m-25\@m {margin: 25px}
+    .m-30\@m {margin: 30px}
+    .m-35\@m {margin: 35px}
+    .m-40\@m {margin: 40px}
+    .m-45\@m {margin: 45px}
+    .mt-5\@m {margin-top: 5px}
+    .mt-10\@m {margin-top: 10px}
+    .mt-15\@m {margin-top: 15px}
+    .mt-20\@m {margin-top: 20px}
+    .mt-25\@m {margin-top: 25px}
+    .mt-30\@m {margin-top: 30px}
+    .mt-35\@m {margin-top: 35px}
+    .mt-40\@m {margin-top: 40px}
+    .mt-45\@m {margin-top: 45px}
+    .mr-5\@m {margin-right: 5px}
+    .mr-10\@m {margin-right: 10px}
+    .mr-15\@m {margin-right: 15px}
+    .mr-20\@m {margin-right: 20px}
+    .mr-25\@m {margin-right: 25px}
+    .mr-30\@m {margin-right: 30px}
+    .mr-35\@m {margin-right: 35px}
+    .mr-40\@m {margin-right: 40px}
+    .mr-45\@m {margin-right: 45px}
+    .ml-5\@m {margin-left: 5px}
+    .ml-10\@m {margin-left: 10px}
+    .ml-15\@m {margin-left: 15px}
+    .ml-20\@m {margin-left: 20px}
+    .ml-25\@m {margin-left: 25px}
+    .ml-30\@m {margin-left: 30px}
+    .ml-35\@m {margin-left: 35px}
+    .ml-40\@m {margin-left: 40px}
+    .ml-45\@m {margin-left: 45px}
+    .mb-5\@m {margin-bottom: 5px}
+    .mb-10\@m {margin-bottom: 10px}
+    .mb-15\@m {margin-bottom: 15px}
+    .mb-20\@m {margin-bottom: 20px}
+    .mb-25\@m {margin-bottom: 25px}
+    .mb-30\@m {margin-bottom: 30px}
+    .mb-35\@m {margin-bottom: 35px}
+    .mb-40\@m {margin-bottom: 40px}
+    .mb-45\@m {margin-bottom: 45px}
+}
+@media (min-width: 640px) {
+    .mt-auto\@s {margin-top: auto;}
+    .ml-auto\@s {margin-left: auto;}
+    .mr-auto\@s {margin-right: auto;}
+    .m-auto\@s {margin: auto;}
+    .mh-auto\@s {margin: 0 auto;}
+    .mv-auto\@s {margin: auto 0;}
+    .m-5\@s {margin: 5px}
+    .m-10\@s {margin: 10px}
+    .m-15\@s {margin: 15px}
+    .m-20\@s {margin: 20px}
+    .m-25\@s {margin: 25px}
+    .m-30\@s {margin: 30px}
+    .m-35\@s {margin: 35px}
+    .m-40\@s {margin: 40px}
+    .m-45\@s {margin: 45px}
+    .mt-5\@s {margin-top: 5px}
+    .mt-10\@s {margin-top: 10px}
+    .mt-15\@s {margin-top: 15px}
+    .mt-20\@s {margin-top: 20px}
+    .mt-25\@s {margin-top: 25px}
+    .mt-30\@s {margin-top: 30px}
+    .mt-35\@s {margin-top: 35px}
+    .mt-40\@s {margin-top: 40px}
+    .mt-45\@s {margin-top: 45px}
+    .mr-5\@s {margin-right: 5px}
+    .mr-10\@s {margin-right: 10px}
+    .mr-15\@s {margin-right: 15px}
+    .mr-20\@s {margin-right: 20px}
+    .mr-25\@s {margin-right: 25px}
+    .mr-30\@s {margin-right: 30px}
+    .mr-35\@s {margin-right: 35px}
+    .mr-40\@s {margin-right: 40px}
+    .mr-45\@s {margin-right: 45px}
+    .ml-5\@s {margin-left: 5px}
+    .ml-10\@s {margin-left: 10px}
+    .ml-15\@s {margin-left: 15px}
+    .ml-20\@s {margin-left: 20px}
+    .ml-25\@s {margin-left: 25px}
+    .ml-30\@s {margin-left: 30px}
+    .ml-35\@s {margin-left: 35px}
+    .ml-40\@s {margin-left: 40px}
+    .ml-45\@s {margin-left: 45px}
+    .mb-5\@s {margin-bottom: 5px}
+    .mb-10\@s {margin-bottom: 10px}
+    .mb-15\@s {margin-bottom: 15px}
+    .mb-20\@s {margin-bottom: 20px}
+    .mb-25\@s {margin-bottom: 25px}
+    .mb-30\@s {margin-bottom: 30px}
+    .mb-35\@s {margin-bottom: 35px}
+    .mb-40\@s {margin-bottom: 40px}
+    .mb-45\@s {margin-bottom: 45px}
+}
+
+
+[class^="width"] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+[class*=child-width] > * {
+    box-sizing: border-box;
+}
+.child-width-max > * {width: max-content; min-width: 1px;}
+.child-width-expand > * {min-width: 1px;flex: 1;}
+.child-width-1-1 > * {width: 100%;}
+.child-width-1-12 > * {width: 8.333%;}
+.child-width-2-12 > * {width: 16.666%;}
+.child-width-3-12 > * {width: 25%;}
+.child-width-4-12 > * {width: 33.333%;}
+.child-width-5-12 > * {width: 41.666%;}
+.child-width-6-12 > * {width: 50%;}
+.child-width-7-12 > * {width: 58.333%;}
+.child-width-8-12 > * {width: 66.666%;}
+.child-width-9-12 > * {width: 75%;}
+.child-width-10-12 > * {width: 83.333%;}
+.child-width-11-12 > * {width: 91.666%;}
+
+@media (min-width: 640px) {
+    .child-width-max\@s > * {width: max-content; min-width: 1px;}
+    .child-width-expand\@s > * {min-width: 1px;flex: 1;}
+    .child-width-1-1\@s > * {width: 100%;}
+    .child-width-1-12\@s > * {width: 8.333%;}
+    .child-width-2-12\@s > * {width: 16.666%;}
+    .child-width-3-12\@s > * {width: 25%;}
+    .child-width-4-12\@s > * {width: 33.333%;}
+    .child-width-5-12\@s > * {width: 41.666%;}
+    .child-width-6-12\@s > * {width: 50%;}
+    .child-width-7-12\@s > * {width: 58.333%;}
+    .child-width-8-12\@s > * {width: 66.666%;}
+    .child-width-9-12\@s > * {width: 75%;}
+    .child-width-10-12\@s > * {width: 83.333%;}
+    .child-width-11-12\@s > * {width: 91.666%;}
+}
+@media (min-width: 960px) {
+    .child-width-max\@m > * {width: max-content; min-width: 1px;}
+    .child-width-expand\@m > * {min-width: 1px;flex: 1;}
+    .child-width-1-1\@m > * {width: 100%;}
+    .child-width-1-12\@m > * {width: 8.333%;}
+    .child-width-2-12\@m > * {width: 16.666%;}
+    .child-width-3-12\@m > * {width: 25%;}
+    .child-width-4-12\@m > * {width: 33.333%;}
+    .child-width-5-12\@m > * {width: 41.666%;}
+    .child-width-6-12\@m > * {width: 50%;}
+    .child-width-7-12\@m > * {width: 58.333%;}
+    .child-width-8-12\@m > * {width: 66.666%;}
+    .child-width-9-12\@m > * {width: 75%;}
+    .child-width-10-12\@m > * {width: 83.333%;}
+    .child-width-11-12\@m > * {width: 91.666%;}
+}
+@media (min-width: 1200px) {
+    .child-width-max\@l > * {width: max-content; min-width: 1px;}
+    .child-width-expand\@l > * {min-width: 1px;flex: 1;}
+    .child-width-1-1\@l > * {width: 100%;}
+    .child-width-1-12\@l > * {width: 8.333%;}
+    .child-width-2-12\@l > * {width: 16.666%;}
+    .child-width-3-12\@l > * {width: 25%;}
+    .child-width-4-12\@l > * {width: 33.333%;}
+    .child-width-5-12\@l > * {width: 41.666%;}
+    .child-width-6-12\@l > * {width: 50%;}
+    .child-width-7-12\@l > * {width: 58.333%;}
+    .child-width-8-12\@l > * {width: 66.666%;}
+    .child-width-9-12\@l > * {width: 75%;}
+    .child-width-10-12\@l > * {width: 83.333%;}
+    .child-width-11-12\@l > * {width: 91.666%;}
+}
+@media (min-width: 1440px) {
+    .child-width-max\@n > * {width: max-content; min-width: 1px;}
+    .child-width-expand\@n > * {min-width: 1px;flex: 1;}
+    .child-width-1-1\@n > * {width: 100%;}
+    .child-width-1-12\@n > * {width: 8.333%;}
+    .child-width-2-12\@n > * {width: 16.666%;}
+    .child-width-3-12\@n > * {width: 25%;}
+    .child-width-4-12\@n > * {width: 33.333%;}
+    .child-width-5-12\@n > * {width: 41.666%;}
+    .child-width-6-12\@n > * {width: 50%;}
+    .child-width-7-12\@n > * {width: 58.333%;}
+    .child-width-8-12\@n > * {width: 66.666%;}
+    .child-width-9-12\@n > * {width: 75%;}
+    .child-width-10-12\@n > * {width: 83.333%;}
+    .child-width-11-12\@n > * {width: 91.666%;}
+}
+@media (min-width: 1600px) {
+    .child-width-max\@xl > * {width: max-content; min-width: 1px;}
+    .child-width-expand\@xl > * {min-width: 1px;flex: 1;}
+    .child-width-1-1\@xl > * {width: 100%;}
+    .child-width-1-12\@xl > * {width: 8.333%;}
+    .child-width-2-12\@xl > * {width: 16.666%;}
+    .child-width-3-12\@xl > * {width: 25%;}
+    .child-width-4-12\@xl > * {width: 33.333%;}
+    .child-width-5-12\@xl > * {width: 41.666%;}
+    .child-width-6-12\@xl > * {width: 50%;}
+    .child-width-7-12\@xl > * {width: 58.333%;}
+    .child-width-8-12\@xl > * {width: 66.666%;}
+    .child-width-9-12\@xl > * {width: 75%;}
+    .child-width-10-12\@xl > * {width: 83.333%;}
+    .child-width-11-12\@xl > * {width: 91.666%;}
+}
+
+
+
+.width-max {width: max-content; min-width: 1px;}
+.width-expand {min-width: 1px;flex: 1;}
+.width-1-5 {width: 20%;}
+.width-2-5 {width: 40%;}
+.width-3-5 {width: 60%;}
+.width-4-5 {width: 80%;}
+
+.width-1-6 {width: calc(100% / 6.001*1)}
+.width-2-6 {width: calc(100% / 6.001*2)}
+.width-3-6 {width: calc(100% / 6.001*3)}
+.width-4-6 {width: calc(100% / 6.001*4)}
+.width-5-6 {width: calc(100% / 6.001*5)}
+
+
+.width-1-8{width: calc(100% / 8.001)}
+.width-2-8{width: calc(100% / 8.001*2)}
+.width-3-8{width: calc(100% / 8.001*3)}
+.width-4-8{width: calc(100% / 8.001*4)}
+.width-5-8{width: calc(100% / 8.001*5)}
+.width-6-8{width: calc(100% / 8.001*6)}
+.width-7-8{width: calc(100% / 8.001*7)}
+
+.width-1-9{width: calc(100% / 9.001)}
+.width-2-9{width: calc(100% / 9.001*2)}
+.width-3-9{width: calc(100% / 9.001*3)}
+.width-4-9{width: calc(100% / 9.001*4)}
+.width-5-9{width: calc(100% / 9.001*5)}
+.width-6-9{width: calc(100% / 9.001*6)}
+.width-7-9{width: calc(100% / 9.001*7)}
+.width-8-9{width: calc(100% / 9.001*8)}
+
+
+.width-1-10{width: calc(100% / 10.001)}
+.width-2-10{width: calc(100% / 10.001 * 2)}
+.width-3-10{width: calc(100% / 10.001 * 3)}
+.width-4-10{width: calc(100% / 10.001 * 4)}
+.width-5-10{width: calc(100% / 10.001 * 5)}
+.width-6-10{width: calc(100% / 10.001 * 6)}
+.width-7-10{width: calc(100% / 10.001 * 7)}
+.width-8-10{width: calc(100% / 10.001 * 8)}
+.width-9-10{width: calc(100% / 10.001 * 9)}
+
+
+.width-1-11{width: calc(100% / 11.001)}
+.width-2-11{width: calc(100% / 11.001 * 2)}
+.width-3-11{width: calc(100% / 11.001 * 3)}
+.width-4-11{width: calc(100% / 11.001 * 4)}
+.width-5-11{width: calc(100% / 11.001 * 5)}
+.width-6-11{width: calc(100% / 11.001 * 6)}
+.width-7-11{width: calc(100% / 11.001 * 7)}
+.width-8-11{width: calc(100% / 11.001 * 8)}
+.width-10-11{width: calc(100% / 11.001 * 9)}
+
+
+
+.width-1-1 {width: 100%;}
+.width-1-12 {width: 8.333%;}
+.width-2-12 {width: 16.666%;}
+.width-3-12 {width: 25%;}
+.width-4-12 {width: 33.333%;}
+.width-5-12 {width: 41.666%;}
+.width-6-12 {width: 50%;}
+.width-7-12 {width: 58.333%;}
+.width-8-12 {width: 66.666%;}
+.width-9-12 {width: 75%;}
+.width-10-12 {width: 83.333%;}
+.width-11-12 {width: 91.666%;}
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-5\@xl {width: 20%;}
+    .width-2-5\@xl {width: 40%;}
+    .width-3-5\@xl {width: 60%;}
+    .width-4-5\@xl {width: 80%;}
+}
+
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-5\@n {width: 20%;}
+    .width-2-5\@n {width: 40%;}
+    .width-3-5\@n {width: 60%;}
+    .width-4-5\@n {width: 80%;}
+
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-5\@l {width: 20%;}
+    .width-2-5\@l {width: 40%;}
+    .width-3-5\@l {width: 60%;}
+    .width-4-5\@l {width: 80%;}
+
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-5\@m {width: 20%;}
+    .width-2-5\@m {width: 40%;}
+    .width-3-5\@m {width: 60%;}
+    .width-4-5\@m {width: 80%;}
+
+}
+
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-5\@s {width: 20%;}
+    .width-2-5\@s {width: 40%;}
+    .width-3-5\@s {width: 60%;}
+    .width-4-5\@s {width: 80%;}
+
+}
+
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-6\@xl {width: calc(100% / 6.001*1)}
+    .width-2-6\@xl {width: calc(100% / 6.001*2)}
+    .width-3-6\@xl {width: calc(100% / 6.001*3)}
+    .width-4-6\@xl {width: calc(100% / 6.001*4)}
+    .width-5-6\@xl {width: calc(100% / 6.001*5)}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-6\@n {width: calc(100% / 6.001*1)}
+    .width-2-6\@n {width: calc(100% / 6.001*2)}
+    .width-3-6\@n {width: calc(100% / 6.001*3)}
+    .width-4-6\@n {width: calc(100% / 6.001*4)}
+    .width-5-6\@n {width: calc(100% / 6.001*5)}
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-6\@l {width: calc(100% / 6.001*1)}
+    .width-2-6\@l {width: calc(100% / 6.001*2)}
+    .width-3-6\@l {width: calc(100% / 6.001*3)}
+    .width-4-6\@l {width: calc(100% / 6.001*4)}
+    .width-5-6\@l {width: calc(100% / 6.001*5)}
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-6\@m {width: calc(100% / 6.001*1)}
+    .width-2-6\@m {width: calc(100% / 6.001*2)}
+    .width-3-6\@m {width: calc(100% / 6.001*3)}
+    .width-4-6\@m {width: calc(100% / 6.001*4)}
+    .width-5-6\@m {width: calc(100% / 6.001*5)}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-6\@s {width: calc(100% / 6.001*1)}
+    .width-2-6\@s {width: calc(100% / 6.001*2)}
+    .width-3-6\@s {width: calc(100% / 6.001*3)}
+    .width-4-6\@s {width: calc(100% / 6.001*4)}
+    .width-5-6\@s {width: calc(100% / 6.001*5)}
+}
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-8\@xl {width: calc(100% / 8.001)}
+    .width-2-8\@xl {width: calc(100% / 8.001*2)}
+    .width-3-8\@xl {width: calc(100% / 8.001*3)}
+    .width-4-8\@xl {width: calc(100% / 8.001*4)}
+    .width-5-8\@xl {width: calc(100% / 8.001*5)}
+    .width-6-8\@xl {width: calc(100% / 8.001*6)}
+    .width-7-8\@xl {width: calc(100% / 8.001*7)}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-8\@n {width: calc(100% / 8.001)}
+    .width-2-8\@n {width: calc(100% / 8.001*2)}
+    .width-3-8\@n {width: calc(100% / 8.001*3)}
+    .width-4-8\@n {width: calc(100% / 8.001*4)}
+    .width-5-8\@n {width: calc(100% / 8.001*5)}
+    .width-6-8\@n {width: calc(100% / 8.001*6)}
+    .width-7-8\@n {width: calc(100% / 8.001*7)}
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-8\@l {width: calc(100% / 8.001)}
+    .width-2-8\@l {width: calc(100% / 8.001*2)}
+    .width-3-8\@l {width: calc(100% / 8.001*3)}
+    .width-4-8\@l {width: calc(100% / 8.001*4)}
+    .width-5-8\@l {width: calc(100% / 8.001*5)}
+    .width-6-8\@l {width: calc(100% / 8.001*6)}
+    .width-7-8\@l {width: calc(100% / 8.001*7)}
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-8\@m {width: calc(100% / 8.001)}
+    .width-2-8\@m {width: calc(100% / 8.001*2)}
+    .width-3-8\@m {width: calc(100% / 8.001*3)}
+    .width-4-8\@m {width: calc(100% / 8.001*4)}
+    .width-5-8\@m {width: calc(100% / 8.001*5)}
+    .width-6-8\@m {width: calc(100% / 8.001*6)}
+    .width-7-8\@m {width: calc(100% / 8.001*7)}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-8\@s {width: calc(100% / 8.001)}
+    .width-2-8\@s {width: calc(100% / 8.001*2)}
+    .width-3-8\@s {width: calc(100% / 8.001*3)}
+    .width-4-8\@s {width: calc(100% / 8.001*4)}
+    .width-5-8\@s {width: calc(100% / 8.001*5)}
+    .width-6-8\@s {width: calc(100% / 8.001*6)}
+    .width-7-8\@s {width: calc(100% / 8.001*7)}
+}
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-9\@xl {width: calc(100% / 9.001)}
+    .width-2-9\@xl {width: calc(100% / 9.001*2)}
+    .width-3-9\@xl {width: calc(100% / 9.001*3)}
+    .width-4-9\@xl {width: calc(100% / 9.001*4)}
+    .width-5-9\@xl {width: calc(100% / 9.001*5)}
+    .width-6-9\@xl {width: calc(100% / 9.001*6)}
+    .width-7-9\@xl {width: calc(100% / 9.001*7)}
+    .width-8-9\@xl {width: calc(100% / 9.001*8)}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-9\@n {width: calc(100% / 9.001)}
+    .width-2-9\@n {width: calc(100% / 9.001*2)}
+    .width-3-9\@n {width: calc(100% / 9.001*3)}
+    .width-4-9\@n {width: calc(100% / 9.001*4)}
+    .width-5-9\@n {width: calc(100% / 9.001*5)}
+    .width-6-9\@n {width: calc(100% / 9.001*6)}
+    .width-7-9\@n {width: calc(100% / 9.001*7)}
+    .width-8-9\@n {width: calc(100% / 9.001*8)}
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-9\@l {width: calc(100% / 9.001)}
+    .width-2-9\@l {width: calc(100% / 9.001*2)}
+    .width-3-9\@l {width: calc(100% / 9.001*3)}
+    .width-4-9\@l {width: calc(100% / 9.001*4)}
+    .width-5-9\@l {width: calc(100% / 9.001*5)}
+    .width-6-9\@l {width: calc(100% / 9.001*6)}
+    .width-7-9\@l {width: calc(100% / 9.001*7)}
+    .width-8-9\@l {width: calc(100% / 9.001*8)}
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-9\@m {width: calc(100% / 9.001)}
+    .width-2-9\@m {width: calc(100% / 9.001*2)}
+    .width-3-9\@m {width: calc(100% / 9.001*3)}
+    .width-4-9\@m {width: calc(100% / 9.001*4)}
+    .width-5-9\@m {width: calc(100% / 9.001*5)}
+    .width-6-9\@m {width: calc(100% / 9.001*6)}
+    .width-7-9\@m {width: calc(100% / 9.001*7)}
+    .width-8-9\@m {width: calc(100% / 9.001*8)}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-9\@s {width: calc(100% / 9.001)}
+    .width-2-9\@s {width: calc(100% / 9.001*2)}
+    .width-3-9\@s {width: calc(100% / 9.001*3)}
+    .width-4-9\@s {width: calc(100% / 9.001*4)}
+    .width-5-9\@s {width: calc(100% / 9.001*5)}
+    .width-6-9\@s {width: calc(100% / 9.001*6)}
+    .width-7-9\@s {width: calc(100% / 9.001*7)}
+    .width-8-9\@s {width: calc(100% / 9.001*8)}
+}
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-11\@xl{width: calc(100% / 11.001)}
+    .width-2-11\@xl{width: calc(100% / 11.001 * 2)}
+    .width-3-11\@xl{width: calc(100% / 11.001 * 3)}
+    .width-4-11\@xl{width: calc(100% / 11.001 * 4)}
+    .width-5-11\@xl{width: calc(100% / 11.001 * 5)}
+    .width-6-11\@xl{width: calc(100% / 11.001 * 6)}
+    .width-7-11\@xl{width: calc(100% / 11.001 * 7)}
+    .width-8-11\@xl{width: calc(100% / 11.001 * 8)}
+    .width-10-11\@xl{width: calc(100% / 11.001 * 9)}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-11\@n{width: calc(100% / 11.001)}
+    .width-2-11\@n{width: calc(100% / 11.001 * 2)}
+    .width-3-11\@n{width: calc(100% / 11.001 * 3)}
+    .width-4-11\@n{width: calc(100% / 11.001 * 4)}
+    .width-5-11\@n{width: calc(100% / 11.001 * 5)}
+    .width-6-11\@n{width: calc(100% / 11.001 * 6)}
+    .width-7-11\@n{width: calc(100% / 11.001 * 7)}
+    .width-8-11\@n{width: calc(100% / 11.001 * 8)}
+    .width-10-11\@n{width: calc(100% / 11.001 * 9)}
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-11\@l{width: calc(100% / 11.001)}
+    .width-2-11\@l{width: calc(100% / 11.001 * 2)}
+    .width-3-11\@l{width: calc(100% / 11.001 * 3)}
+    .width-4-11\@l{width: calc(100% / 11.001 * 4)}
+    .width-5-11\@l{width: calc(100% / 11.001 * 5)}
+    .width-6-11\@l{width: calc(100% / 11.001 * 6)}
+    .width-7-11\@l{width: calc(100% / 11.001 * 7)}
+    .width-8-11\@l{width: calc(100% / 11.001 * 8)}
+    .width-10-11\@l{width: calc(100% / 11.001 * 9)}
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-11\@m{width: calc(100% / 11.001)}
+    .width-2-11\@m{width: calc(100% / 11.001 * 2)}
+    .width-3-11\@m{width: calc(100% / 11.001 * 3)}
+    .width-4-11\@m{width: calc(100% / 11.001 * 4)}
+    .width-5-11\@m{width: calc(100% / 11.001 * 5)}
+    .width-6-11\@m{width: calc(100% / 11.001 * 6)}
+    .width-7-11\@m{width: calc(100% / 11.001 * 7)}
+    .width-8-11\@m{width: calc(100% / 11.001 * 8)}
+    .width-10-11\@m{width: calc(100% / 11.001 * 9)}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-11\@s{width: calc(100% / 11.001)}
+    .width-2-11\@s{width: calc(100% / 11.001 * 2)}
+    .width-3-11\@s{width: calc(100% / 11.001 * 3)}
+    .width-4-11\@s{width: calc(100% / 11.001 * 4)}
+    .width-5-11\@s{width: calc(100% / 11.001 * 5)}
+    .width-6-11\@s{width: calc(100% / 11.001 * 6)}
+    .width-7-11\@s{width: calc(100% / 11.001 * 7)}
+    .width-8-11\@s{width: calc(100% / 11.001 * 8)}
+    .width-10-11\@s{width: calc(100% / 11.001 * 9)}
+}
+
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-10\@xl {width: calc(100% / 10.001)}
+    .width-2-10\@xl {width: calc(100% / 10.001 * 2)}
+    .width-3-10\@xl {width: calc(100% / 10.001 * 3)}
+    .width-4-10\@xl {width: calc(100% / 10.001 * 4)}
+    .width-5-10\@xl {width: calc(100% / 10.001 * 5)}
+    .width-6-10\@xl {width: calc(100% / 10.001 * 6)}
+    .width-7-10\@xl {width: calc(100% / 10.001 * 7)}
+    .width-8-10\@xl {width: calc(100% / 10.001 * 8)}
+    .width-9-10\@xl {width: calc(100% / 10.001 * 9)}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-10\@n {width: calc(100% / 10.001)}
+    .width-2-10\@n {width: calc(100% / 10.001 * 2)}
+    .width-3-10\@n {width: calc(100% / 10.001 * 3)}
+    .width-4-10\@n {width: calc(100% / 10.001 * 4)}
+    .width-5-10\@n {width: calc(100% / 10.001 * 5)}
+    .width-6-10\@n {width: calc(100% / 10.001 * 6)}
+    .width-7-10\@n {width: calc(100% / 10.001 * 7)}
+    .width-8-10\@n {width: calc(100% / 10.001 * 8)}
+    .width-9-10\@n {width: calc(100% / 10.001 * 9)}
+}
+
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-1-10\@l{width: calc(100% / 10.001)}
+    .width-2-10\@l{width: calc(100% / 10.001 * 2)}
+    .width-3-10\@l{width: calc(100% / 10.001 * 3)}
+    .width-4-10\@l{width: calc(100% / 10.001 * 4)}
+    .width-5-10\@l{width: calc(100% / 10.001 * 5)}
+    .width-6-10\@l{width: calc(100% / 10.001 * 6)}
+    .width-7-10\@l{width: calc(100% / 10.001 * 7)}
+    .width-8-10\@l{width: calc(100% / 10.001 * 8)}
+    .width-9-10\@l{width: calc(100% / 10.001 * 9)}
+}
+
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-10\@m{width: calc(100% / 10.001)}
+    .width-2-10\@m{width: calc(100% / 10.001 * 2)}
+    .width-3-10\@m{width: calc(100% / 10.001 * 3)}
+    .width-4-10\@m{width: calc(100% / 10.001 * 4)}
+    .width-5-10\@m{width: calc(100% / 10.001 * 5)}
+    .width-6-10\@m{width: calc(100% / 10.001 * 6)}
+    .width-7-10\@m{width: calc(100% / 10.001 * 7)}
+    .width-8-10\@m{width: calc(100% / 10.001 * 8)}
+    .width-9-10\@m{width: calc(100% / 10.001 * 9)}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-10\@s{width: calc(100% / 10.001)}
+    .width-2-10\@s{width: calc(100% / 10.001 * 2)}
+    .width-3-10\@s{width: calc(100% / 10.001 * 3)}
+    .width-4-10\@s{width: calc(100% / 10.001 * 4)}
+    .width-5-10\@s{width: calc(100% / 10.001 * 5)}
+    .width-6-10\@s{width: calc(100% / 10.001 * 6)}
+    .width-7-10\@s{width: calc(100% / 10.001 * 7)}
+    .width-8-10\@s{width: calc(100% / 10.001 * 8)}
+    .width-9-10\@s{width: calc(100% / 10.001 * 9)}
+}
+
+
+@media (min-width: 1600px){
+    .width-max\@xl {width: max-content; min-width: 1px;}
+    .width-expand\@xl {min-width: 1px;flex: 1;}
+    .width-1-1\@xl {width: 100%;}
+    .width-1-12\@xl {width: 8.333%;}
+    .width-2-12\@xl {width: 16.666%;}
+    .width-3-12\@xl {width: 25%;}
+    .width-4-12\@xl {width: 33.333%;}
+    .width-5-12\@xl {width: 41.666%;}
+    .width-6-12\@xl {width: 50%;}
+    .width-7-12\@xl {width: 58.333%;}
+    .width-8-12\@xl {width: 66.666%;}
+    .width-9-12\@xl {width: 75%;}
+    .width-10-12\@xl {width: 83.333%;}
+    .width-11-12\@xl {width: 91.666%;}
+}
+@media (min-width: 1440px){
+    .width-max\@n {width: max-content; min-width: 1px;}
+    .width-expand\@n {min-width: 1px;flex: 1;}
+    .width-1-1\@n {width: 100%;}
+    .width-1-12\@n {width: 8.333%;}
+    .width-2-12\@n {width: 16.666%;}
+    .width-3-12\@n {width: 25%;}
+    .width-4-12\@n {width: 33.333%;}
+    .width-5-12\@n {width: 41.666%;}
+    .width-6-12\@n {width: 50%;}
+    .width-7-12\@n {width: 58.333%;}
+    .width-8-12\@n {width: 66.666%;}
+    .width-9-12\@n {width: 75%;}
+    .width-10-12\@n {width: 83.333%;}
+    .width-11-12\@n {width: 91.666%;}
+}
+@media (min-width: 1200px){
+    .width-max\@l {width: max-content; min-width: 1px;}
+    .width-expand\@l {min-width: 1px;flex: 1;}
+    .width-1-1\@l {width: 100%;}
+    .width-1-12\@l {width: 8.333%;}
+    .width-2-12\@l {width: 16.666%;}
+    .width-3-12\@l {width: 25%;}
+    .width-4-12\@l {width: 33.333%;}
+    .width-5-12\@l {width: 41.666%;}
+    .width-6-12\@l {width: 50%;}
+    .width-7-12\@l {width: 58.333%;}
+    .width-8-12\@l {width: 66.666%;}
+    .width-9-12\@l {width: 75%;}
+    .width-10-12\@l {width: 83.333%;}
+    .width-11-12\@l {width: 91.666%;}
+}
+@media (min-width: 960px){
+    .width-max\@m {width: max-content; min-width: 1px;}
+    .width-expand\@m {min-width: 1px;flex: 1;}
+    .width-1-1\@m {width: 100%;}
+    .width-1-12\@m {width: 8.333%;}
+    .width-2-12\@m {width: 16.666%;}
+    .width-3-12\@m {width: 25%;}
+    .width-4-12\@m {width: 33.333%;}
+    .width-5-12\@m {width: 41.666%;}
+    .width-6-12\@m {width: 50%;}
+    .width-7-12\@m {width: 58.333%;}
+    .width-8-12\@m {width: 66.666%;}
+    .width-9-12\@m {width: 75%;}
+    .width-10-12\@m {width: 83.333%;}
+    .width-11-12\@m {width: 91.666%;}
+}
+@media (min-width: 640px){
+    .width-max\@s {width: max-content; min-width: 1px;}
+    .width-expand\@s {min-width: 1px;flex: 1;}
+    .width-1-1\@s {width: 100%;}
+    .width-1-12\@s {width: 8.333%;}
+    .width-2-12\@s {width: 16.666%;}
+    .width-3-12\@s {width: 25%;}
+    .width-4-12\@s {width: 33.333%;}
+    .width-5-12\@s {width: 41.666%;}
+    .width-6-12\@s {width: 50%;}
+    .width-7-12\@s {width: 58.333%;}
+    .width-8-12\@s {width: 66.666%;}
+    .width-9-12\@s {width: 75%;}
+    .width-10-12\@s {width: 83.333%;}
+    .width-11-12\@s {width: 91.666%;}
+}
+
+.lineClamp12 {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp11 {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp10 {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp9 {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp8 {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp7 {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp6 {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp5 {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp4 {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp3 {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp2 {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+.lineClamp1 {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+@media (min-width: 1600px){
+    .lineClamp12\@xl {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp11\@xl {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp10\@xl {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp9\@xl {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp8\@xl {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp7\@xl {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp6\@xl {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp5\@xl {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp4\@xl {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp3\@xl {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp2\@xl {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp1\@xl {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+}
+@media (min-width: 1440px){
+    .lineClamp12\@n {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp11\@n {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp10\@n {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp9\@n {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp8\@n {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp7\@n {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp6\@n {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp5\@n {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp4\@n {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp3\@n {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp2\@n {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp1\@n {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+}
+@media (min-width: 1200px){
+    .lineClamp12\@l {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp11\@l {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp10\@l {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp9\@l {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp8\@l {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp7\@l {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp6\@l {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp5\@l {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp4\@l {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp3\@l {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp2\@l {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp1\@l {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+}
+@media (min-width: 960px){
+    .lineClamp12\@m {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp11\@m {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp10\@m {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp9\@m {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp8\@m {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp7\@m {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp6\@m {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp5\@m {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp4\@m {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp3\@m {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp2\@m {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp1\@m {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+}
+@media (min-width: 640px){
+    .lineClamp12\@m {display: -webkit-box !important;-webkit-line-clamp: 12;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp11\@m {display: -webkit-box !important;-webkit-line-clamp: 11;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp10\@m {display: -webkit-box !important;-webkit-line-clamp: 10;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp9\@m {display: -webkit-box !important;-webkit-line-clamp: 9;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp8\@m {display: -webkit-box !important;-webkit-line-clamp: 8;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp7\@m {display: -webkit-box !important;-webkit-line-clamp: 7;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp6\@m {display: -webkit-box !important;-webkit-line-clamp: 6;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp5\@m {display: -webkit-box !important;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp4\@m {display: -webkit-box !important;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp3\@m {display: -webkit-box !important;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp2\@m {display: -webkit-box !important;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;}
+    .lineClamp1\@m {display: -webkit-box !important;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+}
+
+
+* {
+    font-family: "Roboto";
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.container-padding__remove {
+    padding: 0;
+}
+
+.transition-fade {
+    transition: opacity 1s, visibility .4s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fadeOut {
+    opacity: 0 !important;
+}
+
+.fadeIn {
+    opacity: 1 !important;
+}
+
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 5px 7px;
+    min-height: 34px;
+    background-color: #f8f8f8;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    transition: border .5s, color .5s, background-color .5s;
+}
+.button svg path {
+    fill: #666;
+}
+.button__small {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 5px 7px;
+    min-height: 34px;
+    background-color: #f8f8f8;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border .5s, color .5s, background-color .5s;
+}
+.button__medium {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+    padding: 5px 15px;
+    min-width: 42px;
+    min-height: 42px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border .5s, color .5s, background-color .5s;
+}
+.button:hover {
+    border: 1px solid #666;
+    color: #333;
+}
+.button svg{
+    /*padding: 1px;*/
+    margin: 0 3px;
+    box-sizing: border-box;
+}
+
+.button-warning {
+    border: 1px solid #CC9A06;
+    color: #5A4914;
+    background-color: #FFC107;
+}
+.button-warning:hover {
+    color: #5A4914;
+    background-color: #cf9b00;
+}
+.button-success svg path{
+    fill: #5A4914;
+}
+.button-success {
+    border: 1px solid #609952;
+    color: #fff;
+    background-color: #78BF67;
+}
+.button-success:hover {
+    border-color: #78BF67;
+    color: #fff;
+    background-color: #578f4a;
+}
+.button-success svg path {
+    fill: #fff;
+}
+.button-danger {
+    border: 1px solid #B02A37;
+    color: #FFFFFF;
+    background-color: #DC3545;
+}
+.button-danger:hover {
+    border-color: #DC3545;
+    color: #FFFFFF;
+    background-color: #b32735;
+}
+.button-danger svg path{
+    fill: #fff;
+}
+.button-dark {
+    border-color: #333;
+    color: #FFFFFF;
+    background-color: #363636;
+}
+.button-dark:hover {
+    color: #FFFFFF;
+}
+.button-dark svg path {
+    fill: #fff
+}
+.button-secondary {
+    border-color: #9e9e9e;
+    color: #FFFFFF;
+    background-color: #9e9e9e;
+}
+.button-secondary svg path {
+    fill: #fff
+}
+.button-secondary:hover {
+    border-color: #6e6e6e;
+    color: #FFFFFF;
+    background-color: #6e6e6e;
+}
+.input__default {
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #363636;
+    width: 100%;
+    max-width: 100%;
+}
+.input__default::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+.textarea__default {
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #363636;
+    width: 100%;
+    max-width: 100%;
+}
+.textarea__default::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+.radio__default {
+
+}
+.checkbox__default {
+
+}

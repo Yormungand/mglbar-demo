@@ -85,7 +85,14 @@
                             <tr>
                                 <th>№</th>
                                 <th style="width: 40%">НЭР</th>
-                                <th style="cursor: pointer">ХУУЛЬ <i class="fas fa-chevron-down"></i></th>
+                                <th class="table-dropdown">
+                                    <button class="dropbtn">ХУУЛЬ <i class="fas fa-chevron-down"></i></button>
+                                    <div class="dropdown-content">
+                                        <a href="javascript:void(0)">Тогтоол</a>
+                                        <a href="javascript:void(0)">Шийдвэр</a>
+                                        <a href="javascript:Void(0)">Акт</a>
+                                    </div>
+                                </th>
                                 <th style="width: 16%">Огноо</th>
                             </tr>
                             </thead>
@@ -214,6 +221,36 @@
         </div>
     </div>
 </body>
+
+<style>
+    .dropdown-content a:hover {
+        background: #d5d5d5;
+    }
+    .dropbtn {
+        font-size: 16px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+    }
+    .table-dropdown:hover .dropdown-content {display: block;}
+
+    .table-dropdown button{
+        font-size: 16px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+</style>
 
 <footer></footer>
 

@@ -366,6 +366,37 @@
             </div>
         </div>
     </div>
+    <div class="pt-40">
+        <div class="container">
+            <div class="width-3-10" style="position: relative; overflow: visible; min-height: 1px">
+                <div style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none">
+                    <ul class="news-category">
+                        <li class="current-cat">
+                            <a href="javascript:void(0)">Эдийн засаг</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                        <li class="cat-item">
+                            <a href="javascript:void(0)">Мэдээ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", e=>{
@@ -374,3 +405,44 @@
 </script>
 </body>
 </html>
+
+<style>
+    .news-category li a:hover {
+        color: #cba242!important;
+    }
+    .news-category .cat-item{
+        padding: 13px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .news-category li a{
+        display: block;
+        color: #222;
+        font-size: 15px;
+    }
+    .news-category>li:first-child a{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .news-category li.current-cat>a{
+        color: #cba242;
+    }
+    .news-category li{
+        border-bottom: 1px solid #e6e6e6;
+        display: flex;
+        align-items: flex-start;
+        line-height: normal;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0px;
+    }
+    .news-category{
+        border-top: 3px solid #cba242;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .news-category{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+</style>

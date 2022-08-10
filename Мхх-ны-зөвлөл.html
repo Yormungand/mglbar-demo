@@ -74,13 +74,54 @@
                     <div href="javascript:void 0" class="static-title mt-30"><span>Зөвлөлийн гишүүд</span></div>
                     <div class="width-1-1">
                         <div class="grid-30 child-width-4-12@l child-width-6-12@m child-width-1-1 mt-0">
-                            <div>
-                                <a class="advocate">
-                                    <div class="img-wrapper">
-                                        <img src="images/hul1.jpg" alt="">
+                            <button class="btn open-modal" id="open-modal">
+                                <div>
+                                    <a class="advocate">
+                                        <div class="img-wrapper">
+                                            <img src="images/hul1.jpg" alt="">
+                                        </div>
+                                        <div class="name">Д. Болдбаатар</div>
+                                    </a>
+                                </div>
+                            </button>
+                            <div id="modal" class="modal">
+                                <div class="modal-container">
+                                    <div class="modal-content">
+                                        <div class="modal-image">
+                                            <img src="images/hul1.jpg">
+                                            <div class="modal-image__title">
+                                                <span>Болбаатар</span>
+                                            </div>
+                                            <div class="modal-image__profile">
+                                                <span>Өмгөөлөгчдийн хороо</span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-text" style="height: 400px; overflow: auto;">
+                                            <p>
+                                                <strong>Төгссөн сургууль:</strong>
+                                                <ul>
+                                                    <li>1996-2000 онд “Орхон” Их сургууль, хуулийн анги /бакалавр/;</li>
+                                                    <li>2000-2002 онд МУИС, Хууль зүйн сургууль /Хууль зүйн магистр/.
+                                                        Мэргэжил, боловсрол: Эрх зүйч, Хуульч;</li>
+                                                </ul>
+                                                <strong>Ажил, хөдөлмөр эрхлэлтийн байдал:</strong>
+                                                <ul>
+                                                    <li>2000-2002 онд ННФ, “Глоб интернэйшнл” ТББ-ын “Хэвлэл мэдээллийн эрх зүйн шинэтгэл” төслийн хуульч;</li>
+                                                    <li>2002-2011 онд ХЗДХЯ-ны харъяа Хууль зүйн Үндэсний хүрээлэн, эрдэм шинжилгээний ажилтан, багш;</li>
+                                                    <li>2002-2012 онд Өмгөөлийн “Эрх зүйн гүүр” хуулийн фирмийн захирал, өмгөөлөгч;</li>
+                                                    <li>2010-2011 онд Хүний Эрхийн Үндэсний комиссын Үндэсний зөвлөх;</li>
+                                                    <li>2012-2016 онд Нийслэлийн Баянгол дүүргийн Засаг дарга;</li>
+                                                    <li>2012-2016 онд Нийслэлийн Иргэдийн төлөөлөгчдийн хурлын төлөөлөгч, Хууль зүй, төрийн байгуулалтын хорооны дарга;</li>
+                                                    <li>2016-2019 онд Нийслэлийн Баянгол дүүргийн ИТХ-ын төлөөлөгч;</li>
+                                                    <li>2017-2018 онд УИХ дахь АН-ын бүлгийн Хуулийн бодлогын зөвлөх;</li>
+                                                    <li>2018-2019 онд УИХ-ын гишүүний зөвлөх.</li>
+                                                    <li>Ажлын дадлага туршлага: Мэргэжлээрээ 19 жил ажиллаж байгаа</li>
+                                                </ul>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="name">Д. Болдбаатар</div>
-                                </a>
+                                    <span id="close-modal" class="close-modal">&times;</span>
+                                </div>
                             </div>
                             <div>
                                 <a class="advocate">
@@ -154,6 +195,13 @@
         </div>
         </div>
     </div>
+    <script>
+        if ($(window).width() < 768) {
+            $('.scroller').removeClass('perfectM');
+        } else {
+            $('.scroller').addClass('perfectM');
+        }
+    </script>
 </body>
     <footer></footer>
     <script>
@@ -180,3 +228,129 @@
     </script>
 </body>
 </html>
+
+<style>
+    .modal-image__profile{
+        color: #55ACEE;
+        font-size: 14px;
+    }
+    .modal-text p ul li{
+        font-size: 14px;
+    }
+    .modal-image__title{
+        margin: 10px 0;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .modal-image{
+        display: block;!important;
+        height: 400px;
+        position: relative;
+        padding: 40px;
+    }
+    .modal-image img{
+        max-width: none;
+        width: 310px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .modal-text{
+        padding: 20px;
+        font-size: 14px;
+        display: block;!important: ;
+        height: 400px;
+        position: relative;
+        padding: 40px;
+    }
+    .open-modal:hover {
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.5);
+        border-color: #fff;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+    .modal.open {
+        display: flex;
+    }
+    .modal-container {
+        background-color: #fff;
+        width: 60%;
+        position: relative;
+    }
+    .modal.open .modal-container {
+        animation: move 0.6s ease-out;
+    }
+    @keyframes move {
+        from {
+            transform: translateY(-50px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+    .modal-content {
+        display: flex;
+        height: 550px;
+        broder: 2px solid rgb(180 148 76);
+    }
+    .modal-content > *:not(img) {
+        padding: 3 4rem;
+    }
+    .modal-content h2 {
+        margin: 1.5rem 0 0.6rem 0;
+    }
+    .modal-content p {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+    .modal-content a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        padding-bottom: 1rem;
+        display: inline-block;
+    }
+    .modal-content a:hover {
+        color: salmon;
+    }
+
+    .close-modal {
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        transition: color 0.15s linear;
+    }
+    .close-modal:hover {
+        color: #f00;
+    }
+</style>
+
+<script>
+    const btnOpenModal = document.getElementById("open-modal");
+    const btnCloseModal = document.getElementById("close-modal");
+    const modalElm = document.getElementById("modal");
+
+    btnOpenModal.addEventListener("click", function () {
+        modalElm.classList.add("open");
+    });
+
+    btnCloseModal.addEventListener("click", function () {
+        modalElm.classList.remove("open");
+    });
+</script>

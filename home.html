@@ -537,9 +537,50 @@
                                             <span class="width-expand book-item-main__sub-title-number">99996666</span>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0)" class="book-item-main__button">
+                                    <a href="javascript:void(0)" class="book-item-main__button" class="btn open-modal" id="open-modal">
                                         <span>Худалдах цэгүүд</span>
                                     </a>
+                                    <div id="modal" class="modal">
+                                        <div class="modal-container">
+                                            <div class="modal-content">
+                                                <div class="modal-image">
+                                                    <img src="images/book.jpg">
+                                                </div>
+                                                <div class="modal-text" style="height: 400px; overflow: auto;">
+                                                    <div class="book-item-main-text__title">
+                                                        <span>Илтгэлийн эмхтгэл</span>
+                                                    </div>
+                                                    <div class="book-item-main-text__sub-title">
+                                                        <span>Зохиогч Д.БОЛДБААТАР</span>
+                                                    </div>
+                                                    <div class="book-item-main-text-desc">
+                                                        <p class="lineClamp8 mt-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                                                            versions of Lorem Ipsum
+                                                        </p>
+                                                    </div>
+                                                    <div class="selling-location">
+                                                        <div class="selling-location__name mt-30 mb-20">
+                                                            <div class="selling-location__shop-logo">
+                                                                <img src="images/XR-Z7QZVM6-OJBBVKI-V3YSW8I-GH.jpg">
+                                                            </div>
+                                                            <span>Номын дэлгүүрийн: “Аз хур” номын дэлгүүр</span>
+                                                        </div>
+                                                        <div class="selling-place__location">
+                                                            <span>
+                                                                Утас: 70503032, 95332321
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span id="close-modal" class="close-modal">&times;</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -755,6 +796,162 @@
     </div>
 </footer>
 
+
+<style>
+    .selling-location__shop-logo{
+        width: 50%;
+    }
+    .selling-location__shop-logo img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .selling-location__shop-logo{
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 13%;
+        height: 0;
+    }
+    .selling-place__location {
+        flex: 1;
+        font-size: 16px;
+        color: #131313;
+        text-align: justify;
+        line-height: 20px;
+    }
+    .selling-location__name span{
+        font-size: 18px;
+        font-weight: 600;
+        color: #2A2A2A;
+    }
+    .modal-image__profile{
+        color: #55ACEE;
+        font-size: 14px;
+    }
+    .modal-text p ul li{
+        font-size: 14px;
+    }
+    .modal-image__title{
+        margin: 10px 0;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .modal-image{
+        display: block;!important;
+        height: 400px;
+        position: relative;
+        padding: 40px;
+    }
+    .modal-image img{
+        max-width: none;
+        width: 310px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .modal-text{
+        padding: 20px;
+        font-size: 14px;
+        display: block;!important: ;
+        height: 400px;
+        position: relative;
+        padding: 40px;
+    }
+    .open-modal:hover {
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.5);
+        border-color: #fff;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+    .modal.open {
+        display: flex;
+    }
+    .modal-container {
+        background-color: #fff;
+        width: 60%;
+        position: relative;
+    }
+    .modal.open .modal-container {
+        animation: move 0.6s ease-out;
+    }
+    @keyframes move {
+        from {
+            transform: translateY(-50px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+    .modal-content {
+        display: flex;
+        height: 550px;
+        broder: 2px solid rgb(180 148 76);
+    }
+    .modal-content > *:not(img) {
+        padding: 3 4rem;
+    }
+    .modal-content h2 {
+        margin: 1.5rem 0 0.6rem 0;
+    }
+    .modal-content p {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+    .modal-content a {
+        font-size: 0.8rem;
+        text-decoration: none;
+        padding-bottom: 1rem;
+        display: inline-block;
+    }
+    .modal-content a:hover {
+        color: salmon;
+    }
+
+    .close-modal {
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        transition: color 0.15s linear;
+    }
+    .close-modal:hover {
+        color: #f00;
+    }
+</style>
+
+<script>
+    const btnOpenModal = document.getElementById("open-modal");
+    const btnCloseModal = document.getElementById("close-modal");
+    const modalElm = document.getElementById("modal");
+
+    btnOpenModal.addEventListener("click", function () {
+        modalElm.classList.add("open");
+    });
+
+    btnCloseModal.addEventListener("click", function () {
+        modalElm.classList.remove("open");
+    });
+</script>
 
 <script src="dist/js/root.min.js"></script>
     <script>

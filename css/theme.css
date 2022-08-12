@@ -272,7 +272,7 @@ ol#video-player-list__lists a:hover>.vid-desc {color: #333}
 ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active {background-color: rgb(180 148 76); transition: 0.6s}
 ol#video-player-list__lists a:hover,ol#video-player-list__lists a.active .vid-desc {color: #333}
 .video-player-list-video {display: flex;margin-top: 40px;}
-.video-player-list-view__video {position: relative;padding-bottom: 25%;padding-top: 30px;height: 0;width: 50%;float: left;}
+.video-player-list-view__video {position: relative;padding-bottom: 71.9%;padding-top: 30px;height: 0;width: 100%;float: left;}
 
 .video-player-list-view__video iframe,
 .video-player-list-view__video object,

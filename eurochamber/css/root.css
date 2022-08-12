@@ -2,6 +2,8 @@ body {
     position: relative;;
     background: #fff;
     font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -14,7 +16,6 @@ a{
 .header-top-menu > li {display: inline-block; border-right: 1px solid #DEEAF2; line-height: 44px;}
 .header-top-menu > li:last-child{border-right: none;}
 .header-top-menu > li > a{color: #666666; font-size: 12px; line-height: 14px; display: inline-block; margin: 0 10px;}
-.header-middle{margin-bottom: 30px !important;}
 .header-middle_search .uk-search-default{width: 280px;}
 .header-middle_search .uk-search-default .uk-search-input{font-size: 14px; background-color: #ECF2F6; padding: 0 20px; box-sizing: border-box;}
 .header-middle_search .uk-search-default .uk-search-icon{color: #003399;}
@@ -29,7 +30,7 @@ a{
 .header-top-menu__social--linkedin{background-color: #007BB5}
 .header-top-menu__social--linkedin:after{content: "\f0e1"}
 
-.header-menu{ position: relative; border-top: 1px solid #F0F0F0; border-bottom: 1px solid #F0F0F0; box-shadow: 0 2px 2px rgba(151, 164, 175, 0.1);}
+
 .uk-navbar-container:not(.uk-navbar-transparent){background-color: transparent;}
 .uk-navbar-nav>li>a{padding: 15px 15px; color: #363636; font-size: 14px; font-family: "Roboto", sans-serif; text-transform: uppercase; font-weight: 500}
 .uk-navbar-nav>li:first-child > a{padding-left: 0}

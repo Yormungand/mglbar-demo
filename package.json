@@ -13,6 +13,7 @@
     "bb >= 10"
   ],
   "dependencies": {
+    "axios": "^0.27.2",
     "browserslist": "^4.20.4",
     "gsap": "^3.10.4",
     "perfect-scrollbar": "^1.5.5",

@@ -74,6 +74,7 @@ function js() {
     return gulp.src([
         'js/*.js',
         'node_modules/swiper/swiper-bundle.js',
+        'node_modules/axios/dist/axios.js',
         // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.common.js',
         // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
         // '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js',

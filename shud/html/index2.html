@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SHUD</title>
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/uikit.css">
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css">
+    <script src="../js/uikit-icons.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <script src="../js/uikit.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-red__line"></div>
+        <div class="home-page__header">
+            <div class="home-page__menu">
+                <ul>
+                    <li><a href="javascript:void(0)">Сургат</a></li>
+                    <li><a href="javascript:void(0)">Ажлын байр</a></li>
+                    <li><a href="javascript:void(0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="icon"
+                             data-inject-url="https://www.mobicom.mn/build/assets/dd75d8007592eb3928c3691e2d251294.svg"
+                             style="margin-top: -3px; vertical-align: middle;">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        Онлайн дэлгүүр
+                    </a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">
+                            Блог
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="arrow-down"
+                                 data-inject-url="https://www.mobicom.mn/build/assets/c66b213d1dfff391c61146727032f068.svg"
+                                 style="vertical-align: middle;">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="home-page__logo">
+                <img src="../assets/logo.png">
+            </div>
+            <div class="home-page__header-search">
+                <form id="search" action="/en/search" method="GET" class="search__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="icon"
+                         data-inject-url="https://www.mobicom.mn/build/assets/5437e5214c32dc0a8b1e3e3749edd831.svg"
+                         style="vertical-align: middle;">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                <input name="q" placeholder="Search" class="form-control hidden-xs"></form>
+            </div>
+        </div>
+        <div class="mobi-container">
+            <div class="uk-width-1-4@">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <ul id="menu">
+                            <div class="mobile-menu__image">
+                                <img src="../assets/logo.png">
+                            </div>
+                            <li><a href="javascript:void(0)">Service</a></li>
+                            <li><a href="javascript:void(0)">Promotion</a></li>
+                            <li><a href="javascript:void(0)">News</a></li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="icon"
+                                         data-inject-url="https://www.mobicom.mn/build/assets/dd75d8007592eb3928c3691e2d251294.svg"
+                                         style="margin-top: -3px; vertical-align: middle;">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                    Online shop
+                                </a>
+                            </li>
+                            <li><a href="javascript:void(0)">Find a store</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="mobi-img">
+                    <img src="../assets/logo.png">
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="mobi-search">
+                <form id="searchForm" action="/en/search" method="GET">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="icon"
+                         data-inject-url="https://www.mobicom.mn/build/assets/5437e5214c32dc0a8b1e3e3749edd831.svg"
+                         style="vertical-align: middle;">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input name="q" placeholder="Search" class="form-control hidden-xs" style="display: none">
+                </form>
+            </a>
+        </div>
+    </header>
+    <div class="shud-container">
+        <div class="uk-grid">
+            <div class="uk-width-2-3@l uk-width-2-3@m">
+                <div class="swiper mySwiper home-slider__wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="main-page__image">
+                                    <img src="https://www.mongolchamber.mn/resource/mongolchamber/image/2022/09/02/ndoyv8ou55azel6n/304154858_3_l.jpg">
+                                    <div class="overflowContent">
+                                        <div class="swiper-desc">
+                                        <div class="swiper-title">
+                                            "Эрүүл шүд - Эрүүл Монгол" хөтөлбөр
+                                        </div>
+                                        <div class="swiper-body">
+                                            АШУҮИС, Нүүр Ам Судлалын Сургуулиас санаачилан ЭМЯ, Нүүр Ам Судлалын Мэргэжлийн салбар
+                                            зөвлөлтэй
+                                            хамтран хэрэгжүүлж буй үндэсний хөтөлбөр
+                                        </div>
+                                        <a href="javascript:void(0)" class="swiper-button">Detail</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="main-page__image">
+                                    <img src="https://www.mongolchamber.mn/resource/mongolchamber/image/2022/09/02/ndoyv8ou55azel6n/304154858_3_l.jpg">
+                                    <div class="overflowContent">
+                                        <div class="swiper-desc">
+                                            <div class="swiper-title">
+                                                "Эрүүл шүд - Эрүүл Монгол" хөтөлбөр
+                                            </div>
+                                            <div class="swiper-body">
+                                                АШУҮИС, Нүүр Ам Судлалын Сургуулиас санаачилан ЭМЯ, Нүүр Ам Судлалын Мэргэжлийн салбар
+                                                зөвлөлтэй
+                                                хамтран хэрэгжүүлж буй үндэсний хөтөлбөр
+                                            </div>
+                                            <a href="javascript:void(0)" class="swiper-button">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="main-page__image">
+                                    <img src="https://www.mongolchamber.mn/resource/mongolchamber/image/2022/09/02/ndoyv8ou55azel6n/304154858_3_l.jpg">
+                                    <div class="overflowContent">
+                                        <div class="swiper-desc">
+                                            <div class="swiper-title">
+                                                "Эрүүл шүд - Эрүүл Монгол" хөтөлбөр
+                                            </div>
+                                            <div class="swiper-body">
+                                                АШУҮИС, Нүүр Ам Судлалын Сургуулиас санаачилан ЭМЯ, Нүүр Ам Судлалын Мэргэжлийн салбар
+                                                зөвлөлтэй
+                                                хамтран хэрэгжүүлж буй үндэсний хөтөлбөр
+                                            </div>
+                                            <a href="javascript:void(0)" class="swiper-button">Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-swiper-button-prev text-primary" tabindex="0" role="button" style="right: 75px"
+                         aria-label="Previous slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-arrow-left"
+                             data-inject-url="https://www.mobicom.mn/build/assets/f9a44e1ccb9f44cd4de1da8fe7f6f4d8.svg"
+                             svg="" style="vertical-align: middle;">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </div>
+                    <div class="custom-swiper-button-next text-primary" tabindex="0" role="button"
+                         aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-arrow-right"
+                             data-inject-url="https://www.mobicom.mn/build/assets/dc372a07777e87891aaac087cfbe60ad.svg"
+                             svg="" style="vertical-align: middle;">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets">
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                        <span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@l uk-width-expand@m">
+                <div class="home-page__wrapper">
+                    <h3 class="shud__title">Oral Care</h3>
+                    <div class="uk-grid uk-child-width-1-3 uk-grid-small uk-card">
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Эрүүл ахуй
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Эмчилгээ
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Хүүхэд
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Согог засал
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Гажиг засал
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                        <div class="quik-act-wrap uk-margin-small-bottom">
+                            <div class="item-box flex-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                     fill="none"
+                                     data-inject-url="https://www.mobicom.mn/build/assets/5dad9eb145c6e5ad43a2dcd3b58d2b9e.svg"
+                                     svg="" class="text-primary" style="margin-bottom: 5px; vertical-align: middle;">
+                                    <rect width="40" height="40" rx="20" fill="#ED1C24" fill-opacity="0.08"></rect>
+                                    <path d="M20 13V27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                    <path d="M13 20H27" stroke="#ED1C24" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
+                                </svg>
+                                <h4 class="quik__title">
+                                    Имплант
+                                </h4> <small class="text-muted">Buy</small></div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="uk-width-3-3 main-wrapper uk-margin-small-top">
+                        <div class="shud-banner__image">
+                            <img src="https://image.shutterstock.com/image-vector/abstract-polygonal-triangle-blue-background-260nw-1463678462.jpg">
+                        </div>
+                        <div class="flex-home_page-button middle">
+                            <div class="home-page__sub-title">Buy Samsung Galaxy S21 FE</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="s-18px"
+                                 data-inject-url="https://www.mobicom.mn/build/assets/dc372a07777e87891aaac087cfbe60ad.svg"
+                                 style="vertical-align: middle;">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container" style="margin-bottom: 50px">
+        <div class="middle" style="margin: 60px 0px 30px;display: flex; justify-content: space-between"><div class="flex-1">
+            <h4 class="text-primary" style="font-size: 24px;">News</h4>
+            </div><div>
+            <a href="/en/m/454" class="goall">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="s-16px"
+                 data-inject-url="https://www.mobicom.mn/build/assets/dc372a07777e87891aaac087cfbe60ad.svg" svg=""
+                 style="vertical-align: middle;">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+            </a>
+        </div>
+        </div>
+        <div class="uk-grid uk-grid-medium uk-card">
+            <div class="uk-width-1-4@l uk-width-2-4@m">
+                <div class="app-new-item">
+                    <a href="javascript:void(0)">
+                        <div class="shud-item-img">
+                            <img src="https://image.shutterstock.com/image-vector/abstract-polygonal-triangle-blue-background-260nw-1463678462.jpg">
+                        </div>
+                        <h4 class="home-page__item-title lineClamp2">МЭДЭГДЭЛ</h4>
+                    </a>
+                    <div class="item-desc">2022-08-12</div>
+                </div>
+            </div>
+            <div class="uk-width-2-4@m uk-width-1-4@l">
+                <div class="app-new-item">
+                    <a href="javascript:void(0)">
+                        <div class="shud-item-img">
+                            <img src="https://image.shutterstock.com/image-vector/abstract-polygonal-triangle-blue-background-260nw-1463678462.jpg">
+                        </div>
+                        <h4 class="home-page__item-title truncate">Миний моби: Дагалдах эрхэд VOO нэмэгдлээ!</h4>
+                    </a>
+                    <div class="item-desc">2022-08-12</div>
+                </div>
+            </div>
+            <div class="uk-width-2-4@m uk-width-1-4@l">
+                <div class="app-new-item">
+                    <a href="javascript:void(0)">
+                        <div class="shud-item-img">
+                            <img src="https://image.shutterstock.com/image-vector/abstract-polygonal-triangle-blue-background-260nw-1463678462.jpg">
+                        </div>
+                        <h4 class="home-page__item-title truncate">Миний моби: Дагалдах эрхэд VOO нэмэгдлээ!</h4>
+                    </a>
+                    <div class="item-desc">2022-08-12</div>
+                </div>
+            </div>
+            <div class="uk-width-2-4@m uk-width-1-4@l">
+                <div class="app-new-item">
+                    <a href="javascript:void(0)">
+                        <div class="shud-item-img">
+                            <img src="https://image.shutterstock.com/image-vector/abstract-polygonal-triangle-blue-background-260nw-1463678462.jpg">
+                        </div>
+                        <h4 class="home-page__item-title truncate">Миний моби: Дагалдах эрхэд VOO нэмэгдлээ!</h4>
+                    </a>
+                    <div class="item-desc">2022-08-12</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                prevEl: ".custom-swiper-button-prev",
+                nextEl: ".custom-swiper-button-next",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>
+
+<style>
+    .dropbtn {
+        color: #2c2c34;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        color: #ec2027;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 200;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {color: #ec2027;}
+
+    .show {display: block;}
+</style>
+
+
+<style>
+    .home-page__header-search{
+        position: absolute;
+        top: 56px;
+        right: 63px;
+    }
+    .header-red__line{
+        border: 3px solid #ec2027;
+    }
+    .search__button svg{
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        cursor: pointer;
+    }
+    .home-page__logo{
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: #fff;;
+    }
+    @media (min-width: 1600px){
+        .home-page__logo img{
+            width: 130px;
+            height: 120px;
+        }
+    }
+    @media (max-width: 1000px) {
+        .home-page__header-search {
+            position: absolute;
+            top: 53px;
+            right: 16px;
+        }
+    }
+    @media (max-width: 900px){
+        .header-red__line{
+            display: none;
+        }
+        .home-page__header {
+            display: none!important;
+        }
+    }
+    @media (min-width: 900px){
+        .home-page__logo img{
+            width: 100px;
+            height: 90px;
+        }
+        .home-page__menu ul li a{
+            font-size: 14px!important;
+            color: #2c2c34;
+            font-family: none;
+            padding-right: 20px;
+            font-weight: 700;
+        }
+    }
+    .home-page__menu{
+        position: absolute;
+        top: 54px;
+        left: 0px;
+    }
+    .home-page__menu ul{
+        display: flex;
+        padding-left: 20px;
+    }
+    .home-page__menu ul li a{
+        font-size: 20px;
+        color: #2c2c34;
+        font-family: none;
+        padding-right: 20px;
+        font-weight: 700;
+    }
+    .home-page__menu ul li a:hover{
+        color: #ec2027;
+    }
+    .home-page__header{
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+    }
+    #search {
+        position: relative;
+    }
+
+    #app-header svg{
+        opacity: .8;
+    }
+    svg:not(:root){
+        overflow: hidden;
+    }
+
+    #search input{
+        color: #040e3f;
+        width: 200px;
+        height: 30px;
+        padding-left: 40px;
+        border: 1px solid #F5F5F5;
+        background: #f6f7f9;
+        box-shadow: none;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+    @media (max-width: 1200px){
+        .uk-width-2-4\@m {
+            width: 50%;
+        }
+    }
+    @media (max-width: 900px){
+        #app-header #searchForm input {
+            width: 100%;
+        }
+        #app-header #searchForm input {
+            color: #040e3f;
+            width: 250px;
+            height: 40px;
+            padding-left: 40px;
+            border: 1px solid #f5f5f5;
+            background: #f6f7f9;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            font-size: 13px;
+            border-radius: 10px;
+        }
+    }
+        @media (max-width: 900px){
+            .hidden-xs {
+                display: none!important;
+            }
+        }
+    .mobile-menu__image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-menu__image img{
+        width: 100px;
+        height: 100px;
+    }
+    #menu li a{
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 4px;
+        color: #22181C;
+        line-height: 1.5rem;
+    }
+    #menu li a:hover {
+        color: #ec2027;
+    }
+    li{
+        list-style: none;
+    }
+    .mobi-search{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #22181C;
+    }
+    from input{
+        display: none;
+    }
+    .mobi-img{
+        position: absolute;
+        left: 54px;
+        top: 7px;
+    }
+    .mobi-container{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    }
+    .mobi-img img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input
+    {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    #menuToggle span
+    {
+        display: flex;
+        width: 21px;
+        height: 1px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #2A2A2A;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
+        width: 28px;
+        height: 2px;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu
+    {
+        position: absolute;
+        width: 180px;
+        height: 2000px;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background-color: rgb(255, 255, 255);
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+        padding: 10px 0;
+        transition-delay: 2s;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+        transform: none;
+    }
+    @media (min-width: 900px) {
+        .mobi-container{
+            display: none;
+        }
+    }
+    @media (max-width: 750px) {
+        .home-slider__wrapper{
+            display: none;
+        }
+        .home-page__wrapper{
+            margin-top: 70px!important;
+        }
+
+    }
+    @media (max-width: 1250px) {
+        .main-page__image img{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main-page__image{
+            position: relative;
+            display: block;
+            padding-bottom: 80%!important;
+            height: 0;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #dcdcdc;
+            background: #e9e9e9;
+        }
+    }
+    .truncate {
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+    }
+    .item-desc {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .home-page__item-title{
+        font-size: 16px;
+        color: #040e3f;
+        text-transform: uppercase;
+        font-weight: 700;
+        min-height: 40px;
+        margin: 0;
+    }
+    .home-page__item-title:hover{
+        color: #ec2027;
+    }
+    .goall {
+        font-size: 13px;
+        color: #040e3f;
+    }
+    .goall:hover{
+        color: #ec2027!important;
+    }
+    .home-page__sub-title{
+        font-size: 18px;
+        color: #2A2A2A;
+        font-weight: 700;
+    }
+    .flex-home_page-button {
+        padding: 15px;
+    }
+    .flex-home_page-button {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .flex-home_page-button {
+        display: -ms-flexbox!important;
+         display: flex!important;
+        -webkit-box-orient: horizontal!important;
+        -webkit-box-direction: normal!important;
+        -ms-flex-direction: row!important;
+        flex-direction: row!important;
+        justify-content: space-between;
+    }
+    .quik__title{
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .main-wrapper {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 1px solid #dcdcdc;
+    }
+    .shud-banner__image{
+        position: relative;
+        display: block;
+        padding-bottom: 32%;
+        height: 0;
+        overflow: hidden;
+        background-color: #e9e9e9;
+    }
+    .shud-banner__image img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .shud__title{
+        margin-bottom: 20px;
+        margin-top: 0;
+        /*color: rgba(4,14,63,.64);*/
+        color: #ec2027;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .item-box {
+        padding: 15px;
+        display: block;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 1px solid #dcdcdc;
+        -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    }
+    .overflowContent {
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+    .swiper-pagination-bullets {
+        left: 10% !important;
+        bottom: 34px!important;
+        width: auto!important;
+    }
+   .swiper-pagination-bullets .swiper-pagination-bullet-active {
+        background: #fff!important;
+    }
+   .swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: rgba(0,0,0,.2);
+        opacity: 1;
+        border: 1px solid #fff;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #000;
+        opacity: .2;
+    }
+    .custom-swiper-button-prev {
+        right: 75px;
+    }
+    .text-primary {
+        color: #ec2027!important;
+    }
+    .custom-swiper-button-next, .custom-swiper-button-prev {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        z-index: 1;
+        border-radius: 50%;
+        background: hsla(0,0%,100%,.9);
+        padding: 7px;
+        outline: none;
+        cursor: pointer;
+    }
+    .swiper-title{
+        color: rgb(255, 0, 21);
+        font-size: 20px;
+        width: 500px;
+        text-align: left;
+        line-height: 1.1;
+        padding-bottom: 20px;
+    }
+    .swiper-body{
+        color: #fff;
+        font-size: 14px;
+        width: 500px;
+        text-align: left;
+        line-height: 1.1;
+        padding-bottom: 20px;
+    }
+    .swiper-button{
+        margin-top: 40px;
+        text-align: left;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        font-size: 12px;
+        background: hsla(0, 0%, 100%, .1);
+        background-image: linear-gradient(91deg,#c81e37,#eb0014);
+        border-radius: 2px;
+    }
+    .swiper-desc{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .main-page__image{
+        position: relative;
+        display: block;
+        padding-bottom: 50%;
+        height: 0;
+        overflow: hidden;
+        background-color: #e9e9e9;
+    }
+    .main-page__image img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .shud-item-img img {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .shud-item-img{
+        position: relative;
+        display: block;
+        padding-bottom: 60%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #dcdcdc;
+        background: #e9e9e9;
+    }
+    .shud-container {
+        padding: 0 15px;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>

@@ -19,7 +19,57 @@
         <div class="header-red__line"></div>
         <div class="home-page__header">
             <div class="home-page__menu">
-                <ul>
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="" type="button">эхлэл</a>
+                        <div class="uk-width-4-4 dropdown-menu submenu" uk-drop="pos: bottom-justify; boundary: .boundary-align; boundary-align: true; offset: 0;mode: hover">
+                            <div class="dropdown__menu-item" style="background-color: #FFFFFF">
+                                <div class="flex-row">
+                                    <div class="flex-1"><h4 class="sub-title">Main services</h4>
+                                        <ul class="list-unstyled group">
+                                            <li><a href="/en/m/318">Prepaid</a></li>
+                                            <li><a href="/en/hybrid">Hybrid</a></li>
+                                            <li><a href="/en/m/69">Postpaid</a></li>
+                                            <li><a href="/en/m/128">MNP75</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1"><h4 class="sub-title">Data services</h4>
+                                        <ul class="list-unstyled group">
+                                            <li><a href="/en/m/102">Data package</a></li>
+                                            <li><a href="/en/m/105">Data Sim</a></li>
+                                            <li><a href="/en/m/102">Data estimator</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1"><h4 class="sub-title">Internet services</h4>
+                                        <ul class="list-unstyled group">
+                                            <li><a href="/en/m/103">Mobinet</a></li>
+                                            <li><a href="/en/m/104">Manai internet</a></li>
+                                            <li><a href="/en/m/106">Mobinet WI-FI</a></li>
+                                            <li><a href="/en/m/458">4G LTE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1"><h4 class="sub-title">International telecom services</h4>
+                                        <ul class="list-unstyled group">
+                                            <li><a href="/en/m/64">HiCall 003</a></li>
+                                            <li><a href="/en/m/65">Globus service</a></li>
+                                            <li><a href="/en/m/76">Roaming service</a></li>
+                                            <li><a href="/en/m/87">Tourist service</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-1"><h4 class="sub-title">Additional services</h4>
+                                        <ul class="list-unstyled group col-2">
+                                            <li><a href="/en/m/1279">Happy family</a></li>
+                                            <li><a href="/en/m/13">Surprise service</a></li>
+                                            <li><a href="/en/m/17">Missed call notification service</a></li>
+                                            <li><a href="/en/m/18">Blocking a caller ID</a></li>
+                                            <li><a href="/en/hitone">Hitone</a></li>
+                                            <li><a href="/en/m/22">Quick units</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="javascript:void(0)">Сургат</a></li>
                     <li><a href="javascript:void(0)">Ажлын байр</a></li>
                     <li><a href="javascript:void(0)">
@@ -34,24 +84,6 @@
                         </svg>
                         Онлайн дэлгүүр
                     </a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">
-                            Блог
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                 class="arrow-down"
-                                 data-inject-url="https://www.mobicom.mn/build/assets/c66b213d1dfff391c61146727032f068.svg"
-                                 style="vertical-align: middle;">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </a>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#home">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <div class="home-page__logo">
@@ -122,7 +154,8 @@
             </a>
         </div>
     </header>
-    <div class="shud-container">
+    <main>
+        <div class="shud-container">
         <div class="uk-grid">
             <div class="uk-width-2-3@l uk-width-2-3@m">
                 <div class="swiper mySwiper home-slider__wrapper">
@@ -339,7 +372,7 @@
             </div>
         </div>
     </div>
-    <div class="uk-container" style="margin-bottom: 50px">
+        <div class="uk-container" style="margin-bottom: 50px">
         <div class="middle" style="margin: 60px 0px 30px;display: flex; justify-content: space-between"><div class="flex-1">
             <h4 class="text-primary" style="font-size: 24px;">News</h4>
             </div><div>
@@ -402,6 +435,86 @@
             </div>
         </div>
     </div>
+    </main>
+    <footer>
+        <div class="uk-background-muted">
+            <div class="uk-container">
+                <div class="uk-grid footer-space__wrapper">
+                    <div class="uk-width-expand uk-text-uppercase uk-text-center uk-margin-auto-vertical" style="font-size: 24px">
+                        <span style="color: #cc0000">бидэнтэй</span> нэгдээрэй
+                    </div>
+                    <div class="uk-width-2-3@l">
+                        <div class="uk-child-width-1-4 uk-grid footer-space">
+                            <div class="uk-first-column">
+                                <a href="javascript:void(0)" target="_blank" class="social-icon fb uk-padding">
+                                    <i class="fa fa-facebook uk-position-center"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" target="_blank" class="social-icon tw uk-padding">
+                                    <i class="fa fa-twitter uk-position-center"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="social-icon yt uk-padding">
+                                    <i class="fa fa-youtube-play uk-position-center"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="social-icon yt uk-padding">
+                                    <i class="fa fa-instagram uk-position-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-background-default" style="border-top: 1px solid #d4d4d4">
+            <div class="uk-container">
+                <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-1@s uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-grid" uk-grid="">
+                    <div class="uk-first-column">
+                        <div class="uk-column-1-2">
+                            <ul class="uk-list uk-text-left@m uk-text-center@s uk-text-center">
+                                <li><a href="/" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Эхлэл</a></li>
+                                <li><a href="/as/tsag" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Мэдээ</a></li>
+                                <li><a href="/as/job" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Ажлын байр</a></li>
+                                <li><a href="/p/2" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Бидний тухай</a></li>
+                                <li><a href="/p/1" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Холбоо барих</a></li>
+                            </ul>
+                            <ul class="uk-list uk-text-left@m uk-text-center@s uk-text-center">
+                                <li><a href="/ac/lifestages" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Насны онцлог</a></li>
+                                <li><a href="/ac/toothache" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Өвчин, эмгэг</a></li>
+                                <li><a href="/ac/medication" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Эмчилгээ</a></li>
+                                <li><a href="/ac/beauty" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Гажиг, Согог засал</a></li>
+                                <li><a href="/ac/hygiene" class="uk-text-uppercase uk-text-bold color2d" style="color: #666666">Бусад</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="border-left: 1px solid #d5d5d5" class="uk-text-center uk-text-left@l uk-text-center@m">
+                        <div class="uk-text-uppercase" style="font-size: 18px; color: #111111">
+                            биднийг дагаад <span style="color: #CC0000;">инээмсэглэ</span>
+                        </div>
+                        <div style="color: #111111; font-size: 11px;">Мэдээллийг цаг алдалгүй хүлээж авах бол и-мейлээ бүртгүүлээрэй</div>
+                        <form class="uk-padding-small uk-padding-remove-right uk-padding-remove-left">
+                            <div class="uk-width uk-flex uk-flex-center uk-flex-left@l uk-grid" uk-grid="">
+                                <div class="uk-width-2-3 uk-first-column">
+                                    <input type="email" class="uk-input" style="border: 1px solid #dcdcdc; border-radius: 5px;" placeholder="email">
+                                </div>
+                                <div class="uk-card">
+                                    <button class="uk-button shud-button" style="box-sizing: border-box">ДАГАХ</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-container">
+                <div class="uk-grid-collapse uk-padding uk-flex uk-flex-center uk-grid uk-grid-stack" style="font-size: 14px; text-align: justify" uk-grid="">
+                    <p class="uk-first-column">©2021&nbsp;Шүд Магазин Сэтгүүлийн Газар.&nbsp;Зохиогчийн эрхийн хуулиар хамгаалагдсан. Мэдээлэл хуулбарлахыг хориглоно.</p></div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -420,47 +533,82 @@
 </html>
 
 <style>
-    .dropbtn {
-        color: #2c2c34;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropbtn:hover, .dropbtn:focus {
-        color: #ec2027;
-    }
-
-    .dropdown {
+    .flex-1 div {
         position: relative;
-        display: inline-block;
     }
-
-    .dropdown-content {
-        display: none;
+    .sub-title{
+        padding-left: 30px;
+    }
+    #app-header .submenu .flex-row div {
+        position: relative;
+        padding: 10px;
+    }
+    .flex-1 ul li{
+        padding-inline-start: 0px!important;
+        line-height: 1.8rem;
+    }
+    .flex-1 {
+        position: relative;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .flex-row{
+        display: flex;
+    }
+    .flex-row .flex-1::after {
+        content: "";
         position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 200;
+        width: 100%;
+        height: 88%;
+        display: flex;
+        right: 0;
+        left: 0;
+        bottom: 20%;
+        border-right: 1px solid;
+        z-index: 100;
     }
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+    .flex-row .flex-1 ul li{
+        padding-left: 20px;
+        font-size: 13px;
+        color: #040e3f;
     }
-
-    .dropdown a:hover {color: #ec2027;}
-
-    .show {display: block;}
+    .dropdown__menu-item{
+        padding-top: 50px;
+    }
+    .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+        box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+    }
+    .submenu{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 92px;
+        z-index: 100;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    }
+    .submenu{
+        display: none;
+    }
 </style>
 
-
 <style>
+    .footer-space__wrapper{
+        padding: 30px;
+    }
+    .footer-space{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .home-page__header-search{
         position: absolute;
         top: 56px;
@@ -521,13 +669,13 @@
     }
     .home-page__menu{
         position: absolute;
-        top: 54px;
+        top: 41px;
         left: 0px;
     }
-    .home-page__menu ul{
-        display: flex;
-        padding-left: 20px;
-    }
+    /*.home-page__menu ul{*/
+    /*    display: flex;*/
+    /*    padding-left: 20px;*/
+    /*}*/
     .home-page__menu ul li a{
         font-size: 20px;
         color: #2c2c34;
@@ -716,7 +864,7 @@
     #menu
     {
         position: absolute;
-        width: 180px;
+        width: 80px;
         height: 2000px;
         box-shadow: 0 0 10px #85888C;
         margin: -50px 0 0 -50px;

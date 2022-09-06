@@ -143,7 +143,15 @@ a, div, p, dl, dt, h2, h3, h4 ,h5 ,h6 {font-family: 'Roboto'}
 .corp-card h3 {color: #111111; text-align: center}
 .corp-card p {text-align: center; font-size: 15px; color: #111111}
 
-.social-icon {position: relative; border-radius: 50%; display: block; width: 40px; height: 40px; background-color: #e8e8e8; transition-duration: .5s}
+.social-icon {
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #e8e8e8;
+    transition-duration: .5s
+}
 .social-icon .fa {font-size: 42px; position: absolute}
 .social-icon .fa-youtube-play {color: #CC0000}
 .social-icon .fa-twitter {color: #38A1F3}

@@ -4049,7 +4049,6 @@ ul.uk-nav-sub {
  */
 .uk-navbar-nav > li > a {
   color: #999;
-  text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
 }

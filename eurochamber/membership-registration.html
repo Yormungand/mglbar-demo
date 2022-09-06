@@ -194,13 +194,26 @@
         <div class="articleBody">
           <div class="width-9-12">
             <div class="join-member-title">
-              <span>Membership Registration From</span>
+              <span>Membership application form</span>
             </div>
-            <span class="email-join">Email *</span>
+            <span class="email-join">
+              <p>Thank you for your interest in EuroChamber Mongolia. We are committed to serve as a united voice
+                for the business community and contribute to positive business and investment climate in Mongolia.
+                We offer policy dialogue and advocacy on behalf of our members, support to companies in accessing
+                Mongolian and European markets; provide opportunities for networking and knowledge sharing.
+                Please take a moment to answer the questions below.</p>
+            </span>
             <div class="sp-input-wrap mt-20">
+              <span class="uk-form-icon">
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.83398 11L4.54492 10.2891L2.70898 8.45312L1.99805 9.16406V10H2.99805V11H3.83398ZM7.91992 3.75C7.91992 3.63542 7.86263 3.57812 7.74805 3.57812C7.69596 3.57812 7.65169 3.59635 7.61523 3.63281L3.38086 7.86719C3.3444 7.90365 3.32617 7.94792 3.32617 8C3.32617 8.11458 3.38346 8.17187 3.49805 8.17187C3.55013 8.17187 3.5944 8.15365 3.63086 8.11719L7.86523 3.88281C7.90169 3.84635 7.91992 3.80208 7.91992 3.75ZM7.49805 2.25L10.748 5.5L4.24805 12H0.998047V8.75L7.49805 2.25ZM12.834 3C12.834 3.27604 12.7376 3.51042 12.5449 3.70312L11.248 5L7.99805 1.75L9.29492 0.460937C9.48242 0.26302 9.7168 0.164062 9.99805 0.164062C10.2741 0.164062 10.5111 0.26302 10.709 0.460937L12.5449 2.28906C12.7376 2.49219 12.834 2.72917 12.834 3Z"
+                      fill="#003399"></path>
+                  </svg>
+              </span>
               <input type="email" style="height: 50px;  font-size: 13px;
-        color: rgba(153, 153, 153, 1); background-color: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(166, 124, 0, 1); border-radius: 2px" placeholder required name="2">
+        color: #ECF2F6; background-color: rgba(255, 255, 255, 1);
+        border: 1px solid #ECF2F6; border-radius: 2px" placeholder required name="2">
             </div>
             <div class="fluid-join">
               <div class="fluid-join__title mb-20">SURVEY QUESTIONS</div>
@@ -247,6 +260,13 @@
                   <span>How can we better serve you? *</span>
                 </label>
                 <div>
+                <span class="uk-form-icon">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.83398 11L4.54492 10.2891L2.70898 8.45312L1.99805 9.16406V10H2.99805V11H3.83398ZM7.91992 3.75C7.91992 3.63542 7.86263 3.57812 7.74805 3.57812C7.69596 3.57812 7.65169 3.59635 7.61523 3.63281L3.38086 7.86719C3.3444 7.90365 3.32617 7.94792 3.32617 8C3.32617 8.11458 3.38346 8.17187 3.49805 8.17187C3.55013 8.17187 3.5944 8.15365 3.63086 8.11719L7.86523 3.88281C7.90169 3.84635 7.91992 3.80208 7.91992 3.75ZM7.49805 2.25L10.748 5.5L4.24805 12H0.998047V8.75L7.49805 2.25ZM12.834 3C12.834 3.27604 12.7376 3.51042 12.5449 3.70312L11.248 5L7.99805 1.75L9.29492 0.460937C9.48242 0.26302 9.7168 0.164062 9.99805 0.164062C10.2741 0.164062 10.5111 0.26302 10.709 0.460937L12.5449 2.28906C12.7376 2.49219 12.834 2.72917 12.834 3Z"
+                              fill="#003399"></path>
+                    </svg>
+                 </span>
                 <textarea style="margin-top: 20px; height: 50px; font-size: 13px;
                   color: rgba(153, 153, 153, 1); background-color: rgba(255, 255, 255, 1);
                   border: 1px solid rgba(166, 124, 0, 1); border-radius: 2px; min-height: 120px;" placeholder="(Please write as much as you wish. You may also email details afterwards.)" name="6" required=""></textarea>
@@ -700,6 +720,15 @@
 
 
 <style>
+  .sp-input-wrap{
+    position: relative;
+  }
+  .uk-form-icon{
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    z-index: 2;
+  }
   .county-join{
     width: 80%;
   }
@@ -782,6 +811,26 @@
   }
   .sp-input-wrap input:focus-visible{
     color: #213B81;
+  }
+  input{
+    background-color: #ECF2F6!important;
+    border: 1px solid #ECF2F6!important;
+    color: #ECF2F6!important;
+  }
+  textarea{
+    background-color: #ECF2F6!important;
+    border: 1px solid #ECF2F6!important;
+    color: #ECF2F6!important;+
+  }
+  select{
+    background-color: #ECF2F6!important;
+    border: 1px solid #ECF2F6!important;
+    color: #ECF2F6!important;
+  }
+  @media (max-width: 900px) {
+    .width-9-12{
+      width: 100%;
+    }
   }
 </style>
 

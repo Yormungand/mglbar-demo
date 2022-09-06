@@ -264,7 +264,7 @@
     font-size: 13px;
     font-weight: 500;
     margin: 0;
-    text-transform: uppercase;
+    text-transform: revert!important;
     display: block;
     color: #444;
     font-family: "Roboto", sans-serif;
@@ -288,15 +288,15 @@
     display:inline-block;
 }
 
-.header-menu nav a {
+.header-menu nav ul li a {
     display:block;
     padding: 15px 15px;
     color: #363636;
     font-size: 14px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
     text-decoration:none;
+    text-transform: uppercase;
 }
 /* Hide Dropdowns by Default */
 .header-menu nav ul ul {
@@ -518,11 +518,32 @@ a {
 }
 
 .header-wrapper{
-    display: flex;
-    justify-content: space-between;
     box-shadow: 0 2px 2px rgba(151, 164, 175, 0.1);
 }
-/*.header-middle{margin-bottom: 30px !important;}*/
+
+
+
+
+@media (min-width: 1200px){
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-middle__logo{
+        position: relative;
+    }
+}
+@media (max-width: 1200px){
+    .header-wrapper {
+        display: flex;
+    }
+    .header-middle__logo{
+        padding: 15px 0;
+        display: flex;
+    }
+}
+
+    /*.header-middle{margin-bottom: 30px !important;}*/
 /*.header-menu {*/
 /*    position: relative;*/
 /*    border-top: 1px solid #F0F0F0;*/
@@ -552,8 +573,8 @@ a {
     animation-fill-mode: both;
 }
 .article-button {
-    background-color: #326195;
-    border-color: #326195 #326195 #00839f;
+    background-color: #003399;
+    border-color: #326195 #003399 #003399;
     color: #FFF;
 }
 
@@ -821,8 +842,13 @@ button, select {
 }
 
 @media (max-width: 1000px) {
-    .header-wrapper{
-        display: flex;
-        flex-direction: column;
+    .header-menu nav ul li a{
+        font-size: 12px;
+        font-weight: 600;
     }
+}
+
+.owl-nav button .fa{
+    color: #2A2A2A!important;
+    font-size: 24px!important;
 }

@@ -76,7 +76,7 @@ html .text-hover-dark:hover {
 
 html .text-color-light,
 html .text-light {
-	color: #FFF !important;
+	color: #080707;
 }
 
 html .text-color-hover-light:hover,
@@ -3055,7 +3055,7 @@ html .inverted-light {
 
 .owl-carousel .owl-dots .owl-dot.active span,
 .owl-carousel .owl-dots .owl-dot:hover span {
-	background-color: #0094b3;
+	background-color: #2A2A2A;
 }
 
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"],

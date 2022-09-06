@@ -23,43 +23,18 @@
     <script src="/home/dookshdee/IdeaProjects/portalcms4/base/src/main/webapp/static/base/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://swiperjs.com/package/js/swiper.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>-->
+<!--    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+<!--    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">-->
 </head>
 <body>
 <header>
     <div class="header">
         <div class="container">
-            <div class="header-top">
-                <ul class="header-top-menu">
-                    <li>
-                        <a><i class="fa fa-lock"></i> LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="membership-registration.html">JOIN US</a>
-                    </li>
-                    <li>
-                        <a href="new-home.html">
-                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="25" height="15" fill="url(#pattern0)"></rect>
-                                <defs>
-                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0" transform="scale(0.04 0.0666667)"></use>
-                                    </pattern>
-                                    <image id="image0" width="25" height="15"
-                                           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAABVElEQVQ4EbWUO04DMRCGP693k92EpACBFJSIDirgADRIiJImh6HkBHRcBW7ACaBCQgiliUSQAgmPzT5s5F3FUUKDEjPN2pbn//TPeEfc7h1qpiFASI1OzQJqKuWifcr1+gFCJdNb9qu9gOO3By57N8ReYM8XF97iwX/sLUSlgtpOzObJEJULpywLKVU1QiiYFdAJzEJ0Jtg4eme7OyBo5miHbgqIVmWjTbOTYYCs5ZjyuQrfCMkwJ+qkfPVCvEAjo5yoPUH33YAKJ9WthN3zZ2RVkQx9Wt0BrbMBeWyruZIpq2J64Dfy4v8QArRaSXcuuShXqQzN/TGmP4Wj1/rcxVU21ol5tqO7BvlYkn1K8Ny94xIiNF6okHVF9u0jDMN3BynKpWKP0f0aH48RQTNj0q9gRpWZYy6igExeKjxdddBGU4Mw/gTUw99DcRnorCfLZP8x5wehGWiEeijHZgAAAABJRU5ErkJggg=="></image>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="header-wrapper">
                 <div class="header-middle">
                     <a href="" class="header-middle__logo uk-display-block" style=";">
-                        <svg width="300" height="36" viewBox="0 0 692 100" fill="none"
+                        <svg width="350" height="100" viewBox="0 0 692 100" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M184.867 55.0013H167.867V25.4413H184.867V29.8413H172.507V37.9213H184.467V42.2812H172.507V50.6013H184.867V55.0013Z"
                                   fill="#003399"/>
@@ -250,47 +225,76 @@
                         </svg>
                     </a>
                 </div>
-                <div class="header-menu">
+                <div class="wrapper-header">
+                    <div class="header-top">
+                    <ul class="header-top-menu">
+                        <li>
+                            <a><i class="fa fa-lock"></i> LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="membership-registration.html">JOIN US</a>
+                        </li>
+                        <li>
+                            <a href="new-home.html">
+                                <svg width="25" height="15" viewBox="0 0 25 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="25" height="15" fill="url(#pattern0)"></rect>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0" transform="scale(0.04 0.0666667)"></use>
+                                        </pattern>
+                                        <image id="image0" width="25" height="15"
+                                               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAABVElEQVQ4EbWUO04DMRCGP693k92EpACBFJSIDirgADRIiJImh6HkBHRcBW7ACaBCQgiliUSQAgmPzT5s5F3FUUKDEjPN2pbn//TPeEfc7h1qpiFASI1OzQJqKuWifcr1+gFCJdNb9qu9gOO3By57N8ReYM8XF97iwX/sLUSlgtpOzObJEJULpywLKVU1QiiYFdAJzEJ0Jtg4eme7OyBo5miHbgqIVmWjTbOTYYCs5ZjyuQrfCMkwJ+qkfPVCvEAjo5yoPUH33YAKJ9WthN3zZ2RVkQx9Wt0BrbMBeWyruZIpq2J64Dfy4v8QArRaSXcuuShXqQzN/TGmP4Wj1/rcxVU21ol5tqO7BvlYkn1K8Ny94xIiNF6okHVF9u0jDMN3BynKpWKP0f0aH48RQTNj0q9gRpWZYy6igExeKjxdddBGU4Mw/gTUw99DcRnorCfLZP8x5wehGWiEeijHZgAAAABJRU5ErkJggg=="></image>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                     <div class="header-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="javascript:void(0)">Home</a></li>
-                                <li><a href="javascript:void(0)">About us</a>
-                                    <!-- First Tier Drop Down -->
-                                    <ul class="drop-down__menu">
-                                        <li><a href="#">about us</a></li>
-                                        <li><a href="#">Board of Directors</a></li>
-                                        <li><a href="#">Eurochamber team</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                </li>
-                                <li><a href="#">membership</a>
-                                    <ul class="drop-down__menu">
-                                        <li><a href="#">members</a></li>
-                                        <li><a href="#">membership categories</a></li>
-                                        <li><a href="#">application from</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Policy</a>
-                                    <ul class="drop-down__menu">
-                                        <li><a href="#">Working groups</a></li>
-                                        <li><a href="#">Position papers</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Publications</a>
-                                    <ul class="drop-down__menu">
-                                        <li><a href="javascript:void(0)">News</a></li>
-                                        <li><a href="javascript:void(0)">Monthly newsletters</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="up-coming.html">up coming</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">About us</a>
+                                <!-- First Tier Drop Down -->
+                                <ul class="drop-down__menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Board of Directors</a></li>
+                                    <li><a href="#">Executive Team</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            </li>
+                            <li><a href="#">membership</a>
+                                <ul class="drop-down__menu">
+                                    <li><a href="#">Members</a></li>
+                                    <li><a href="#">Membership categories</a></li>
+                                    <li><a href="#">Application from</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Working groups</a>
+                                <ul class="drop-down__menu">
+                                    <li><a href="#">Banking & Finance</a></li>
+                                    <li><a href="#">Foreign Direct Investment</a></li>
+                                    <li><a href="#">Wines & Spirits</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">Innovation & Digitalisation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Publications</a>
+                                <ul class="drop-down__menu">
+                                    <li><a href="javascript:void(0)">News</a></li>
+                                    <li><a href="javascript:void(0)">Monthly newsletters</a></li>
+                                    <li><a href="javascript:void(0)">Position papers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="up-coming.html">Events</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 </div>
             </div>
         </div>
@@ -414,12 +418,13 @@
 </header>
     <main class="mb-40">
         <section class="section section-with-shape-divider border-0 py-0 m-0">
-            <div class="shape-divider shape-divider-bottom z-index-3" style="height: 136px;">
+            <div class="shape-divider shape-divider-bottom z-index-3">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 136" preserveAspectRatio="xMinYMin">
                     <path d="M 0 0.11 L 0 136 L 1920 136 L 1920 1.9 C 1650.0482 79.0955 1327.0648 134 980 134 C 615.6218 134 277.7878 84.5059 0 0.11 Z" fill="#ffffff"/>
                 </svg>
             </div>
-            <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-primary nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 9000}" style="height: 100vh;">
+            <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-primary nav-md nav-font-size-md show-nav-hover mb-0"
+                 data-plugin-options="{'autoplayTimeout': 9000}" style="height: 90vh;">
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
                         <!-- Carousel Slide -->
@@ -845,22 +850,16 @@
 <!-- Theme Base, Components and Settings -->
 <script src="https://amcham.mn/js/theme.js"></script>
 
-<!-- Current Page Vendor and Views -->
+<!-- Current Page Vendor and Views-->
 <script src="https://amcham.mn/js/views/view.contact.js"></script>
 
-<!-- Calendar -->
-<script src="https://amcham.mn/js/mini-event-calendar.js"></script>
 
-<!-- Theme Custom -->
-<script src="https://amcham.mn/js/custom.js"></script>
-
-<!-- Stack JS -->
 
 <!-- Theme Initialization Files -->
 <script src="https://amcham.mn/js/theme.init.js"></script>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6119049d4d88eb50"></script>
+
 
     <script>
         var swiper = new Swiper(".busSwiper", {
@@ -905,7 +904,6 @@
 
 </body>
 </html>
-
 
 
 <script>

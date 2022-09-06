@@ -346,6 +346,11 @@
     const btnCloseModal = document.getElementById("close-modal");
     const modalElm = document.getElementById("modal");
 
+
+    modalElm.addEventListener("click", function () {
+        modalElm.classList.remove("open");
+    });
+
     btnOpenModal.addEventListener("click", function () {
         modalElm.classList.add("open");
     });

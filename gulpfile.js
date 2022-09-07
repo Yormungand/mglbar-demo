@@ -59,6 +59,7 @@ function css() {
     return gulp.src([
         'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
         'node_modules/swiper/swiper-bundle.css',
+        'node_modules/@fancyapps/ui/dist/fancybox.css',
         'css/*.css',
     ])
         .pipe(cleancss())
@@ -72,13 +73,11 @@ function css() {
 
 function js() {
     return gulp.src([
-        'js/*.js',
+        'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+        // 'node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js',
         'node_modules/swiper/swiper-bundle.js',
         'node_modules/axios/dist/axios.js',
-        // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.common.js',
-        // '/home/zakuro/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
-        // '/home/turbold/IdeaProjects/mglbar-demo/node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js',
-
+        'js/*.js',
     ])
         .pipe(uglify())
         .pipe(concat('root.min.js'))
@@ -93,7 +92,6 @@ function serve(){
     gulp.watch('./css/*.css').on('change', css, browserSync.reload);
     gulp.watch('./js/*.js').on('change', css, browserSync.reload);
     gulp.watch('./**/**/*').on('change', function () {
-
         console.log("Watch hit");
         browserSync.reload();
     });

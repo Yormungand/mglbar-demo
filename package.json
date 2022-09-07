@@ -13,6 +13,7 @@
     "bb >= 10"
   ],
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "axios": "^0.27.2",
     "browserslist": "^4.20.4",
     "gsap": "^3.10.4",

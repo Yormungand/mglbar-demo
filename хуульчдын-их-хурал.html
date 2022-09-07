@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/roboto-condensed/fonts.css">
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.min.css">
     <script src="dist/js/root.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../mglbar/src/main/webapp/static/webs/mglbar/js/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://static.sodonsolution.org/fonts/fontawesome-free-5/css/all.css">
-    <link rel="stylesheet" href="../mglbar/src/main/webapp/static/webs/mglbar/js/jquery-3.2.1.min.js">
-    <link rel="stylesheet" href="js/jquery.fancybox.min.js">
+
+
+
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">-->
+    <script src="dist/js/root.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>-->
+<!--    <script src="dist/js/fancy.js"></script>-->
+
+
 </head>
 
 <header></header>
@@ -85,30 +91,33 @@
                                         <div class="image-gallery">
                                             <div class="width-1-1">
                                                 <div class="child-width-4-12@l grid-20">
+                                                    <style>
+                                                        a.image-gallery__img {display: block}
+                                                    </style>
                                                     <div>
-                                                        <div class="image-gallery__img">
+                                                        <a href="images/chulgan4.jpg" data-fancybox="images" class="image-gallery__img">
                                                             <img src="images/chulgan4.jpg">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <div>
-                                                        <div class="image-gallery__img">
+                                                        <a href="images/chulgan4.jpg" data-fancybox="images" class="image-gallery__img">
                                                             <img src="images/chulgan.jpg">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <div>
-                                                        <div class="image-gallery__img">
+                                                        <a href="images/chulgan4.jpg" data-fancybox="images" class="image-gallery__img">
                                                             <img src="images/chulgan2.png">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <div>
-                                                        <div class="image-gallery__img">
+                                                        <a href="images/chulgan4.jpg" data-fancybox="images" class="image-gallery__img">
                                                             <img src="images/chulgan.jpeg">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <div>
-                                                        <div class="image-gallery__img">
+                                                        <a href="images/chulgan4.jpg" data-fancybox="images" class="image-gallery__img">
                                                             <img src="images/chulgan5.jpg">
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                     <a href="javascript:void(0)">
                                                         <div class="image-gallery__img image-color">
@@ -118,6 +127,17 @@
                                                         </div>
                                                     </a>
                                                 </div>
+
+                                                <!--<script>
+                                                    Fancybox.bind("a.image-gallery__img", {
+                                                        groupAll : true, // Group all items
+                                                        on : {
+                                                            ready : (fancybox) => {
+                                                                console.log(`fancybox #${fancybox.id} is ready!`);
+                                                            }
+                                                        }
+                                                    });
+                                                </script>-->
                                             </div>
                                         </div>
                                     </div>
@@ -179,12 +199,12 @@
                                         <div class="width-1-1">
                                             <div class="child-width-4-12@l grid-20">
                                                 <div>
-                                                    <div class="image-gallery__img">
+                                                    <a href="images/chulgan4.jpg" data-fancybox="images2" class="image-gallery__img">
                                                         <img src="images/chulgan4.jpg">
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div>
-                                                    <div class="image-gallery__img">
+                                                    <div href="images/chulgan4.jpg" data-fancybox="images2"  class="image-gallery__img">
                                                         <img src="images/chulgan.jpg">
                                                     </div>
                                                 </div>
